@@ -1,0 +1,74 @@
+---
+title: "Importance of Rationality"
+author: "Connair J. S. Russell"
+number-depth: 2
+---
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, eval=FALSE}
+
+library(tidyverse)
+library(kableExtra)
+
+cogstyles <- read.csv("variables/cog-styles.csv")
+colnames(cogstyles) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
+
+
+imprtab <- cogstyles %>% filter(`Variable Name` == "Importance of Rationality")
+
+```
+
+**Cluster:** Cognitive Style
+
+## Measure
+
+Here we include the Importance of Rationality Scale from @stahl2016
+
+### Modifications {.unnumbered}
+
+## Implementation
+
+### Question wording {.unnumbered}
+
+Participants read the following text:
+
+*Please read each of the following statements carefully and state to what extent you agree. There are no right or wrong answers and your responses remain anonymous.*
+
+**INSERT**
+
+### Items {.unnumbered}
+
+|        |                                                                                                       |
+|-----------------------|-------------------------------------------------|
+| imp_01 | It is important to me personally to be skeptical about claims that are not backed up by evidence.     |
+| imp_02 | It is important to me personally to remain rational and levelheaded even in heated arguments.         |
+| imp_03 | It is important to me personally to examine traditionally held beliefs using logic and evidence.      |
+| imp_04 | It is important to me personally that I can justify my beliefs using rational arguments and evidence. |
+| imp_05 | It is important to me personally to critically examine my long-held beliefs.                          |
+| imp_06 | It is important to me personally to be a rational person.                                             |
+
+### Coding {.unnumbered}
+
+This questionnaire uses our standard agreement scale.
+
+| **1**             | **2**               | **3**             | **4**                      | **5**          | **6**            | **7**          |
+|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+| strongly disagree | moderately disagree | slightly disagree | neither agree nor disagree | slightly agree | moderately agree | strongly agree |
+
+`No items are reverse coded`
+
+### Scoring {.unnumbered}
+
+The following variables are derived form this measure:
+
+```{r, echo=FALSE, eval=FALSE}
+kbl(imprtab, booktabs = T) %>%
+             kable_styling(full_width = T,
+                           fixed_thead = T) %>%
+             column_spec(1, width = "3cm") %>%
+             column_spec(2, width = "3cm") %>%
+             column_spec(3, width = "3cm") %>%
+             column_spec(4, width = "3cm") %>%
+             column_spec(5, width = "3cm") %>%
+             column_spec(6, width = "3cm") 
+```
+

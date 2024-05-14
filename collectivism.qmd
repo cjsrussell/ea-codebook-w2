@@ -1,0 +1,107 @@
+---
+title: "Collectivism"
+author: "Connair J. S. Russell"
+number-depth: 2
+---
+
+```{r, echo=FALSE, message=FALSE, eval= FALSE}
+
+library(dplyr)
+library(kableExtra)
+
+morvals <- read.csv("variables/morals-vals.csv")
+colnames(morvals) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
+
+indivtab <- morvals %>%filter(`Variable Name`=="Individualism & Collectivism")
+
+```
+
+## Measure
+
+The collectivism measure used was that of Triandis (1994), available in @gelfand1999.
+
+### Modifications {.unnumbered}
+
+For consistency with our other measures we used a 7-point likert scale for agreement, where the original measure used a 9-point scale.
+
+## Implementation
+
+### Question wording {.unnumbered}
+
+Participants read the following text:
+
+*We want to know if you agree or disagree with the following statements. The statements sometimes refer to your 'group,' which refers to your group of friends or any other group that you are involved in. Read each one carefully. Indicate your agreement or disagreement with the statement by using the following scale:*
+
+### Items {.unnumbered}
+
++------------+------------------------------------------------------------------------------------------+
+| Qlabel     | question                                                                                 |
++============+==========================================================================================+
+| ic_01      | It is important for me to maintain harmony within my group                               |
++------------+------------------------------------------------------------------------------------------+
+| ic_02      | I would sacrifice an activity that I enjoy very much if my family did not approve of it. |
++------------+------------------------------------------------------------------------------------------+
+| ic_03      | Children should be taught to place duty before pleasure.                                 |
++------------+------------------------------------------------------------------------------------------+
+| ic_04      | My happiness depends very much on the happiness of those around                          |
+|            |                                                                                          |
+|            | me.                                                                                      |
++------------+------------------------------------------------------------------------------------------+
+| ic_05      | The well-being of my group is a very important concern for me                            |
++------------+------------------------------------------------------------------------------------------+
+| ic_06      | I really like to cooperate with others                                                   |
++------------+------------------------------------------------------------------------------------------+
+| ic_07      | I usually sacrifice my self-interest for the benefit of my group                         |
++------------+------------------------------------------------------------------------------------------+
+| ic_08      | Before making a decision, I like to consult with many others.                            |
++------------+------------------------------------------------------------------------------------------+
+| ic_09      | Children should feel honored if their parents receive a distinguished                    |
+|            |                                                                                          |
+|            | award                                                                                    |
++------------+------------------------------------------------------------------------------------------+
+| ic_10      | If any of my relatives were in financial difficulty, I would help them                   |
+|            |                                                                                          |
+|            | even if it made my life difficult.                                                       |
++------------+------------------------------------------------------------------------------------------+
+| ic_11      | If a member of my group gets a prize, I would feel proud.                                |
++------------+------------------------------------------------------------------------------------------+
+| ic_12      | Sharing little things with my group makes me very happy                                  |
++------------+------------------------------------------------------------------------------------------+
+| ic_13      | I feel we should keep our aging parents with us at home                                  |
++------------+------------------------------------------------------------------------------------------+
+| ic_14      | To me, pleasure is spending time with others                                             |
++------------+------------------------------------------------------------------------------------------+
+| ic_15      | I hate to disagree with others in my group                                               |
++------------+------------------------------------------------------------------------------------------+
+| ic_16      | I would do what would please my family, even if I detested the activity                  |
++------------+------------------------------------------------------------------------------------------+
+
+### Coding {.unnumbered}
+
+This questionnaire used our standard response scale for agreement.
+
++-------------------+---------------------+-------------------+----------------------------+----------------+------------------+----------------+
+| **1**             | **2**               | **3**             | **4**                      | **5**          | **6**            | **7**          |
++-------------------+---------------------+-------------------+----------------------------+----------------+------------------+----------------+
+| strongly disagree | moderately disagree | slightly disagree | neither agree nor disagree | slightly agree | moderately agree | strongly agree |
++-------------------+---------------------+-------------------+----------------------------+----------------+------------------+----------------+
+
+`No items are reverse coded`
+
+### Scoring {.unnumbered}
+
+The following variables were derived from this measure
+
+```{r, echo=FALSE, message=FALSE, eval= FALSE}
+kbl(indivtab, booktabs = T) %>%
+             kable_styling(full_width = T,
+                           fixed_thead = T) %>%
+             column_spec(1, width = "3cm") %>%
+             column_spec(2, width = "3cm") %>%
+             column_spec(3, width = "3cm") %>%
+             column_spec(4, width = "3cm") %>%
+             column_spec(5, width = "3cm") 
+   
+```
+
+## 

@@ -1,0 +1,68 @@
+---
+title: "Promiscuous Teleology"
+author: "Connair J. S. Russell"
+number-depth: 2
+---
+
+```{r, echo=FALSE, message=FALSE, eval=FALSE}
+
+library(dplyr)
+library(kableExtra)
+
+cogbi <- read.csv("variables/cog-bias.csv")
+colnames(cogbi) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
+
+pttab <- cogbi %>%filter(`Variable Name`=="Promiscuous Teleology")
+
+```
+
+## Measure
+
+The promiscuous teleology measure we use is the short form of the Teleological Ideas about Nature Scale (TINS), which is an as yet unpublished scale by Kelemen, Brown, Burnham & Rottman (2023, in prep).
+
+`PAGE WILL BE UPDATED WHEN THE SCALE IS PUBLISHED`
+
+
+### Modifications {.unnumbered}
+
+## Implementation
+
+### Question wording {.unnumbered}
+
+Participants read the following text:
+
+*Please read each of the following statements carefully and state to what extent you agree. There are no right or wrong answers and your responses remain anonymous.*
+
+### Items {.unnumbered}
+
+
+### Coding {.unnumbered}
+
+This questionnaire used the standard response scale for agreement
+
+`No items are reverse coded`
+
+### Scoring
+
+The following variables are derived from this measure:
+
+```{r, echo=FALSE, eval=FALSE}
+kbl(pttab, booktabs = T) %>%
+             kable_styling(full_width = T,
+                           fixed_thead = T) %>%
+             column_spec(1, width = "3cm") %>%
+             column_spec(2, width = "3cm") %>%
+             column_spec(3, width = "3cm") %>%
+             column_spec(4, width = "3cm") %>%
+             column_spec(5, width = "3cm") 
+   
+```
+
+## Script
+
+
+```{r, eval = FALSE}
+
+
+```
+

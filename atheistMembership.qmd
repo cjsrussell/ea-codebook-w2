@@ -1,0 +1,22 @@
+---
+title: "Atheist Membership"
+author: "Connair J. S. Russell"
+number-depth: 2
+---
+
+**Cluster:** Measuring Belief
+
+## Measure
+
+### Modifications {.unnumbered}
+
+## Implementation
+
+| Qlabel | Question                                                                                                               | Response options |
+|--------------|--------------------------------------------|--------------|
+| am_01  | Are you currently a member of any atheist, secularist, humanist, or similar organization at a national or local level? | Y/N              
+## Scoring
+
+See the Belief Measures landing page for all belief measures variables and their definitions.
+
+

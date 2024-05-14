@@ -1,0 +1,82 @@
+---
+title: "Tolerance of Ambiguity"
+author: "Connair J. S. Russell"
+bibliography: lib.bib
+csl: apa.csl
+number-depth: 2
+---
+
+```{r, echo=FALSE, message=FALSE, eval=FALSE}
+
+# echo and message false so not shown on page
+
+library(dplyr)
+library(kableExtra)
+
+cogstyles <- read.csv("variables/cog-styles.csv")
+colnames(cogstyles) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
+
+tatab <- cogstyles %>%filter(`Variable Name`=="Tolerance of Ambiguity")
+
+```
+
+**Cluster:** Cognitive Styles
+
+## Measure
+
+The measure used for tolerance of ambiguity is the Multiple Stimulus Types Ambiguity Tolerance Scale- II (MSTAT-II) by @mclain2009 .
+
+### Modifications {.unnumbered}
+
+## Implementation
+
+### Question wording {.unnumbered}
+
+Participants read the following text:
+
+*Please read each of the following statements carefully and state to what extent you agree with each. There are no right or wrong answers and your responses remain anonymous.*
+
+### Items {.unnumbered}
+
+| Qlabel | question                                                                                       |
+|-------------|-----------------------------------------------------------|
+| at_01  | I don't tolerate ambiguous situations well                                                     |
+| at_02  | I would rather avoid solving a problem that must be viewed from several different perspectives |
+| at_03  | I try to avoid situations that are ambiguous                                                   |
+| at_04  | I prefer familiar situations to new ones                                                       |
+| at_05  | Problems that cannot be considered from just one point of view are a little threatening        |
+| at_06  | I avoid situations that are too complicated for me to easily understand                        |
+| at_07  | I am tolerant of ambiguous situations                                                          |
+| at_08  | I enjoy tackling problems that are complex enough to be ambiguous                              |
+| at_09  | I try to avoid problems that don't seem to have only one "best" solution                       |
+| at_10  | I generally prefer novelty over familiarity                                                    |
+| at_11  | I dislike ambiguous situations                                                                 |
+| at_12  | I find it hard to make a choice when the outcome is uncertain                                  |
+| at_13  | I prefer a situation in which there is some ambiguity                                          |
+
+### Coding {.unnumbered}
+
+This questionnaire uses our standard response scale for agreement,
+
+| **1**             | **2**               | **3**             | **4**                      | **5**          | **6**            | **7**          |
+|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+| strongly disagree | moderately disagree | slightly disagree | neither agree nor disagree | slightly agree | moderately agree | strongly agree |
+
+`at_01, at_02, at_03, at_04, at_05, at_06, at_09, at_11, and at_12 are reverse coded`
+
+### Scoring
+
+The following variables are derived from this measure:
+
+```{r, echo=FALSE, eval=FALSE}
+kbl(tatab, booktabs = T) %>%
+             kable_styling(full_width = T,
+                           fixed_thead = T) %>%
+             column_spec(1, width = "3cm") %>%
+             column_spec(2, width = "3cm") %>%
+             column_spec(3, width = "3cm") %>%
+             column_spec(4, width = "3cm") %>%
+             column_spec(5, width = "3cm") %>%
+             column_spec(6, width = "3cm") 
+```
+

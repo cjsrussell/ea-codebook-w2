@@ -1,0 +1,91 @@
+---
+title: "Mentalizing"
+author: "Connair J. S. Russell"
+number-depth: 2
+---
+
+```{r, echo=FALSE, message=FALSE, eval= FALSE}
+
+library(dplyr)
+library(kableExtra)
+
+cogbi <- read.csv("variables/cog-bias.csv")
+colnames(cogbi) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
+
+mnttab <- cogbi %>%filter(`Variable Name`=="Mentalizing")
+
+```
+
+**Cluster:** Cognitive Biases
+
+## Measure
+
+The Mentalizing measure used was the EQ-Short [@wakabayashi2006], which is an abbreviated version of the original Empathy Quotient measure [@baron-cohen2004].
+
+### Modifications
+
+In contrast with other agreement based measures we used, the selected mentalizing measure used a unique scoring system, and as such was not altered to be consistent with our other Likert measures.
+
+The wording of the question was altered to reflect the manner of administration ("select" your answer instead of the original "circle")
+
+## Implementation
+
+### Question wording {.unnumbered}
+
+Participants read the following text:
+
+*Please read each of the following statements carefully and rate how strongly you agree or disagree. There are no right or wrong answers and your responses remain anonymous.*
+
+### Items {.unnumbered}
+
+| Qlabel | question                                                                                                |
+|--------|---------------------------------------------------------------------------------------------------------|
+| mnt_01 | I can easily tell if someone else wants to enter a conversation.                                        |
+| mnt_02 | I really enjoy caring for other people                                                                  |
+| mnt_03 | I find it hard to know what to do in a social situation                                                 |
+| mnt_04 | I often find it difficult to judge if something is rude or polite                                       |
+| mnt_05 | In a conversation, I tend to focus on my own thoughts rather than on what my listener might be thinking |
+| mnt_06 | I can pick up quickly if someone says one thing but means another.                                      |
+| mnt_07 | It is hard for me to see why some things upset people so much                                           |
+| mnt_08 | I find it easy to put myself in somebody else's shoes                                                   |
+| mnt_09 | I am good at predicting how someone will feel.                                                          |
+| mnt_10 | I am quick to spot when someone in a group is feeling awkward or uncomfortable                          |
+| mnt_11 | I can't always see why someone should have felt offended by a remark                                    |
+| mnt_12 | I don't tend to find social situations confusing.                                                       |
+| mnt_13 | Other people tell me I am good at understanding how they are feeling and what they are thinking         |
+| mnt_14 | I can easily tell if someone else is interested or bored with what I am saying                          |
+| mnt_15 | Friends usually talk to me about their problems as they say that I am very understanding.               |
+| mnt_16 | I can sense if I am intruding, even if the other person doesn't tell me                                 |
+| mnt_17 | Other people often say that I am insensitive, though I don't always see why                             |
+| mnt_18 | I can tune into how someone else feels rapidly and intuitively.                                         |
+| mnt_19 | I can easily work out what another person might want to talk about                                      |
+| mnt_20 | I can tell if someone is masking their true emotion                                                     |
+| mnt_21 | I am good at predicting what someone will do                                                            |
+| mnt_22 | I tend to get emotionally involved with a friend's problems                                             |
+
+### Coding {.unnumbered}
+
+The mentalizing measure follows a bespoke 4 point agreement scale and uses a the following coding scheme:
+
+| definitely disagree | slightly disagree | slightly agree | definitely agree |
+|---------------------|-------------------|----------------|------------------|
+| 0                   | 0                 | 1              | 2                |
+
+`Items 03, 04, 05, 07, 11, and 17 are reverse coded.`
+
+### Scoring
+
+The following variables are derived from this measure:
+
+```{r, echo=FALSE, message=FALSE, eval= FALSE}
+kbl(mnttab, booktabs = T) %>%
+             kable_styling(full_width = T,
+                           fixed_thead = T) %>%
+             column_spec(1, width = "3cm") %>%
+             column_spec(2, width = "3cm") %>%
+             column_spec(3, width = "3cm") %>%
+             column_spec(4, width = "3cm") %>%
+             column_spec(5, width = "3cm") 
+   
+```
+

@@ -1,0 +1,79 @@
+project:
+  type: book
+  output-dir: docs
+
+
+book:
+  title: "Explaining Atheism: Wave 2 Codebook"
+  cover-image: cover.jpg 
+  sidebar: 
+    title: Wave 2 Codebook
+    search: true
+    background: white
+    foreground: "#30ba8f"
+    logo: EA_Logo.jpg 
+    tools:
+      - icon: github
+        href: https://github.com/cjsrussell/
+        aria-label: GitHub
+      - icon: twitter
+        href: https://twitter.com/ExplainingAthe1/
+        aria-label: Twitter 
+      - icon: globe
+        href: https://www.explainingatheism.org/
+        aria-label: Explaining Atheism  
+    style: docked 
+  chapters:
+    - index.qmd
+    - part: "Survey 1"
+      chapters: 
+      - rebelliousness.qmd
+      - creds.qmd
+      - normativity.qmd
+      - collectivism.qmd
+      - existentialInsecurity.qmd
+      - nonTheisticSocialisation.qmd
+      - religiousEmphasis.qmd
+      - socialDesirability.qmd
+      - meaningInLife.qmd
+    - part: "Survey 2"
+      chapters:
+      - anthropomorphism.qmd 
+      - mentalizing.qmd     
+      - vividness.qmd
+      - dualism.qmd
+      - promisctel_temp.qmd
+      - thinkingStyle.qmd
+      - existentialInsecurity.qmd
+      - ambiguityTolerance.qmd
+      - importanceRationality.qmd
+    - part: "Belief Measures"
+      chapters:
+      - issp.qmd       
+      - religiousIdentity.qmd
+      - religiousPractice.qmd
+      - supernaturalBelief.qmd
+      - generalBelief.qmd
+      - atheistMembership.qmd
+    - part: references.qmd  
+      chapters:
+      - references.qmd
+
+      
+bibliography: lib.bib
+csl: apa.csl
+
+format:
+  docx: 
+   toc: true
+   number-sections: true
+   prefer-html: true
+  html:
+    theme: cosmo
+    linkcolor: "#253f8c"
+  pdf:
+   documentclass: scrbook
+   prefer-html: true
+
+
+

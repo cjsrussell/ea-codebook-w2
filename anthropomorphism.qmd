@@ -1,0 +1,77 @@
+---
+title: "Anthropomorphism"
+author: "Connair J. S. Russell"
+bibliography: lib.bib
+csl: apa.csl
+number-depth: 2
+---
+
+```{r, echo=FALSE, message=FALSE, eval= FALSE}
+
+library(dplyr)
+library(kableExtra)
+
+cogbi <- read.csv("variables/cog-bias.csv")
+colnames(cogbi) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
+
+anthtab <- cogbi %>%filter(`Variable Name`=="Anthropomorphism")
+
+```
+
+## Measure
+
+### Modifications {.unnumbered}
+
+The original measure used by @neave2015 questions pertaining to childhood and adulthood experiences. For the sake of brevity only questions pertaining to adulthood were included.
+
+For consistency with the other agreement based measures used in the project the anchors and response items were altered to be a 7-point Likert scale.
+
+## Implementation
+
+### Question wording {.unnumbered}
+
+Participants read the following text:
+
+*Please read each of the following statements carefully and rate how strongly you agree or disagree. There are no right or wrong answers and your responses remain anonymous.*
+
+### Items {.unnumbered}
+
+| Qlabel  | question                                                                                                                            |
+|------------|------------------------------------------------------------|
+| anth_01 | I sometimes wonder if my computer deliberately runs more slowly after I have shouted at it                                          |
+| anth_02 | On occasions I feel that my computer/printer is being deliberately awkward                                                          |
+| anth_03 | I sometimes wonder if my personal possessions appreciate it when I have given them a good clean                                     |
+| anth_04 | On occasion I feel that the weather conditions are being deliberately bad in order to ruin a social event                           |
+| anth_05 | I do think that certain cars have a specific personality                                                                            |
+| anth_06 | If I accidentally break one of my favourite possessions I make sure that I apologise to it for my clumsiness                        |
+| anth_07 | I think that some trees are friendly while others have an air of menace                                                             |
+| anth_08 | I sometimes think that if my computer/printer is made to feel happy and/or wanted, then they will be less likely to malfunction     |
+| anth_09 | I sometimes feel that the sea can be angry                                                                                          |
+| anth_10 | Part of the reason why I picked a new car/electrical item was because when I first saw it I felt that it had a friendly personality |
+
+### Coding {.unnumbered}
+
+This questionnaire follows our standard coding for agreement based measures, with strongly disagree = 1, and strongly agree = 7.
+
+|                   |                     |                   |                            |                |                  |                |
+|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+| **1**             | **2**               | **3**             | **4**                      | **5**          | **6**            | **7**          |
+| strongly disagree | moderately disagree | slightly disagree | neither agree nor disagree | slightly agree | moderately agree | strongly agree |
+
+`No items are reverse coded`
+
+### Scoring
+
+The following variables were derived from this measure
+
+```{r, echo=FALSE, eval = FALSE}
+kbl(anthtab, booktabs = T) %>%
+             kable_styling(full_width = T,
+                           fixed_thead = T) %>%
+             column_spec(1, width = "3cm") %>%
+             column_spec(2, width = "3cm") %>%
+             column_spec(3, width = "3cm") %>%
+             column_spec(4, width = "3cm") %>%
+             column_spec(5, width = "3cm") 
+   
+```

@@ -1,0 +1,85 @@
+---
+title: "Dualism"
+author: "Connair J. S. Russell"
+number-depth: 2
+---
+
+```{r, echo=FALSE, message=FALSE, eval=FALSE}
+
+# echo and message false so not shown on page
+
+library(dplyr)
+library(kableExtra)
+
+cogbi <- read.csv("variables/cog-bias.csv")
+colnames(cogbi) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
+
+duatab <- cogbi %>% filter(`Variable Name`=="Dualism")
+
+```
+
+**Cluster:** Cognitive Biases
+
+## Measure
+
+The Dualism measure used is an abbreviation of The Dualism Scale by @stanovich1989. As with previous research the scale has been shortened for brevity [@willard2017; @willard2020].
+
+### Modifications.
+
+For consistency with the other agreement based measures used in the project the anchors and response items were altered to be a 7-point Likert scale
+
+## Implementation
+
+### Question wording
+
+Participants read the following text, adapted and shortened from @stanovich1989:
+
+*Please read each of the following statements carefully and rate how strongly you agree or disagree. There are no right or wrong answers and your responses remain anonymous*
+
+### Items {.unnumbered}
+
+| Qlabel | question                                                                                                                                 |
+|--------|------------------------------------------------------------------------------------------------------------------------------------------|
+| dua_01 | The mind is not part of the brain but it affects the brain.                                                                              |
+| dua_02 | When I imagine a scene in my mind, I am in a state that will forever be beyond explanation by science.                                   |
+| dua_03 | The mind is a special form of energy (currently unknown to man) that is in contact with the brain and affects it.                        |
+| dua_04 | When people talk about their minds they are really just talking about what their brains seem to be doing.                                |
+| dua_05 | The fact that I can know my own thought processes (that I can introspect) means that my thought processes cannot be just brain processes |
+| dua_06 | The mind is a nonmaterial substance that interact with the brain to determine behavior                                                   |
+| dua_07 | Minds are inside brains but are not the same as brains.                                                                                  |
+| dua_08 | Some mental processes have no connection to brain processes                                                                              |
+| dua_09 | Mental processes are the result of activity in the nervous system                                                                        |
+| dua_10 | The mind and the brain are two totally separate things                                                                                   |
+
+### Coding {.unnumbered}
+
+This questionnaire follows our standard scoring for agreement based measures, with strongly disagree = 1, and strongly agree = 7.
+
+|                   |                     |                   |                            |                |                  |                |
+|-------------------|---------------------|-------------------|----------------------------|----------------|------------------|----------------|
+| **1**             | **2**               | **3**             | **4**                      | **5**          | **6**            | **7**          |
+| strongly disagree | moderately disagree | slightly disagree | neither agree nor disagree | slightly agree | moderately agree | strongly agree |
+
+`dua_04 and dua_09 are reverse coded`
+
+
+## Scoring
+
+```{r, echo=FALSE, message=FALSE, eval=FALSE}
+
+kbl(duatab, booktabs = T) %>%
+             kable_styling(full_width = T,
+                           fixed_thead = T) %>%
+             column_spec(1, width = "3cm") %>%
+             column_spec(2, width = "3cm") %>%
+             column_spec(3, width = "3cm") %>%
+             column_spec(4, width = "3cm") %>%
+             column_spec(5, width = "3cm") %>%
+             column_spec(6, width = "3cm") 
+```
+
+## Script
+
+```{r, eval = FALSE}
+```
+

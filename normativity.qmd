@@ -1,0 +1,84 @@
+---
+title: "Normativity of Religion"
+author: "Connair J. S. Russell"
+number-depth: 2
+---
+
+```{r, echo=FALSE, message=FALSE, eval= FALSE}
+
+library(tidyverse)
+library(kableExtra)
+
+soc <- read.csv("variables/socialisation.csv")
+colnames(soc) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
+
+
+normtab <- soc %>% filter(grepl("^Normativity",`Variable Name`))
+
+```
+
+## Measure
+
+### Modifications {.unnumbered}
+
+## Implementation
+
+### Question wording {.unnumbered}
+
+Participants are presented with the following text:
+
+*People are a part of a number of groups that affect their lives, such as nation-states, ethnic groups, companies, friend/peer groups, and hobby groups (e.g. sports/music fandoms). For these groups, being a good, respected member often comes with expectations. Below, we will ask you how important certain personal qualities are to being a good, respected member of the groups to which you belong.*
+
+Along with subscale specific text:
+
+| **Subscale**  | text                                                                                                                                                                                                                               | response |
+|-------------|-----------------------------------------------|-------------|
+| Nation        | The following questions will ask you about your nation. There are no right or wrong answers and your responses remain anonymous.                                                                                                   | extent   |
+| Ethnic        | The following questions will ask you about the ethnic group with which you identify (e.g. Black British, White (other), Han, Japanese, Pacific Islander). There are no right or wrong answers and your responses remain anonymous. | extent   |
+| Friends/peers | The following questions will ask you about your friendship/ peer group. There are no right or wrong answers and your responses remain anonymous.                                                                                   | extent   |
+| Choose own    | The following questions will ask you about a hobby or interest group that is important to you (e.g. music, fashion, gaming communities). There are no right or wrong answers and your responses remain anonymous.                  | extent   |
+
+### Items {.unnumbered}
+
+The question items were as follows, where \[COUNTRY\] is the name of the country:
+
+| Qlabel  | **Subscale**  | question                                                                                                                   | response |
+|------------|------------|-------------------------------------|------------|
+| norm_01 | Nation        | To what extent is it expected for a citizen of \[COUNTRY\] to believe in God?                                              | extent   |
+| norm_02 | Nation        | To what extent is it expected for a citizen of \[COUNTRY\] to perform rituals honouring God?                               | extent   |
+| norm_03 | Nation        | To what extent is it expected for a citizen of \[COUNTRY\] to belong to a religion?                                        | extent   |
+| norm_04 | Ethnic        | To what extent is it expected of people in your ethnic group to believe in God?                                            | extent   |
+| norm_05 | Ethnic        | To what extent is it expected of people in your ethnic group to perform rituals honouring God?                             | extent   |
+| norm_06 | Ethnic        | To what extent is it expected of people in your ethnic group to belong to a religion?                                      | extent   |
+| norm_07 | Friends/peers | To what extent is it expected amongst your friends to believe in God?                                                      | extent   |
+| norm_08 | Friends/peers | To what extent is it expected amongst your friends to perform rituals honouring God?                                       | extent   |
+| norm_09 | Friends/peers | To what extent is it expected amongst your friends to belong to a religion?                                                | extent   |
+| norm_10 | Choose own    | To what extent is it expected for members of the hobby or interest group most important to you to believe in God?          | extent   |
+| norm_11 | Choose own    | To what extent is it expected for members of the hobby or interest group most important to you to perform rituals for God? | extent   |
+| norm_12 | Choose own    | To what extent is it expected for members of the hobby or interest group most important to you to belong to a religion?    | extent   |
+
+
+
+### Coding {.unnumbered}
+
+This questionnaire follows our standard coding for extent based measures, with To No Extent At All = 1, and To a Great Extent = 7.
+
+| **1**               | **2**              | **3**            | **4**                | **5**                    | **6**                    | **7**             |
+|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+| To No Extent At All | To a Slight Extent | To a Mild Extent | To a Moderate Extent | To an Appreciable Extent | To a Considerable Extent | To a Great Extent |
+
+`No items are reverse coded`
+
+### Scoring
+
+```{r, echo=FALSE, message=FALSE, eval= FALSE}
+kbl(normtab, booktabs = T) %>%
+             kable_styling(full_width = T,
+                           fixed_thead = T) %>%
+             column_spec(1, width = "3cm") %>%
+             column_spec(2, width = "3cm") %>%
+             column_spec(3, width = "3cm") %>%
+             column_spec(4, width = "3cm") %>%
+             column_spec(5, width = "3cm") %>%
+             column_spec(6, width = "3cm") 
+```

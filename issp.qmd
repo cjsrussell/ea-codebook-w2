@@ -1,0 +1,58 @@
+---
+title: "ISSP"
+author: "Connair J. S. Russell"
+number-depth: 2
+---
+
+**Cluster:** Measuring Belief
+
+## Measure
+
+### Modifications {.unnumbered}
+
+Note ISSP_03 was not originally an ISSP question. This is a question created by us and added to this section for practical purposes.
+
+## Implementation
+
+`issp_02 only appears if issp_01 = 1 or 2`
+
++-----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
+| Qlabel    | Question                                                                                                                                                                                     | Response options                                                                          |
++===========+==============================================================================================================================================================================================+===========================================================================================+
+| issp_01   | Which statement comes closes to expressing what you believe about God?                                                                                                                       | 1.  I don't believe in God                                                                |
+|           |                                                                                                                                                                                              | 2.  I don't know whether there is a God, and I don't believe there is any way to find out |
+|           |                                                                                                                                                                                              | 3.  I don't believe in a personal God, but I do believe in a Higher Power of some kind    |
+|           |                                                                                                                                                                                              | 4.  I find myself believing in God some of the time, but not at others                    |
+|           |                                                                                                                                                                                              | 5.  While I have doubts, I feel that I do believe in God.                                 |
+|           |                                                                                                                                                                                              | 6.  I know God really exists and I have no doubt about it.                                |
+|           |                                                                                                                                                                                              | 7.  Don't know                                                                            |
++-----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
+| issp_02   | Here are some examples of how different people who do not believe in God or gods identify themselves. If you had to pick a label, which of these comes closest to how you identify yourself? | 1.  Spiritual but not religious                                                           |
+|           |                                                                                                                                                                                              | 2.  Seeker                                                                                |
+|           |                                                                                                                                                                                              | 3.  Non-religious                                                                         |
+|           |                                                                                                                                                                                              | 4.  Atheist                                                                               |
+|           |                                                                                                                                                                                              | 5.  Agnostic                                                                              |
+|           |                                                                                                                                                                                              | 6.  Humanist                                                                              |
+|           |                                                                                                                                                                                              | 7.  Sceptic                                                                               |
+|           |                                                                                                                                                                                              | 8.  Free thinker                                                                          |
+|           |                                                                                                                                                                                              | 9.  Rationalist                                                                           |
+|           |                                                                                                                                                                                              | 10. Secular                                                                               |
+|           |                                                                                                                                                                                              | 11. Christian                                                                             |
+|           |                                                                                                                                                                                              | 12. Muslim                                                                                |
+|           |                                                                                                                                                                                              | 13. Jewish                                                                                |
+|           |                                                                                                                                                                                              | 14. Buddhist                                                                              |
+|           |                                                                                                                                                                                              | 15. Hindu                                                                                 |
+|           |                                                                                                                                                                                              | 16. Daoist                                                                                |
+|           |                                                                                                                                                                                              | 17. Shinto                                                                                |
+|           |                                                                                                                                                                                              | 18. Confucian                                                                             |
+|           |                                                                                                                                                                                              | 19. Other (please specify)                                                                |
++-----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
+| issp_03   | Which of the following best describes your belief in god?                                                                                                                                    | 1.  Generally speaking, I have always believed in God.                                    |
+|           |                                                                                                                                                                                              | 2.  Generally speaking, I have never believed in God.                                     |
+|           |                                                                                                                                                                                              | 3.  I believed in God in the past, but now I do not.                                      |
+|           |                                                                                                                                                                                              | 4.  I did not believe in God in the past, but now I do.                                   |
++-----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
+
+## Scoring
+
+See the Belief Measures landing page for all belief measures variables and their definitions.

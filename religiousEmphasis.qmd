@@ -1,0 +1,74 @@
+---
+title: "Religious Emphasis"
+author: "Connair J. S. Russell"
+number-depth: 2
+---
+
+```{r, echo=FALSE, message=FALSE, eval= FALSE}
+
+library(tidyverse)
+library(kableExtra)
+
+soc <- read.csv("variables/socialisation.csv")
+colnames(soc) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
+
+
+retab <- soc %>% filter(`Variable Name` == "Religious Emphasis")
+
+```
+
+## Measure
+
+## Implementation
+
+The Religious Emphasis measure that we use vary across the countries within our survey. Specifically we have different question wording for the historically Christian nations (Brazil, Denmark, United Kingdom, United States), Japan, and China.
+
+### Question wording {.unnumbered}
+
+| Questions | Question Text                                                                                                                                                                                                                                                     |
+|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| intro     | To what extent did you have an upbringing devoted to God? That is, to what extent, adding it all up, did the important people in your life -- such as your parents, teachers, and church officials (if any) -- do the things listed below as you were growing up? |
+
+## Items
+
+The items were as follows:
+
+| Qlabel | question                                                                                                                               | response |
+|--------|----------------------------------------------------------------------------------------------------------------------------------------|----------|
+| re_01  | Review the teachings of Christianity, Judaism, Islam, Hinduism or another similar tradition at home?                                   | extent   |
+| re_02  | Emphasize that you should read scripture or books associated with Christianity, Judaism, Islam, Hinduism or another similar tradition? | extent   |
+| re_03  | Discuss moral do's and don'ts in relation to God?                                                                                      | extent   |
+| re_04  | Tell stories about God?                                                                                                                | extent   |
+| re_05  | Talk about the afterlife?                                                                                                              | extent   |
+| re_06  | Emphasise that spiritual matters were of high importance?                                                                              | extent   |
+| re_07  | Relate stories about God to contemporary life?                                                                                         | extent   |
+| re_08  | Teach you to obey the wishes of God?                                                                                                   | extent   |
+| re_09  | Teach you to obey the persons who act as representatives of God (e.g. priests, ministers, rabbis, imams, etc.)?                        | extent   |
+
+
+### Coding {.unnumbered}
+
+This measure used our standard response scale for extent.
+
+|                     |                    |                  |                      |                          |                          |                   |
+|---------------------|--------------------|------------------|----------------------|--------------------------|--------------------------|-------------------|
+| **1**               | **2**              | **3**            | **4**                | **5**                    | **6**                    | **7**             |
+| To No Extent At All | To a Slight Extent | To a Mild Extent | To a Moderate Extent | To an Appreciable Extent | To a Considerable Extent | To a Great Extent |
+
+`No items are reverse coded`
+
+### Scoring
+
+The following variables were derived from this measure.
+
+```{r, echo=FALSE, message=FALSE, eval= FALSE}
+kbl(retab, booktabs = T) %>%
+             kable_styling(full_width = T,
+                           fixed_thead = T) %>%
+             column_spec(1, width = "3cm") %>%
+             column_spec(2, width = "3cm") %>%
+             column_spec(3, width = "3cm") %>%
+             column_spec(4, width = "3cm") %>%
+             column_spec(5, width = "3cm") %>%
+             column_spec(6, width = "3cm") 
+```

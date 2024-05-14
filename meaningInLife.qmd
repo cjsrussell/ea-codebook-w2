@@ -1,0 +1,83 @@
+---
+title: "Meaning in Life"
+author: "Connair J. S. Russell"
+number-depth: 2
+---
+
+```{r, echo=FALSE, message=FALSE, eval= FALSE}
+
+library(tidyverse)
+library(kableExtra)
+
+mot <- read.csv("variables/motivational.csv")
+colnames(mot) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
+
+
+mlqtab <- mot %>% filter(`Variable Name` == "Meaning in Life")
+
+```
+
+**Cluster:** Motivational
+
+## Measure
+
+To examine need for meaning we used The Meaning in Life Questionnaire (MLQ) by @steger2006. THe original scale has a two factor structure, with the subscales noted below. 
+
+### Modifications {.unnumbered}
+
+The truth-based Likert scale in the MLQ is the standard 7-point truth scale we used throughout the project so this was not altered.
+
+We used the original question wording for the MLQ.
+
+## Implementation
+
+### Question wording {.unnumbered}
+
+Participants read the following text:
+
+*Please read each of the following statements carefully and rate how strongly you agree or disagree. There are no right or wrong answers and your responses remain anonymous.*
+
+### Items
+
+**Meaning in Life Questionnaire**
+
+| Qlabel | Subscale | question                                                                 |
+|--------------|--------------|--------------------------------------------|
+| mlq_01 | presence | I understand my life's meaning.                                          |
+| mlq_02 | search   | I am looking for something that makes my life feel meaningful.           |
+| mlq_03 | search   | I am always looking to find my life's purpose.                           |
+| mlq_04 | presence | My life has a clear sense of purpose                                     |
+| mlq_05 | presence | I have a good sense of what makes my life meaningful.                    |
+| mlq_06 | presence | I have discovered a satisfying life purpose.                             |
+| mlq_07 | search   | I am always searching for something that makes my life feel significant. |
+| mlq_08 | search   | I am seeking a purpose or mission for my life.                           |
+| mlq_09 | presence | My life has no clear purpose.                                            |
+| mlq_10 | search   | I am searching for meaning in my life.                                   |
+
+
+
+## Coding
+
+**The Meaning in Life Questionnaire (mlq\_ items) used our standard response scale for truth:**
+
+|                   |               |                 |                         |               |             |                 |
+|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+| **1**             | **2**         | **3**           | **4**                   | **5**         | **6**       | **7**           |
+| absolutely untrue | mostly untrue | somewhat untrue | can't say true or false | somewhat true | mostly true | absolutely true |
+
+`Item mlq_09 is reverse coded`
+
+## Scoring
+
+```{r, echo=FALSE, message=FALSE, eval= FALSE}
+kbl(mlqtab, booktabs = T) %>%
+             kable_styling(full_width = T,
+                           fixed_thead = T) %>%
+             column_spec(1, width = "3cm") %>%
+             column_spec(2, width = "3cm") %>%
+             column_spec(3, width = "3cm") %>%
+             column_spec(4, width = "3cm") %>%
+             column_spec(5, width = "3cm") %>%
+             column_spec(6, width = "3cm") 
+```
+

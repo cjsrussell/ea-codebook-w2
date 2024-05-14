@@ -1,0 +1,89 @@
+---
+title: "Existential Insecurity"
+author: "Connair J. S. Russell"
+number-depth: 2
+---
+
+```{r, echo=FALSE, message=FALSE, eval= FALSE}
+
+# echo and message false so not shown on page
+
+library(dplyr)
+library(kableExtra)
+
+mot <- read.csv("variables/motivational.csv")
+colnames(mot) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
+
+estab <- mot %>%  filter(`Variable Name`%in% c("Social Trust", "Wealth Inequality", "Social Security") | grepl("^Existential", `Variable Name`) )
+
+```
+
+**Cluster:** Motivational
+
+## Measure
+
+The initial existential insecurity measures were derived from those used by @baimel2022 and by @willard2017.
+
+### Modifications {.unnumbered}
+
+The food security measure from @baimel2022 was combined with financial and physical security from @willard2017, these were asked for 'recently' and 'for the forthcoming months'. 
+
+In this wave we only included questions pertaining to childhood.
+
+## Implementation
+
+### Question wording {.unnumbered}
+
+The question wording was as follows:
+
+| Questions     | Question Text                                                |
+|-----------------|-------------------------------------------------------|
+| es_15 - es_21 | *When growing up did you:*                                   |
+
+
+### Items {.unnumbered}
+
+The question items were as follows:
+
+**Existential Security**
+
+| Qlabel | question                                                                       |
+|-------------|-----------------------------------------------------------|
+| es_15 | worry that your household may not able to buy or produce enough food to eat? |
+| es_16 | feel that your household may not be able to afford to buy items you need     |
+| es_17 | worry that your household may not have enough money                          |
+| es_18 | worry about members of your household losing their job                       |
+| es_19 | feel you will be safe walking alone in your local area after dark            |
+| es_20 | worry about being burgled                                                    |
+| es_21 | worry about being a victim of violent crime                                  |
+
+
+### Coding {.unnumbered}
+
+Items on the existential security subscale use the following frequency based Likert scale:
+
+|       |                   |              |           |            |                 |        |
+|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+| **1** | **2**             | **3**        | **4**     | **5**      | **6**           | **7**  |
+| never | very infrequently | infrequently | sometimes | frequently | very frequently | always |
+
+
+`es_19 is reverse coded`
+
+### Scoring
+
+The following variables are derived form this measure:
+
+```{r, echo=FALSE, message=FALSE, eval= FALSE}
+kbl(estab, booktabs = T) %>%
+             kable_styling(full_width = T,
+                           fixed_thead = T) %>%
+             column_spec(1, width = "3cm") %>%
+             column_spec(2, width = "3cm") %>%
+             column_spec(3, width = "3cm") %>%
+             column_spec(4, width = "3cm") %>%
+             column_spec(5, width = "3cm") %>%
+             column_spec(6, width = "3cm") 
+```
+
+

@@ -1,0 +1,20 @@
+## Welcome {.unnumbered}
+
+`** This is a living document as is not necessarily complete.**`
+
+`A timestamped final codebook will be published alongside the dataset when this is released`
+
+Welcome to the codebook for the second of the Explaining Atheism project. Here you will find all the information about what is in the accompanying dataset. This is a more focussed examination of variables tested in wave 1 (see here) across more countries.
+
+### Data
+
+This dataset is being collected via international surveys in Brazil, Japan, China, the United States, Denmark annd the UK.
+
+The dataset is comprised of two surveys of possible explanations of belief and non-belief, with the same belief measures included in both surveys. Each survey is run in a nationally representative sample (age, sex, region) of 1250 participants in each of the six countries.
+
+
+### Additional Information
+
+All information about the project, including scorings scripts for each measures used, is available on our Figshare page upon release, along with on my personal GitHub. This includes links to pre-registrations, materials and the data itself.
+
+If you have any questions or want any further information feel free to contact me at c.russell@qub.ac.uk, or get in touch via my GitHub or Twitter linked on the top left!

@@ -1,0 +1,107 @@
+---
+title: "Vividness of Mental Imagery"
+author: "Connair J. S. Russell"
+number-depth: 2
+---
+
+```{r, echo=FALSE, message=FALSE, eval= FALSE}
+
+library(dplyr)
+library(kableExtra)
+
+cogbi <- read.csv("variables/cog-bias.csv")
+colnames(cogbi) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
+
+vvitab <- cogbi %>%filter(`Variable Name`=="Vividness of Mental Imagery")
+
+```
+
+**Cluster:** Cognitive Biases
+
+## Measure
+
+The measure of vividness of mental imagery we use is the Vividness of Mental Imagery scale @marks1973.
+
+### Modifications {.unnumbered}
+
+## Implementation
+
+For this questionnaire each subscale appeared on its own page with the subscale specific text above
+
+### Question wording {.unnumbered}
+
+Participants read the following text:
+
++-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Items           | Text                                                                                                                                                                                                                                                                                                                                                                             |
++=================+==================================================================================================================================================================================================================================================================================================================================================================================+
++-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| vvi_01 - vvi_16 | For each scenario try to form a mental picture of the people, objects, or setting. Consider carefully the vividness of your visual imagery experience. Does some type of image come to mind? Rate how vivid the image is using the 5-point scale. If you do not have a visual image, rate vividness as '1'. Only use '5' for images that are as lively and vivid as real seeing. |
+|                 |                                                                                                                                                                                                                                                                                                                                                                                  |
+|                 | Please try to form the mental image of the following items with your eyes ***closed.***                                                                                                                                                                                                                                                                                          |
++-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+additional text was also presented prior to each subscale:
+
++---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Subscale (items)                            | Text                                                                                                                                                                                  |
++=============================================+=======================================================================================================================================================================================+
+| Relative or friend (vvi_01 - vvi_04)        | For items 1 to 4, think of some relative or friend whom you frequently see (but who is not with you at present) and consider carefully the picture that comes before your mind's eye. |
++---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Natural scene: Rising sun (vvi_05 - vvi_08) | Visualize a rising sun. Consider carefully the picture that comes before your mind's eye.                                                                                             |
++---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Shop (vvi_09 - vvi_12)                      | Think of the front of a shop which you often go to. Consider the picture that comes before your mind's eye.                                                                           |
++---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Natural scene: Lake (vvi_13 - vvi_16)       | Finally, think of a country scene which involves trees, mountains, and a lake. Consider the picture that comes before your mind's eye.                                                |
++---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+### Items {.unnumbered}
+
+| Qlabel | Subscale                  | question                                                                                         |
+|--------|---------------------------|--------------------------------------------------------------------------------------------------|
+| vvi_01 | Relative or friend        | The exact contour of face, head, shoulders, and body.                                            |
+| vvi_02 | Relative or friend        | Characteristic poses of head, attitudes of body, etc.                                            |
+| vvi_03 | Relative or friend        | The precise carriage, length of step, etc. in walking.                                           |
+| vvi_04 | Relative or friend        | The different colors worn in some familiar clothes.                                              |
+| vvi_05 | Natural scene: Rising sun | The sun is rising above the horizon into a hazy sky.                                             |
+| vvi_06 | Natural scene: Rising sun | The sky clears and surrounds the sun with blueness.                                              |
+| vvi_07 | Natural scene: Rising sun | Clouds. A storm blows up, with flashes of lightening.                                            |
+| vvi_08 | Natural scene: Rising sun | A rainbow appears.                                                                               |
+| vvi_09 | Shop                      | The overall appearance of the shop from the opposite side of the road.                           |
+| vvi_10 | Shop                      | A window display including colors, shape, and details of individual items for sale.              |
+| vvi_11 | Shop                      | You are near the entrance. The color, shape, and details of the door.                            |
+| vvi_12 | Shop                      | You enter the shop and go to the counter. The counter assistant serves you. Money changes hands. |
+| vvi_13 | Natural scene: Lake       | The contours of the landscape.                                                                   |
+| vvi_14 | Natural scene: Lake       | The color and shape of the trees.                                                                |
+| vvi_15 | Natural scene: Lake       | The color and shape of the lake.                                                                 |
+| vvi_16 | Natural scene: Lake       | A strong wind blows on the tree and on the lake causing waves.                                   |
+
+
+
+### Coding {.unnumbered}
+
+This questionnaire follows a unique scoring scheme for vividness
+
+| **1**                                         | **2**                      | **3**                      | **4**         | **5**                                                               |
+|-----------------------------------------------|----------------------------|----------------------------|---------------|---------------------------------------------------------------------|
+| Perfectly clear and as vivid as normal vision | Clear and reasonably vivid | Moderately clear and vivid | Vague and dim | No image at all, you only "know" that you are thinking of an object |
+
+`No items are reverse coded`
+
+### Scoring
+
+The following variables are derived from this measure:
+
+```{r, echo=FALSE, message=FALSE, eval= FALSE}
+kbl(vvitab, booktabs = T) %>%
+             kable_styling(full_width = T,
+                           fixed_thead = T) %>%
+             column_spec(1, width = "3cm") %>%
+             column_spec(2, width = "3cm") %>%
+             column_spec(3, width = "3cm") %>%
+             column_spec(4, width = "3cm") %>%
+             column_spec(5, width = "3cm") %>%
+             column_spec(6, width = "3cm") 
+```
+
+## 

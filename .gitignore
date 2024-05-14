@@ -1,0 +1,10 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+_book
+promisctel.qmd
+
+/.quarto/
+/_site/
+/_book/

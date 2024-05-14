@@ -1,0 +1,84 @@
+---
+title: "Non-theistic Socialisation"
+author: "Connair J. S. Russell"
+number-depth: 2
+---
+
+```{r, echo=FALSE, message=FALSE, eval= FALSE}
+
+library(tidyverse)
+library(kableExtra)
+
+soc <- read.csv("variables/socialisation.csv")
+colnames(soc) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
+
+
+ntstab <- soc %>% filter(`Variable Name` == "Non-Theistic Socialisation")
+
+```
+
+**Cluster:** Socialisation
+
+## Measure
+
+### Modifications {.unnumbered}
+
+## Implementation
+
+The Non-theistic Socialisation measure that we use vary across the countries within our survey, as such the following sections are subset by nation. Specifically we have different questions for the historically Christian nations (Brazil, Denmark, United Kingdom, United States), and for Japan and China.
+
+### Question wording {.unnumbered}
+
+
+| Questions | Question Text                                                                                                                                                                                                                                                                                          |
+|---------------|---------------------------------------------------------|
+| intro     | To what extent did important people in your upbringing speak against the idea that God exists? That is, to what extent, adding it all up, did the important people in your life -- such as your parents, teachers, and church officials (if any) -- do the things listed below as you were growing up? |
+
+
+### Items {.unnumbered}
+
+
+The items were as follows:
+
+| Qlabel | question                                                           | response |
+|---------------|-------------------------------------------|---------------|
+| nts_01 | State that God does not exist?                                     | extent   |
+| nts_02 | State that prayers to God do not work?                             | extent   |
+| nts_03 | Mock or joke about people's religious belief?                      | extent   |
+| nts_04 | State that belief in God is not necessary for morality?            | extent   |
+| nts_05 | State that one should not be religious?                            | extent   |
+| nts_06 | State that there are no good reasons to believe in God?            | extent   |
+| nts_07 | State that religious belief does more harm than good in the world? | extent   |
+| nts_08 | State that religious practices are irrational?                     | extent   |
+
+
+### Coding {.unnumbered}
+
+This measure uses our standard response scale for extent.
+
+#### Extent
+
+|                     |       |       |       |       |       |                   |
+|---------------------|-------|-------|-------|-------|-------|-------------------|
+| **1**               | **2** | **3** | **4** | **5** | **6** | **7**             |
+| To No Extent At All |       |       |       |       |       | To a Great Extent |
+
+`No items were reverse coded`
+
+### Scoring
+
+The following variables were derived from this measure:
+
+```{r, echo=FALSE, message=FALSE, eval= FALSE}
+kbl(ntstab, booktabs = T) %>%
+             kable_styling(full_width = T,
+                           fixed_thead = T) %>%
+             column_spec(1, width = "3cm") %>%
+             column_spec(2, width = "3cm") %>%
+             column_spec(3, width = "3cm") %>%
+             column_spec(4, width = "3cm") %>%
+             column_spec(5, width = "3cm") %>%
+             column_spec(6, width = "3cm") 
+```
+
+## 

@@ -1,0 +1,80 @@
+---
+title: "Social Desirability"
+author: "Connair J. S. Russell"
+number-depth: 2
+---
+
+```{r, echo=FALSE, message=FALSE, eval= FALSE}
+
+# echo and message false so not shown on page
+
+library(dplyr)
+library(kableExtra)
+
+mot <- read.csv("variables/motivational.csv")
+colnames(mot) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
+
+sdtab <- mot %>%  filter(`Variable Name` == "Social Desirability")
+
+```
+
+**Cluster:** Motivational
+
+## Measure
+
+To measure social desirability we use is the impression management subscale of the balanced Inventory of Desirable Responding Short Form (BIDR-16) from @hart2015 . This itself is an abbreviated version of the larger 40-item BIDR measure which can be found [here](https://sjdm.org/dmidi/Balanced_Inventory_of_Desirable_Responding.html).
+
+### Modifications {.unnumbered}
+
+The BIDR-16 used a truth based Likert scale. As with other measures we have standardized this to be a 7-point scale with anchors and response items consistent with the other truth-based Likert scales we used in the project.
+
+The original BIDR measure asked participants to write a numbered response indicating the degree to which each statement is true. For consistency with other measures used, and the method of administration, we ask participants to respond by selecting their response.
+
+## Implementation
+
+### Question wording {.unnumbered}
+
+Participants read the following text:
+
+*Please read each of the following statements carefully and say to what degree they are true or untrue for you. There are no right or wrong answers and your responses remain anonymous.*
+
+### Items {.unnumbered}
+
+| Qlabel | question                                                         |
+|-------------------|----------------------------------------------------|
+| sd_01  | I sometimes tell lies if I have to                               |
+| sd_02  | I never cover up my mistakes                                     |
+| sd_03  | There have been occasions when I have taken advantage of someone |
+| sd_04  | I sometimes try to get even rather than forgive and forget       |
+| sd_05  | I have said something bad about a friend behind his/her back     |
+| sd_06  | When I hear people talking privately, I avoid listening          |
+| sd_07  | I never take things that don't belong to me                      |
+| sd_08  | I don't gossip about other people's business                     |
+
+### Coding {.unnumbered}
+
+This questionnaire follows our standard coding for agreement based measures, with absolutely untrue = 1, and absolutely true = 7.
+
+|                   |               |                 |                         |               |             |                 |
+|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+| **1**             | **2**         | **3**           | **4**                   | **5**         | **6**       | **7**           |
+| absolutely untrue | mostly untrue | somewhat untrue | can't say true or false | somewhat true | mostly true | absolutely true |
+
+`Items sd_01, sd_03, sd_04, and sd_05 are reverse coded`
+
+
+### Scoring
+
+The following variables are derived from this measure:
+
+```{r, echo=FALSE, message=FALSE, eval= FALSE}
+kbl(sdtab, booktabs = T) %>%
+             kable_styling(full_width = T,
+                           fixed_thead = T) %>%
+             column_spec(1, width = "3cm") %>%
+             column_spec(2, width = "3cm") %>%
+             column_spec(3, width = "3cm") %>%
+             column_spec(4, width = "3cm") %>%
+             column_spec(5, width = "3cm") %>%
+             column_spec(6, width = "3cm") 
+```

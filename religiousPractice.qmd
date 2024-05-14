@@ -1,0 +1,70 @@
+---
+title: "Religious Practice"
+author: "Connair J. S. Russell"
+number-depth: 2
+---
+
+**Cluster:** Measuring Belief
+
+## Measure
+
+### Modifications {.unnumbered}
+
+## Implementation
+
++------------+-------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------+
+| Qlabel     | Question                                                                                                                      | Response options                           |
++============+===============================================================================================================================+============================================+
+| rp_01      | Apart from weddings and funerals, about how often do you attend religious services these days?                                | 1.  More than once a week                  |
+|            |                                                                                                                               | 2.  Once a week                            |
+|            |                                                                                                                               | 3.  Once a month                           |
+|            |                                                                                                                               | 4.  Only on special holy days              |
+|            |                                                                                                                               | 5.  Once a year                            |
+|            |                                                                                                                               | 6.  Less often                             |
+|            |                                                                                                                               | 7.  Never, practically never               |
++------------+-------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------+
+| rp_02      | Apart from weddings and funerals, about how often do you pray?                                                                | 1.  Several times a day                    |
+|            |                                                                                                                               | 2.  Once a day                             |
+|            |                                                                                                                               | 3.  Several times each week                |
+|            |                                                                                                                               | 4.  Only when attending religious services |
+|            |                                                                                                                               | 5.  Only on special holy days              |
+|            |                                                                                                                               | 6.  Once a year                            |
+|            |                                                                                                                               | 7.  Less often                             |
+|            |                                                                                                                               | 8.  Never, practically never               |
++------------+-------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------+
+| rp_03      | Do you have in your home a shrine, altar, or a religious object on display such as a (BIBLE OR CROSS/ COUNTRY SPECIFIC ITEM)? | 1.  Yes, for religious reasons             |
+|            |                                                                                                                               | 2.  Yes, for non-religious reasons         |
+|            |                                                                                                                               | 3.  No                                     |
++------------+-------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------+
+
+**Country Specific Examples**
+
+*Brazil*
+
+rp_03: crucifix or an image of Iemanja
+
+*China*
+
+rp_03: an ancestor tablet,  censer, Buddha statue, or statue of a deity?
+
+*Denmark*
+
+rp_03: a Bible or cross?
+
+*Japan*
+
+rp_03: butsudan, ihai, or kamidana?
+
+*UK*
+
+rp_03: cross, icon, mezuzah, or Bible?
+
+*USA*
+
+rp_03: a cross, icon, mezuzah, Bible, or retablo?
+
+### Scoring/ Coding
+
+See the General Belief landing page for all belief measures variables and their definitions.
+
+

@@ -1,0 +1,169 @@
+---
+title: "CREDs"
+author: "Connair J. S. Russell"
+number-depth: 2
+---
+
+```{r, echo=FALSE, message=FALSE, eval= FALSE}
+
+library(tidyverse)
+library(kableExtra)
+
+soc <- read.csv("variables/socialisation.csv")
+colnames(soc) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
+
+
+credtab <- soc %>% filter(grepl("^CRED", `Variable Name`))
+
+```
+
+**Cluster:** Socialisation
+
+## Measure
+
+The measure is a further development of the CREDs measure used by @lanman2017.
+
+### Modifications {.unnumbered}
+
+The CRED measures that we use vary across the countries within our survey, as such the following sections are subset by nation. Specifically we have different questions for the historically Christian nations (Brazil, Denmark, United Kingdom, United States), Japan, and China, and we have nation specific examples in some cases.
+
+In this round we added an additional question on perceived parental sincerity- cred_32.
+
+## Implementation
+
+### Question wording {.unnumbered}
+
++-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Questions         | Question Text                                                                                                                                                                                                                          |
++===================+========================================================================================================================================================================================================================================+
+| intro             | The following questions ask about experiences during your upbringing that relate to God.                                                                                                                                               |
++-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| cred_01 - cred_06 | These questions ask about your perceptions of your primary caregiver or caregivers (i.e., parents or guardians). Please answer each of the following according to your overall impression of your caregiver(s) on the following scale: |
++-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| cred_07           | *Stand alone question*                                                                                                                                                                                                                 |
++-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| cred_26 - cred_31 | These questions ask about your perceptions of your local area growing up (i.e., hometown, school). Please answer each of the following according to your overall impression of your caregiver(s) on the following scale:               |
++-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
+### Items {.unnumbered}
+
+The question items were as follows:
+
++---------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
+| Qlabel  | question                                                                                                                                                                                                     | response  |
++=========+==============================================================================================================================================================================================================+===========+
+| cred_01 | To what extent did your caregivers visit places sacred to God (e.g. temple, church, synagogue, mosque)?                                                                                                      | extent    |
++---------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
+| cred_02 | To what extent did your caregivers engage in volunteer/charity work associated with their devotion to God. (e.g. Habitat for humanity, Salvation Army, Catholic Relief Services, local religious charities)? | extent    |
++---------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
+| cred_03 | To what extent did your caregivers give financial donations to Godly causes (e.g. to churches,emples, mosques, charities, etc.)?                                                                             | extent    |
++---------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
+| cred_04 | To what extent did your caregivers make personal sacrifices as part of their devotion to God (e.g. fasting, abstaining from alcohol and caffeine, giving away wealth, etc.)?                                 | extent    |
++---------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
+| cred_05 | To what extent did your caregivers perform acts of devotion to God in the home (e.g. Bible readings, visible prayer, etc.)?                                                                                  | extent    |
++---------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
+| cred_06 | To what extent do you think their devotion to God influenced important decisions in their lives (e.g. marriage, divorce, moving, changing jobs, having children, etc.)?                                      | extent    |
++---------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
+| cred_32 | How sincere did you feel your caregivers were in their devotion to God?                                                                                                                                      | sincerity |
++---------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
+
++--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
+| cred_07      | Did you attend or participate in any groups devoted to God\] you were growing up? (e.g. churches, religious organisations, camps, etc.)\                                  | yes/no    |
+|              |                                                                                                                                                                           |           |
+|              | If yes, you will have the ability to answer for 2 different groups below.                                                                                                 |           |
++--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
+| cred_08      | Please name/describe the first group                                                                                                                                      | **open**  |
++--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
+| cred_09      | Did this group have leadership figures such as priests, pastors, imams, head counsellors, rabbis, gurus, etc.?                                                            | yes/no    |
++--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
+| cred_10      | How sincere did you feel the leaders of this group were in their devotion to God?                                                                                         | sincerity |
++--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
+| cred_11      | To what extent did the leaders of this group make personal sacrifices as part of their devotion to God? (e.g. fasting, celibacy, abstaining from alcohol and/or caffeine) | extent    |
++--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
+| cred_12      | How sincere did you feel the members of this group were in their devotion to God?                                                                                         | sincerity |
++--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
+| cred_13      | To what extent did members of this group engage in charitable work together?                                                                                              | extent    |
++--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
+| cred_14      | To what extent did members of this group express emotion during group gatherings?                                                                                         | extent    |
++--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
+| cred_15      | How often did members of this group appear to be in altered states of consciousness such as speaking in tongues, trance, or possession?                                   | frequency |
++--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
+| cred_16      | To what extent would members of this group wear particular clothes or clothing styles?                                                                                    | extent    |
++--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
+| cred_17 - 25 | REPEAT CRED 08 - 16                                                                                                                                                       | \-        |
++--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
+
++---------+---------------------------------------------------------------------------------------------------------+------------+
+| cred_26 | What percentage of people in your hometown/city do you think believed in God?                           | percentage |
++---------+---------------------------------------------------------------------------------------------------------+------------+
+| cred_27 | To what extent did believers in God in your hometown demonstrate their beliefs in everyday life?        | extent     |
++---------+---------------------------------------------------------------------------------------------------------+------------+
+| cred_28 | How sincere did you feel the believers in God in your hometown were in their devotion to God?           | sincerity  |
++---------+---------------------------------------------------------------------------------------------------------+------------+
+| cred_29 | What percentage of people in your high school do you think believed in God?                             | percentage |
++---------+---------------------------------------------------------------------------------------------------------+------------+
+| cred_30 | To what extent did the believers in God in your high school demonstrate their beliefs in everyday life? | extent     |
++---------+---------------------------------------------------------------------------------------------------------+------------+
+| cred_31 | How sincere did you feel the believers in God in your high school were in their devotion to God?        | sincerity  |
++---------+---------------------------------------------------------------------------------------------------------+------------+
+
+### Country Specific Variations:
+
+
+### Coding {.unnumbered}
+
+The above questions had a number of different response options, with no reverse coding:
+
+#### Yes/No
+
+| 0   | 1   |
+|-----|-----|
+| No  | Yes |
+
+#### Frequency
+
++--------+-------------------+--------------+-----------+------------+-----------------+--------+
+| **1**  | **2**             | **3**        | **4**     | **5**      | **6**           | **7**  |
++--------+-------------------+--------------+-----------+------------+-----------------+--------+
+| Never  | Very Infrequently | Infrequently | Sometimes | Frequently | Very Frequently | Always |
++--------+-------------------+--------------+-----------+------------+-----------------+--------+
+
+#### Extent
+
++---------------------+--------+--------+--------+--------+--------+-------------------+
+| **1**               | **2**  | **3**  | **4**  | **5**  | **6**  | **7**             |
++=====================+========+========+========+========+========+===================+
+| To No Extent At All |        |        |        |        |        | To a Great Extent |
++---------------------+--------+--------+--------+--------+--------+-------------------+
+
+#### Sincerity
+
++----------------------+----------------+-----------+---------+---------+--------------+--------------------+
+| **1**                | **2**          | **3**     | **4**   | **5**   | **6**        | **7**              |
++======================+================+===========+=========+=========+==============+====================+
+| Completely Insincere | Very Insincere | Insincere | Neutral | Sincere | Very Sincere | Completely Sincere |
++----------------------+----------------+-----------+---------+---------+--------------+--------------------+
+
+#### Percentage
+
+| 0 -100% |
+|---------|
+
+### Scoring
+
+The following variables are derived from this measure:
+
+```{r, echo=FALSE, eval = FALSE}
+kbl(credtab, booktabs = T) %>%
+             kable_styling(full_width = T,
+                           fixed_thead = T) %>%
+             column_spec(1, width = "3cm") %>%
+             column_spec(2, width = "3cm") %>%
+             column_spec(3, width = "3cm") %>%
+             column_spec(4, width = "3cm") %>%
+             column_spec(5, width = "3cm") %>%
+             column_spec(6, width = "3cm") 
+```
+
+

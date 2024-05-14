@@ -1,0 +1,69 @@
+---
+title: "Rebelliousness"
+author: "Connair J. S. Russell"
+number-depth: 2
+---
+
+```{r, echo=FALSE, message=FALSE, eval= FALSE}
+
+library(dplyr)
+library(kableExtra)
+
+morvals <- read.csv("variables/morals-vals.csv")
+colnames(morvals) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
+
+rebtab <- morvals %>% filter(grepl("^Rebelliousness",`Variable Name`))
+
+```
+
+**Cluster:** Morals/Values
+
+## Measure
+
+The rebelliousness measure is a custom measure devised to examine the subscales pro-active rebelliousness and reactive rebelliousness identified by @mcdermott2001. After wave 1 we exluded what we termed the "Activism" subscale and only included the "Trolling" subscale in this round.
+
+### Modifications {.unnumbered}
+
+## Implementation
+
+### Question wording {.unnumbered}
+
+Participants read the following text:
+
+*Please read each of the following statements carefully and state to what extent they apply to you. There are no right or wrong answers and your responses remain anonymous.*
+
+### Items {.unnumbered}
+
+| Qlabel | **Subscale** | question                                                              |
+|-----------------|-----------------|---------------------------------------|
+| reb_01 | Trolling     | I find it exciting to poke fun at people                              |
+| reb_02 | Trolling     | I find it exciting to poke fun at authority                           |
+| reb_03 | Trolling     | I experience a thrill when disobeying authority                       |
+| reb_04 | Trolling     | I experience an urge to disobey social rules                          |
+
+### Coding {.unnumbered}
+
+This questionnaire follows our standard coding for extent based measures, with To No Extent At All = 1, and To a Great Extent = 7.
+
+| **1**               | **2**              | **3**            | **4**                | **5**                    | **6**                    | **7**             |
+|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+| To No Extent At All | To a Slight Extent | To a Mild Extent | To a Moderate Extent | To an Appreciable Extent | To a Considerable Extent | To a Great Extent |
+
+`No items are reverse coded`
+
+### Scoring
+
+The following variables are derived from this measure.
+
+```{r, echo=FALSE, eval= FALSE}
+kbl(rebtab, booktabs = T) %>%
+             kable_styling(full_width = T,
+                           fixed_thead = T) %>%
+             column_spec(1, width = "3cm") %>%
+             column_spec(2, width = "3cm") %>%
+             column_spec(3, width = "3cm") %>%
+             column_spec(4, width = "3cm") %>%
+             column_spec(5, width = "3cm") %>%
+             column_spec(6, width = "3cm") 
+```
+
