@@ -47,7 +47,7 @@ book:
       - existentialInsecurity.qmd
       - ambiguityTolerance.qmd
       - importanceRationality.qmd
-    - part: "Belief Measures"
+    - part: beliefMeasures.qmd
       chapters:
       - issp.qmd       
       - religiousIdentity.qmd
@@ -64,16 +64,17 @@ bibliography: lib.bib
 csl: apa.csl
 
 format:
-  docx: 
-   toc: true
-   number-sections: true
-   prefer-html: true
   html:
     theme: cosmo
     linkcolor: "#253f8c"
-  pdf:
-   documentclass: scrbook
-   prefer-html: true
+#  docx: 
+#   toc: true
+#   number-sections: true
+#   prefer-html: true    
+#  pdf:
+#   documentclass: scrbook
+#   prefer-html: true
+
 
 
 

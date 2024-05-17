@@ -4,14 +4,14 @@ author: "Connair J. S. Russell"
 number-depth: 2
 ---
 
-```{r, echo=FALSE, message=FALSE, eval= FALSE}
+```{r, echo=FALSE, message=FALSE}
 
 # echo and message false so not shown on page
 
 library(dplyr)
 library(kableExtra)
 
-mot <- read.csv("variables/motivational.csv")
+mot <- read.csv("variables/survey2.csv")
 colnames(mot) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
 
 estab <- mot %>%  filter(`Variable Name`%in% c("Social Trust", "Wealth Inequality", "Social Security") | grepl("^Existential", `Variable Name`) )
@@ -74,7 +74,7 @@ Items on the existential security subscale use the following frequency based Lik
 
 The following variables are derived form this measure:
 
-```{r, echo=FALSE, message=FALSE, eval= FALSE}
+```{r, echo=FALSE, message=FALSE}
 kbl(estab, booktabs = T) %>%
              kable_styling(full_width = T,
                            fixed_thead = T) %>%

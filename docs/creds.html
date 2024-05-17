@@ -89,6 +89,8 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
 
 </head>
@@ -273,7 +275,7 @@ div.csl-indent {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a href="./beliefMeasures.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Belief Measures</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -738,6 +740,138 @@ div.csl-indent {
 <section id="scoring" class="level3">
 <h3 class="anchored" data-anchor-id="scoring">Scoring</h3>
 <p>The following variables are derived from this measure:</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-sm table-striped small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">Variable Name</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">Variable Label</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">Description</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">Variable Type</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">Source (Section)</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; width: 3cm;">CRED Exposure</td>
+<td style="text-align: left; width: 3cm;">cred</td>
+<td style="text-align: left; width: 3cm;">CRED exposure score</td>
+<td style="text-align: left; width: 3cm;">numeric</td>
+<td style="text-align: left; width: 3cm;">CREDs</td>
+<td style="text-align: left; width: 3cm;">sum of cred_caregiver + cred_group + cred_hometown + cred_highschool*</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 3cm;">CRED (Caregiver) Exposure</td>
+<td style="text-align: left; width: 3cm;">credCaregiver</td>
+<td style="text-align: left; width: 3cm;">Caregiver CRED exposure score</td>
+<td style="text-align: left; width: 3cm;">numeric</td>
+<td style="text-align: left; width: 3cm;">CREDs</td>
+<td style="text-align: left; width: 3cm;">sum of cred_01: cred_06*</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 3cm;">CRED (Group Leader) Exposure</td>
+<td style="text-align: left; width: 3cm;">credGroupLeader</td>
+<td style="text-align: left; width: 3cm;">Group leader CRED exposure score</td>
+<td style="text-align: left; width: 3cm;">numeric</td>
+<td style="text-align: left; width: 3cm;">CREDs</td>
+<td style="text-align: left; width: 3cm;">cred_11 + cred_20*</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 3cm;">CRED (Group Member) Exposure</td>
+<td style="text-align: left; width: 3cm;">credGroupMember</td>
+<td style="text-align: left; width: 3cm;">Group member CRED exposure score</td>
+<td style="text-align: left; width: 3cm;">numeric</td>
+<td style="text-align: left; width: 3cm;">CREDs</td>
+<td style="text-align: left; width: 3cm;">sum of cred_13, 14, 15, 16, 22, 23, 24, 25)*</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 3cm;">CRED (Group) Exposure</td>
+<td style="text-align: left; width: 3cm;">credGroup</td>
+<td style="text-align: left; width: 3cm;">Group CRED exposure score</td>
+<td style="text-align: left; width: 3cm;">numeric</td>
+<td style="text-align: left; width: 3cm;">CREDs</td>
+<td style="text-align: left; width: 3cm;">sum of cred_group_ldr + cred_group_mbr*</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 3cm;">CRED (Hometown) Exposure</td>
+<td style="text-align: left; width: 3cm;">credHometown</td>
+<td style="text-align: left; width: 3cm;">Hometown CRED exposure score</td>
+<td style="text-align: left; width: 3cm;">ordinal</td>
+<td style="text-align: left; width: 3cm;">CREDs</td>
+<td style="text-align: left; width: 3cm;">cred_28</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 3cm;">CRED (High School) Exposure</td>
+<td style="text-align: left; width: 3cm;">credHighschool</td>
+<td style="text-align: left; width: 3cm;">Highschool CRED exposure score</td>
+<td style="text-align: left; width: 3cm;">ordinal</td>
+<td style="text-align: left; width: 3cm;">CREDs</td>
+<td style="text-align: left; width: 3cm;">cred_30</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 3cm;">Sincerity (Group Leader)</td>
+<td style="text-align: left; width: 3cm;">sincerityGroupLeader</td>
+<td style="text-align: left; width: 3cm;">Sincerity of group leader question response</td>
+<td style="text-align: left; width: 3cm;">ordinal</td>
+<td style="text-align: left; width: 3cm;">CREDs</td>
+<td style="text-align: left; width: 3cm;">mean of cred_10: cred_19*</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 3cm;">Sincerity (Group Members)</td>
+<td style="text-align: left; width: 3cm;">sincerityGroupMember</td>
+<td style="text-align: left; width: 3cm;">Sincerity of group members question response</td>
+<td style="text-align: left; width: 3cm;">ordinal</td>
+<td style="text-align: left; width: 3cm;">CREDs</td>
+<td style="text-align: left; width: 3cm;">mean of cred_12: cred_21*</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 3cm;">Sincerity (Parents)</td>
+<td style="text-align: left; width: 3cm;">sincerityParents</td>
+<td style="text-align: left; width: 3cm;">Sincerity of parents question response</td>
+<td style="text-align: left; width: 3cm;">ordinal</td>
+<td style="text-align: left; width: 3cm;">CREDs</td>
+<td style="text-align: left; width: 3cm;">cred_32</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 3cm;">Sincerity (Hometown)</td>
+<td style="text-align: left; width: 3cm;">sincerityHometown</td>
+<td style="text-align: left; width: 3cm;">Sincerity of hometown question response</td>
+<td style="text-align: left; width: 3cm;">ordinal</td>
+<td style="text-align: left; width: 3cm;">CREDs</td>
+<td style="text-align: left; width: 3cm;">cred_28</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 3cm;">Sincerity (High school)</td>
+<td style="text-align: left; width: 3cm;">sincerityHighschool</td>
+<td style="text-align: left; width: 3cm;">Sincerity of highschool question response</td>
+<td style="text-align: left; width: 3cm;">ordinal</td>
+<td style="text-align: left; width: 3cm;">CREDs</td>
+<td style="text-align: left; width: 3cm;">cred_31</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 3cm;">Percentage Believers (Hometown)</td>
+<td style="text-align: left; width: 3cm;">believersHometown</td>
+<td style="text-align: left; width: 3cm;">Percentage of hometown believers response</td>
+<td style="text-align: left; width: 3cm;">numeric</td>
+<td style="text-align: left; width: 3cm;">CREDs</td>
+<td style="text-align: left; width: 3cm;">cred_26</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 3cm;">Percentage Believers (High School)</td>
+<td style="text-align: left; width: 3cm;">believersHighschool</td>
+<td style="text-align: left; width: 3cm;">Percentage of highschool believers response</td>
+<td style="text-align: left; width: 3cm;">numeric</td>
+<td style="text-align: left; width: 3cm;">CREDs</td>
+<td style="text-align: left; width: 3cm;">cred_29</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">

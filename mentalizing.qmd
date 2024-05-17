@@ -4,12 +4,12 @@ author: "Connair J. S. Russell"
 number-depth: 2
 ---
 
-```{r, echo=FALSE, message=FALSE, eval= FALSE}
+```{r, echo=FALSE, message=FALSE, eval= TRUE}
 
 library(dplyr)
 library(kableExtra)
 
-cogbi <- read.csv("variables/cog-bias.csv")
+cogbi <- read.csv("variables/survey2.csv")
 colnames(cogbi) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
 
 mnttab <- cogbi %>%filter(`Variable Name`=="Mentalizing")
@@ -77,7 +77,7 @@ The mentalizing measure follows a bespoke 4 point agreement scale and uses a the
 
 The following variables are derived from this measure:
 
-```{r, echo=FALSE, message=FALSE, eval= FALSE}
+```{r, echo=FALSE, message=FALSE, eval= TRUE}
 kbl(mnttab, booktabs = T) %>%
              kable_styling(full_width = T,
                            fixed_thead = T) %>%

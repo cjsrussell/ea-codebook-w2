@@ -4,14 +4,14 @@ author: "Connair J. S. Russell"
 number-depth: 2
 ---
 
-```{r, echo=FALSE, message=FALSE, eval=FALSE}
+```{r, echo=FALSE, message=FALSE}
 
 # echo and message false so not shown on page
 
 library(dplyr)
 library(kableExtra)
 
-cogbi <- read.csv("variables/cog-bias.csv")
+cogbi <- read.csv("variables/survey2.csv")
 colnames(cogbi) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
 
 duatab <- cogbi %>% filter(`Variable Name`=="Dualism")
@@ -65,7 +65,7 @@ This questionnaire follows our standard scoring for agreement based measures, wi
 
 ## Scoring
 
-```{r, echo=FALSE, message=FALSE, eval=FALSE}
+```{r, echo=FALSE, message=FALSE}
 
 kbl(duatab, booktabs = T) %>%
              kable_styling(full_width = T,

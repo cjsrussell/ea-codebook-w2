@@ -4,12 +4,12 @@ author: "Connair J. S. Russell"
 number-depth: 2
 ---
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE, eval=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE, eval=TRUE}
 
 library(tidyverse)
 library(kableExtra)
 
-cogstyles <- read.csv("variables/cog-styles.csv")
+cogstyles <- read.csv("variables/survey2.csv")
 colnames(cogstyles) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
 
 tstab <- cogstyles %>% filter(grepl("^Cognitive Style", `Variable Name`))
@@ -66,7 +66,7 @@ For scoring responses are labelled as either "Correct", "Intuitive" or "Incorrec
 
 The following variables are derived from this measure:
 
-```{r, echo=FALSE, eval=FALSE}
+```{r, echo=FALSE, eval=TRUE}
 kbl(tstab, booktabs = T) %>%
              kable_styling(full_width = T,
                            fixed_thead = T) %>%

@@ -1,0 +1,48 @@
+---
+title: "General Belief"
+author: "Connair J. S. Russell"
+number-depth: 2
+---
+
+**Cluster:** Belief Measures
+
+## Measure
+
+### Modifications {.unnumbered}
+
+## Implementation
+
+### Question wording {.unnumbered}
+
+Participants read the following text:
+
+*"The following section will list a number of statements regarding your attitudes towards God, religion, and belief. Please read each and state to what extent you agree. There are no right or wrong answers and your responses remain anonymous. "*
+
+### Items
+
+| Qlabel    | question                                                                                         |
+|--------------|---------------------------------------------------------|
+| belief_01 | I believe that God exists                                                                        |
+| belief_02 | It is not possible to know if God exists                                                         |
+| conf_01   | I am confident that my beliefs about God\'s existence are the right ones.                        |
+| ar_01     | We would all be better off if people left religion behind.                                       |
+| apth_01   | Whether or not God exists is a question that doesn't interest me much                            |
+| apth_02   | Whether or not there is an ultimate purpose to life is a question that doesn't interest me much. |
+| agn_01    | I don't know whether there is a God, and I don't believe there is any way to find out.           |
+| mean_01   | For most things in the world, we will never be able to discover the real objective truth.        |
+
+## Coding
+
+This scale uses our standard response scale for agreement
+
+|                   |                     |                   |                            |                |                  |                |
+|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+| **1**             | **2**               | **3**             | **4**                      | **5**          | **6**            | **7**          |
+| strongly disagree | moderately disagree | slightly disagree | neither agree nor disagree | slightly agree | moderately agree | strongly agree |
+
+
+## Scoring
+
+See the Belief Measures landing page for all belief measures variables and their definitions.
+
+

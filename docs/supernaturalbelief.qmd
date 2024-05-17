@@ -1,0 +1,102 @@
+---
+title: "Supernatural Belief"
+author: "Connair J. S. Russell"
+number-depth: 2
+---
+
+**Cluster:** Belief Measures
+
+## Measure
+
+### Modifications {.unnumbered}
+
+## Implementation
+
+### Question wording {.unnumbered}
+
+Participants read the following text:
+
+*Please read each of the following statements carefully and state to what extent you agree. There are no right or wrong answers and your responses remain anonymous.*
+
+### Items
+
+| Qlabel | question                                                                                                                                                 |
+|-----------------|-------------------------------------------------------|
+| snb_01 | There is some sort of life after death                                                                                                                   |
+| snb_02 | Sometime after I die, I expect that I'll be born again in another body.                                                                                  |
+| snb_03 | The positions of the stars and planets affect people's lives                                                                                             |
+| snb_04 | Some people have mystical powers (e.g. to heal, harm, or bring good luck)                                                                                |
+| snb_05 | Some objects have mystical powers (e.g. to heal, harm, or bring good luck)                                                                               |
+| snb_06 | There are underlying forces of good and evil in this world.                                                                                              |
+| snb_07 | There exists a universal spirit or life force.                                                                                                           |
+| snb_08 | There is a power in the universe that causes good things to happen to people who behave morally and bad things to happen to people who behave immorally. |
+| snb_09 | Most significant life events are meant to be and happen for a reason.                                                                                    |
+| snb_10 | Supernatural beings of some kind exist                                                                                                                   |
+| snb_11 | There exist supernatural beings that are good/kind (e.g. COUNTRY SPECIFIC)                                                                               |
+| snb_12 | There exist supernatural beings that are harmful. (e.g COUNTRY SPECIFIC)                                                                                 |
+| snb_13 | Some people will be punished after they die                                                                                                              |
+| snb_14 | Some people will be rewarded after they die                                                                                                              |
+| snb_15 | Making other people envious of you can cause illness or misfortune.                                                                                      |
+| snb_16 | Have you ever felt as though you were connected to a powerful spiritual force?                                                                           |
+| snb_17 | Do you carry any objects for luck or protection?                                                                                                         |
+
+**Country Specific Examples**
+
+*Brazil*
+
+snb_11: e.g. angels, nature spirits
+
+snb_12: e.g. demons, ghosts
+
+*China*
+
+snb_11: e.g. ancestor spirits
+
+snb_12: e.g. ghosts
+
+*Denmark*
+
+snb_11: e.g. angels, nature spirits
+
+snb_12: e.g. demons, ghosts
+
+*Japan*
+
+snb_11: e.g. angels, spirits
+
+snb_12: e.g.  ghosts, monsters
+
+*UK*
+
+snb_11: e.g. angels, nature spirits
+
+snb_12: e.g. demons, ghosts
+
+*USA*
+
+snb_11: e.g. angels, nature spirits
+
+snb_12: e.g. demons, ghosts
+
+## Coding
+
+**Items snb_01 - snb_15 use our standard response scale for agreement**
+
+|                   |                     |                   |                            |                |                  |                |
+|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+| **1**             | **2**               | **3**             | **4**                      | **5**          | **6**            | **7**          |
+| strongly disagree | moderately disagree | slightly disagree | neither agree nor disagree | slightly agree | moderately agree | strongly agree |
+
+**Item snb_16 uses the following bespoke scale**
+
+| 1                                      | 2                                                                                   | 3                                           |
+|------------------|-----------------------------------|-------------------|
+| Yes, I've had an experience like this. | I've had an experience like this, but I didn't associate it with a spiritual force. | No, I've never had an experience like this. |
+
+**Item snb_17 is a Yes/No response**
+
+
+### Scoring
+
+See the General Belief landing page for all belief measures variables and their definitions.
+

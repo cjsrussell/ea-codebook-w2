@@ -1,0 +1,59 @@
+﻿Variable Name,Variable Label,Variable Type,Description,Definition,Response Options
+Religious Identification,relig_id_1,binary,Yes/no belong to a religion,rid_01 default,"0,1"
+Religious Identity,relig_id_2,categorical,Which religion category,rid_02 default,"1. Protestant
+2. Catholic
+3. Orthodox (e.g. Greek Orthodox, Russian Orthodox)
+4. Sunni
+5. Shiite
+6.Buddhist
+7. Confucian
+8. Daoist
+9. Hindu
+10. Jewish
+11. Shinto
+12. Other (please specify)"
+Religious Attendance,relig_attend,continuous/ ordinal,Frequency of religious attendence likert scale,rp_01 default,"1. More than once a week
+2. Once a week
+3. Once a month
+4. Only on special holy days
+5. Once a year
+6. Less often
+7. Never, practically never"
+Prayer Frequency,prayer_freq,continuous/ ordinal,Frequency of prayer likert scale,rp_02 default,"1. Several times a day
+2. Once a day
+3. Several times each week
+4. Only when attending religious services
+5. Only on special holy days
+6. Once a year
+7. Less often
+8. Never, practically never"
+Religious Objects,relig_object,categorical,Presence of religious objects,rp_03 default,"1. Yes, for religious reasons
+2. Yes, for non-religious reasons
+3. No"
+Anti-religiosity,anti_relig,continuous/ ordinal,Agreement with anti-religiosity statement,ar_01 default,1 to 7
+Primary Caregiver Religiosity ,caregiver_relig,binary,Yes/no belong to a religion,rid_03 default,"0,1"
+Primary Caregiver Religios Identity,caregiver_relig_id,categorical,Which religion category,rid_04 default,"1. Protestant
+2. Catholic
+3. Orthodox (e.g. Greek Orthodox, Russian Orthodox)
+4. Sunni
+5. Shiite
+6.Buddhist
+7. Confucian
+8. Daoist
+9. Hindu
+10. Jewish
+11. Shinto
+12. Other (please specify)"
+Additional Caregiver Religiousity,caregiver2_relig,binary,Yes/no belong to a religion,rid_05 default,"0,1"
+Additional Caregiver Religiosity  Identity,caregiver2_relig_id,categorical,Which religion category,rid_06 default,"1. Protestant
+2. Catholic
+3. Orthodox (e.g. Greek Orthodox, Russian Orthodox)
+4. Sunni
+5. Shiite
+6.Buddhist
+7. Confucian
+8. Daoist
+9. Hindu
+10. Jewish
+11. Shinto
+12. Other (please specify)"

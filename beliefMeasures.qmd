@@ -1,0 +1,136 @@
+# Belief Measures {.unnumbered}
+
+The variables defined here are derived from the following measures for which detailed information can be found on their respective pages:
+
+-   [ISSP](issp.qmd)
+-   [Religious Identity](religiousidentity.qmd)
+-   [Religious Practice](religiouspractice.qmd)
+-   [Supernatural Belief](supernaturalbelief.qmd)
+-   [General Belief](generalbelief.qmd)
+-   [Atheist Membership](atheistmembership.qmd)
+
+
+## Belief Variables
+
+```{r, echo=FALSE, message=FALSE}
+
+library(dplyr)
+library(kableExtra)
+
+
+
+ath <- read.csv("variables/atheism.csv")
+colnames(ath) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Definition", "Response Options")
+
+big <- read.csv("variables/belief in god.csv")
+colnames(big) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Definition", "Response Options")
+
+rel <- read.csv("variables/religiosity.csv")
+colnames(rel) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Definition", "Response Options")
+
+meta <- read.csv("variables/meta-belief.csv")
+colnames(meta) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Definition", "Response Options")
+
+snb <- read.csv("variables/supernatural-belief.csv")
+colnames(snb) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Definition", "Response Options")
+
+  
+
+agreement <- read.csv("variables/agreement.csv", header = TRUE)
+colnames(agreement) <- c("Strongly Disagree", "Moderately Disagree", "Slightly Disagree", "Neither Agree nor Disagree", "Slightly Agree", "Moderately Agree", "Strongly Agree")
+```
+
+
+### Belief in God
+
+```{r, echo=FALSE}
+kbl(big, booktabs = T) %>%
+  kable_styling(full_width = T)%>%
+  column_spec(1, width = "3cm") %>%
+  column_spec(2, width = "3cm") %>%
+  column_spec(3, width = "3cm") %>%
+  column_spec(4, width = "3cm") %>%
+  column_spec(5, width = "3cm") %>%
+  column_spec(6, width = "3cm")
+```
+
+### Religiosity
+
+```{r, echo=FALSE}
+kbl(rel, booktabs = T) %>%
+  kable_styling(full_width = T)%>%
+  column_spec(1, width = "3cm") %>%
+  column_spec(2, width = "3cm") %>%
+  column_spec(3, width = "3cm") %>%
+  column_spec(4, width = "3cm") %>%
+  column_spec(5, width = "3cm") %>%
+  column_spec(6, width = "3cm") 
+```
+
+### Atheism
+
+```{r, echo=FALSE}
+kbl(ath, booktabs = T) %>%
+  kable_styling(full_width = T)%>%
+  column_spec(1, width = "3cm") %>%
+  column_spec(2, width = "3cm") %>%
+  column_spec(3, width = "3cm") %>%
+  column_spec(4, width = "3cm") %>%
+  column_spec(5, width = "3cm") %>%
+  column_spec(6, width = "3cm")
+```
+
+### Meta-Belief
+
+```{r, echo=FALSE}
+kbl(meta, booktabs = T) %>%
+  kable_styling(full_width = T)%>%
+  column_spec(1, width = "3cm") %>%
+  column_spec(2, width = "3cm") %>%
+  column_spec(3, width = "3cm") %>%
+  column_spec(4, width = "3cm") %>%
+  column_spec(5, width = "3cm") %>%
+  column_spec(6, width = "3cm") 
+```
+
+### Supernatural Belief
+
+Supernatural Belief measures use our 1-7 agreement scale:
+
+```{r, echo=FALSE, warning=FALSE}
+kbl(agreement,
+    booktabs = T,
+    align = "c") %>%
+             kable_styling(full_width = T,
+                           fixed_thead = T) %>%
+             column_spec(1, width = "2.5cm") %>%
+             column_spec(2, width = "2.5cm") %>%
+             column_spec(3, width = "2.5cm") %>%
+             column_spec(4, width = "2.5cm") %>%
+             column_spec(5, width = "2.5cm") %>%
+             column_spec(6, width = "2.5cm") %>%
+             column_spec(7, width = "2.5cm") 
+
+```
+
+#### Supernatural Belief Variables
+
+```{r, echo=FALSE, warning=FALSE}
+
+rownames(snb) <- NULL
+
+
+
+kbl(snb,
+    booktabs = T) %>%
+             kable_styling(full_width = T,
+                           fixed_thead = T) %>%
+             column_spec(1, width = "3cm") %>%
+             column_spec(2, width = "3cm") %>%
+             column_spec(3, width = "3cm") %>%
+             column_spec(4, width = "3cm") %>%
+             column_spec(5, width = "3cm") %>%
+             column_spec(6, width = "3cm")
+
+
+```

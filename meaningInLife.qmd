@@ -4,12 +4,12 @@ author: "Connair J. S. Russell"
 number-depth: 2
 ---
 
-```{r, echo=FALSE, message=FALSE, eval= FALSE}
+```{r, echo=FALSE, message=FALSE, eval= TRUE}
 
 library(tidyverse)
 library(kableExtra)
 
-mot <- read.csv("variables/motivational.csv")
+mot <- read.csv("variables/survey1.csv")
 colnames(mot) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
 
 
@@ -69,7 +69,7 @@ Participants read the following text:
 
 ## Scoring
 
-```{r, echo=FALSE, message=FALSE, eval= FALSE}
+```{r, echo=FALSE, message=FALSE, eval= TRUE}
 kbl(mlqtab, booktabs = T) %>%
              kable_styling(full_width = T,
                            fixed_thead = T) %>%

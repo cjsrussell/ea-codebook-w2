@@ -1,0 +1,20 @@
+﻿Variable Name,Variable Label,Description,Variable Type,Definition,Response Options
+Afterlife Existence,afterlife_exist,"Agreement with: ""There is some sort of life after death""",continuous/ ordinal,snb_01 default,1 to 7
+Afterlife Punishment,afterlife_punish,"Agreement with: ""Some people will be punished after they die.""",continuous/ ordinal,snb_13 default,1 to 7
+Afterlife Reward,afterlife_reward,"Agreement with: ""Some people will be rewarded after they die""",continuous/ ordinal,snb_14 default,1 to 7
+Reincarnation,reincarnation,"Agreement with: ""Sometime after I die, I expect that I'll be born again in another body.""",continuous/ ordinal,snb_02 default,1 to 7
+Astrology,astrology,"Agreement with: ""The positions of the stars and planets affect people's lives""",continuous/ ordinal,snb_03 default,1 to 7
+Mystical People,msystical_people,"Agreement with: ""Some people have mystical powers (e.g. to heal, harm, or bring good luck)""",continuous/ ordinal,snb_04 default,1 to 7
+Mystical Objects,mystical_objects,"Agreement with: ""Some objects have mystical powers (e.g. to heal, harm, or bring good luck)""",continuous/ ordinal,snb_05 default,1 to 7
+Good and Evil,good_evil,"Agreement with: ""There are underlying forces of good and evil in this world.""",continuous/ ordinal,snb_06 default,1 to 7
+Universal spirit or life force,lifeforce,"Agreement with: ""There exists a universal spirit or life force.""",continuous/ ordinal,snb_07 default,1 to 7
+Karma,karma,"Agreement with: ""There is a power in the universe that causes good things to happen to people who behave morally and bad things to happen to people who behave immorally.""",continuous/ ordinal,snb_08 default,1 to 7
+Fate,fate,"Agreement with: ""Most significant life events are meant to be and happen for a reason.""",continuous/ ordinal,snb_09 default,1 to 7
+Supernatural Being Existence,supernat_beings,"Agreement with: ""Supernatural beings of some kind exist""",continuous/ ordinal,snb_10 default,1 to 7
+Good Supernatural Beings,good_beings,"Agreement with: ""There exist supernatural beings that are good/kind (e.g. COUNTRY SPECIFIC)""",continuous/ ordinal,snb_11 default,1 to 7
+Harmful Supernatural Beings,harmful_beings,"Agreement with: ""There exist supernatural beings that are harmful. (e.g COUNTRY SPECIFIC)""",continuous/ ordinal,snb_12 default,1 to 7
+Evil Eye,evil_eye,"Agreement with: ""Making other people envious of you can cause illness or misfortune.""",continuous/ ordinal,snb_15 default,1 to 7
+Spiritual Experience (personal),spiritual_force,"Category response to: ""Have you ever felt as though you were connected to a powerful spiritual force?""",continuous/ ordinal,snb_16 default,"1. Yes, I've had an experience like this.
+2. I've had an experience like this, but I didn't associate it with a spiritual force.
+3. No, I've never had an experience like this."
+Lucky Object,lucky_objects,"Yes/No to: ""Do you carry any objects for luck or protection?""",binary,snb_17 default,"0, 1"

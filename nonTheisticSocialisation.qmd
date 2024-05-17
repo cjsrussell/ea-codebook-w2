@@ -4,12 +4,12 @@ author: "Connair J. S. Russell"
 number-depth: 2
 ---
 
-```{r, echo=FALSE, message=FALSE, eval= FALSE}
+```{r, echo=FALSE, message=FALSE, eval= TRUE}
 
 library(tidyverse)
 library(kableExtra)
 
-soc <- read.csv("variables/socialisation.csv")
+soc <- read.csv("variables/survey1.csv")
 colnames(soc) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
 
 
@@ -69,7 +69,7 @@ This measure uses our standard response scale for extent.
 
 The following variables were derived from this measure:
 
-```{r, echo=FALSE, message=FALSE, eval= FALSE}
+```{r, echo=FALSE, message=FALSE, eval= TRUE}
 kbl(ntstab, booktabs = T) %>%
              kable_styling(full_width = T,
                            fixed_thead = T) %>%

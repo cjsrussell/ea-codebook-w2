@@ -4,12 +4,12 @@ author: "Connair J. S. Russell"
 number-depth: 2
 ---
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE, eval=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE, eval=TRUE}
 
 library(tidyverse)
 library(kableExtra)
 
-cogstyles <- read.csv("variables/cog-styles.csv")
+cogstyles <- read.csv("variables/survey2.csv")
 colnames(cogstyles) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
 
 
@@ -60,7 +60,7 @@ This questionnaire uses our standard agreement scale.
 
 The following variables are derived form this measure:
 
-```{r, echo=FALSE, eval=FALSE}
+```{r, echo=FALSE, eval=TRUE}
 kbl(imprtab, booktabs = T) %>%
              kable_styling(full_width = T,
                            fixed_thead = T) %>%

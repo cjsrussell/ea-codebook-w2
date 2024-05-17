@@ -4,15 +4,15 @@ author: "Connair J. S. Russell"
 number-depth: 2
 ---
 
-```{r, echo=FALSE, message=FALSE, eval= FALSE}
+```{r, echo=FALSE, message=FALSE}
 
 library(dplyr)
 library(kableExtra)
 
-morvals <- read.csv("variables/morals-vals.csv")
+morvals <- read.csv("variables/survey1.csv")
 colnames(morvals) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
 
-indivtab <- morvals %>%filter(`Variable Name`=="Individualism & Collectivism")
+indivtab <- morvals %>%filter(`Variable Name`=="Collectivism")
 
 ```
 
@@ -92,7 +92,7 @@ This questionnaire used our standard response scale for agreement.
 
 The following variables were derived from this measure
 
-```{r, echo=FALSE, message=FALSE, eval= FALSE}
+```{r, echo=FALSE, message=FALSE}
 kbl(indivtab, booktabs = T) %>%
              kable_styling(full_width = T,
                            fixed_thead = T) %>%

@@ -6,12 +6,12 @@ csl: apa.csl
 number-depth: 2
 ---
 
-```{r, echo=FALSE, message=FALSE, eval= FALSE}
+```{r, echo=FALSE, message=FALSE}
 
 library(dplyr)
 library(kableExtra)
 
-cogbi <- read.csv("variables/cog-bias.csv")
+cogbi <- read.csv("variables/survey2.csv")
 colnames(cogbi) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
 
 anthtab <- cogbi %>%filter(`Variable Name`=="Anthropomorphism")
@@ -64,7 +64,7 @@ This questionnaire follows our standard coding for agreement based measures, wit
 
 The following variables were derived from this measure
 
-```{r, echo=FALSE, eval = FALSE}
+```{r, echo=FALSE}
 kbl(anthtab, booktabs = T) %>%
              kable_styling(full_width = T,
                            fixed_thead = T) %>%

@@ -4,16 +4,16 @@ author: "Connair J. S. Russell"
 number-depth: 2
 ---
 
-```{r, echo=FALSE, message=FALSE, eval= FALSE}
+```{r, echo=FALSE, message=FALSE}
 
 library(tidyverse)
 library(kableExtra)
 
-soc <- read.csv("variables/socialisation.csv")
+soc <- read.csv("variables/survey1.csv")
 colnames(soc) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
 
 
-credtab <- soc %>% filter(grepl("^CRED", `Variable Name`))
+credtab <- soc %>% filter(grepl("^(CRED|Sincerity|Percentage)", `Variable Name`))
 
 ```
 
@@ -154,7 +154,7 @@ The above questions had a number of different response options, with no reverse 
 
 The following variables are derived from this measure:
 
-```{r, echo=FALSE, eval = FALSE}
+```{r, echo=FALSE}
 kbl(credtab, booktabs = T) %>%
              kable_styling(full_width = T,
                            fixed_thead = T) %>%
