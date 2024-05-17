@@ -8,11 +8,12 @@ number-depth: 2
 
 library(dplyr)
 library(kableExtra)
+library(flextable)
 
 cogbi <- read.csv("variables/survey2.csv")
 colnames(cogbi) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
 
-mnttab <- cogbi %>%filter(`Variable Name`=="Mentalizing")
+tab <- cogbi %>%filter(`Variable Name`=="Mentalizing")
 
 ```
 
@@ -78,14 +79,28 @@ The mentalizing measure follows a bespoke 4 point agreement scale and uses a the
 The following variables are derived from this measure:
 
 ```{r, echo=FALSE, message=FALSE, eval= TRUE}
-kbl(mnttab, booktabs = T) %>%
+if (knitr::pandoc_to("html")) {
+kbl(tab, booktabs = T) %>%
              kable_styling(full_width = T,
                            fixed_thead = T) %>%
              column_spec(1, width = "3cm") %>%
              column_spec(2, width = "3cm") %>%
              column_spec(3, width = "3cm") %>%
              column_spec(4, width = "3cm") %>%
-             column_spec(5, width = "3cm") 
+             column_spec(5, width = "3cm") %>%
+             column_spec(6, width = "3cm") 
+
+} else {
+tab %>%
+  flextable() %>%
+  width(j = 1, width = 3, unit = "cm") %>%
+  width(j = 2, width = 3, unit = "cm") %>%
+  width(j = 3, width = 3, unit = "cm") %>%
+  width(j = 4, width = 3, unit = "cm") %>%
+  width(j = 5, width = 3, unit = "cm") %>%
+  width(j = 6, width = 3, unit = "cm") %>%
+  theme_vanilla()
+}
    
 ```
 

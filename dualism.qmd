@@ -10,11 +10,12 @@ number-depth: 2
 
 library(dplyr)
 library(kableExtra)
+library(flextable)
 
 cogbi <- read.csv("variables/survey2.csv")
 colnames(cogbi) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
 
-duatab <- cogbi %>% filter(`Variable Name`=="Dualism")
+tab <- cogbi %>% filter(`Variable Name`=="Dualism")
 
 ```
 
@@ -67,7 +68,8 @@ This questionnaire follows our standard scoring for agreement based measures, wi
 
 ```{r, echo=FALSE, message=FALSE}
 
-kbl(duatab, booktabs = T) %>%
+if (knitr::pandoc_to("html")) {
+kbl(tab, booktabs = T) %>%
              kable_styling(full_width = T,
                            fixed_thead = T) %>%
              column_spec(1, width = "3cm") %>%
@@ -76,6 +78,19 @@ kbl(duatab, booktabs = T) %>%
              column_spec(4, width = "3cm") %>%
              column_spec(5, width = "3cm") %>%
              column_spec(6, width = "3cm") 
+
+} else {
+  # do use gt
+tab %>%
+  flextable() %>%
+  width(j = 1, width = 3, unit = "cm") %>%
+  width(j = 2, width = 3, unit = "cm") %>%
+  width(j = 3, width = 3, unit = "cm") %>%
+  width(j = 4, width = 3, unit = "cm") %>%
+  width(j = 5, width = 3, unit = "cm") %>%
+  width(j = 6, width = 3, unit = "cm") %>%
+  theme_vanilla()
+}
 ```
 
 ## Script

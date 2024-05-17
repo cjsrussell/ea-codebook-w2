@@ -8,11 +8,12 @@ number-depth: 2
 
 library(tidyverse)
 library(kableExtra)
+library(flextable)
 
 cogstyles <- read.csv("variables/survey2.csv")
 colnames(cogstyles) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
 
-tstab <- cogstyles %>% filter(grepl("^Cognitive Style", `Variable Name`))
+tab <- cogstyles %>% filter(grepl("^Cognitive Style", `Variable Name`))
 
 ```
 
@@ -67,7 +68,8 @@ For scoring responses are labelled as either "Correct", "Intuitive" or "Incorrec
 The following variables are derived from this measure:
 
 ```{r, echo=FALSE, eval=TRUE}
-kbl(tstab, booktabs = T) %>%
+if (knitr::pandoc_to("html")) {
+kbl(tab, booktabs = T) %>%
              kable_styling(full_width = T,
                            fixed_thead = T) %>%
              column_spec(1, width = "3cm") %>%
@@ -76,4 +78,16 @@ kbl(tstab, booktabs = T) %>%
              column_spec(4, width = "3cm") %>%
              column_spec(5, width = "3cm") %>%
              column_spec(6, width = "3cm") 
+
+} else {
+tab %>%
+  flextable() %>%
+  width(j = 1, width = 3, unit = "cm") %>%
+  width(j = 2, width = 3, unit = "cm") %>%
+  width(j = 3, width = 3, unit = "cm") %>%
+  width(j = 4, width = 3, unit = "cm") %>%
+  width(j = 5, width = 3, unit = "cm") %>%
+  width(j = 6, width = 3, unit = "cm") %>%
+  theme_vanilla()
+}
 ```

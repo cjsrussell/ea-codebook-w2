@@ -63,14 +63,18 @@ book:
 bibliography: lib.bib
 csl: apa.csl
 
+
+#cannot render simultaneously. Comment/remove the not needed formats.
+
 format:
+  docx: 
+   toc: true
+   number-sections: true
+   prefer-html: true
   html:
     theme: cosmo
     linkcolor: "#253f8c"
-#  docx: 
-#   toc: true
-#   number-sections: true
-#   prefer-html: true    
+
 #  pdf:
 #   documentclass: scrbook
 #   prefer-html: true

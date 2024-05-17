@@ -8,12 +8,13 @@ number-depth: 2
 
 library(tidyverse)
 library(kableExtra)
+library(flextable)
 
 soc <- read.csv("variables/survey1.csv")
 colnames(soc) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
 
 
-credtab <- soc %>% filter(grepl("^(CRED|Sincerity|Percentage)", `Variable Name`))
+tab <- soc %>% filter(grepl("^(CRED|Sincerity|Percentage)", `Variable Name`))
 
 ```
 
@@ -155,7 +156,8 @@ The above questions had a number of different response options, with no reverse 
 The following variables are derived from this measure:
 
 ```{r, echo=FALSE}
-kbl(credtab, booktabs = T) %>%
+if (knitr::pandoc_to("html")) {
+kbl(tab, booktabs = T) %>%
              kable_styling(full_width = T,
                            fixed_thead = T) %>%
              column_spec(1, width = "3cm") %>%
@@ -164,6 +166,19 @@ kbl(credtab, booktabs = T) %>%
              column_spec(4, width = "3cm") %>%
              column_spec(5, width = "3cm") %>%
              column_spec(6, width = "3cm") 
+
+} else {
+  # do use gt
+tab %>%
+  flextable() %>%
+  width(j = 1, width = 3, unit = "cm") %>%
+  width(j = 2, width = 3, unit = "cm") %>%
+  width(j = 3, width = 3, unit = "cm") %>%
+  width(j = 4, width = 3, unit = "cm") %>%
+  width(j = 5, width = 3, unit = "cm") %>%
+  width(j = 6, width = 3, unit = "cm") %>%
+  theme_vanilla()
+}
 ```
 
 

@@ -10,11 +10,12 @@ number-depth: 2
 
 library(dplyr)
 library(kableExtra)
+library(flextable)
 
 mot <- read.csv("variables/survey2.csv")
 colnames(mot) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
 
-estab <- mot %>%  filter(`Variable Name`%in% c("Social Trust", "Wealth Inequality", "Social Security") | grepl("^Existential", `Variable Name`) )
+tab <- mot %>%  filter(`Variable Name`%in% c("Social Trust", "Wealth Inequality", "Social Security") | grepl("^Existential", `Variable Name`) )
 
 ```
 
@@ -75,7 +76,9 @@ Items on the existential security subscale use the following frequency based Lik
 The following variables are derived form this measure:
 
 ```{r, echo=FALSE, message=FALSE}
-kbl(estab, booktabs = T) %>%
+
+if (knitr::pandoc_to("html")) {
+kbl(tab, booktabs = T) %>%
              kable_styling(full_width = T,
                            fixed_thead = T) %>%
              column_spec(1, width = "3cm") %>%
@@ -84,6 +87,20 @@ kbl(estab, booktabs = T) %>%
              column_spec(4, width = "3cm") %>%
              column_spec(5, width = "3cm") %>%
              column_spec(6, width = "3cm") 
+
+} else {
+  # do use gt
+tab %>%
+  flextable() %>%
+  width(j = 1, width = 3, unit = "cm") %>%
+  width(j = 2, width = 3, unit = "cm") %>%
+  width(j = 3, width = 3, unit = "cm") %>%
+  width(j = 4, width = 3, unit = "cm") %>%
+  width(j = 5, width = 3, unit = "cm") %>%
+  width(j = 6, width = 3, unit = "cm") %>%
+  theme_vanilla()
+}
+
 ```
 
 

@@ -8,12 +8,13 @@ number-depth: 2
 
 library(tidyverse)
 library(kableExtra)
+library(flextable)
 
 mot <- read.csv("variables/survey1.csv")
 colnames(mot) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
 
 
-mlqtab <- mot %>% filter(`Variable Name` == "Meaning in Life")
+tab <- mot %>% filter(`Variable Name` == "Meaning in Life")
 
 ```
 
@@ -70,7 +71,8 @@ Participants read the following text:
 ## Scoring
 
 ```{r, echo=FALSE, message=FALSE, eval= TRUE}
-kbl(mlqtab, booktabs = T) %>%
+if (knitr::pandoc_to("html")) {
+kbl(tab, booktabs = T) %>%
              kable_styling(full_width = T,
                            fixed_thead = T) %>%
              column_spec(1, width = "3cm") %>%
@@ -79,5 +81,17 @@ kbl(mlqtab, booktabs = T) %>%
              column_spec(4, width = "3cm") %>%
              column_spec(5, width = "3cm") %>%
              column_spec(6, width = "3cm") 
+
+} else {
+tab %>%
+  flextable() %>%
+  width(j = 1, width = 3, unit = "cm") %>%
+  width(j = 2, width = 3, unit = "cm") %>%
+  width(j = 3, width = 3, unit = "cm") %>%
+  width(j = 4, width = 3, unit = "cm") %>%
+  width(j = 5, width = 3, unit = "cm") %>%
+  width(j = 6, width = 3, unit = "cm") %>%
+  theme_vanilla()
+}
 ```
 

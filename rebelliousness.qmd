@@ -8,11 +8,13 @@ number-depth: 2
 
 library(dplyr)
 library(kableExtra)
+library(flextable)
+
 
 morvals <- read.csv("variables/survey1.csv")
 colnames(morvals) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
 
-rebtab <- morvals %>% filter(grepl("^Rebelliousness",`Variable Name`))
+tab <- morvals %>% filter(grepl("^Rebelliousness",`Variable Name`))
 
 ```
 
@@ -56,7 +58,10 @@ This questionnaire follows our standard coding for extent based measures, with T
 The following variables are derived from this measure.
 
 ```{r, echo=FALSE, eval= TRUE}
-kbl(rebtab, booktabs = T) %>%
+
+
+if (knitr::pandoc_to("html")) {
+kbl(tab, booktabs = T) %>%
              kable_styling(full_width = T,
                            fixed_thead = T) %>%
              column_spec(1, width = "3cm") %>%
@@ -65,5 +70,17 @@ kbl(rebtab, booktabs = T) %>%
              column_spec(4, width = "3cm") %>%
              column_spec(5, width = "3cm") %>%
              column_spec(6, width = "3cm") 
+
+} else {
+tab %>%
+  flextable() %>%
+  width(j = 1, width = 3, unit = "cm") %>%
+  width(j = 2, width = 3, unit = "cm") %>%
+  width(j = 3, width = 3, unit = "cm") %>%
+  width(j = 4, width = 3, unit = "cm") %>%
+  width(j = 5, width = 3, unit = "cm") %>%
+  width(j = 6, width = 3, unit = "cm") %>%
+  theme_vanilla()
+}
 ```
 
