@@ -1,3 +1,3 @@
 ﻿Variable Name,Variable Label,Description,Variable Type,Definition,Response Options
 Atheist Membership,atheistMembership,Yes/no to membership of an atheist org.,binary,am_01 response,"0,1"
-Atheist Identity,atheistIdentity,"Categorisation of ""athetists"" from issp_02",binary,dummy variable from option 4 for issp_02,"0,1"
+Atheist Identity,atheistID,"Categorisation of ""athetists"" from issp_02",binary,dummy variable from option 4 for issp_02,"0,1"
