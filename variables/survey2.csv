@@ -2,11 +2,11 @@
 Anthropomorphism,anthropomorphism,Anthropomorphism score,numeric,Anthropomorphism,mean anth_01: anth_10
 Mentalizing,mentalizing,Mentalizing score,numeric,Mentalizing,mean mnt_01: mnt_22
 Dualism,dualism,Dualism score,numeric,Dualism,mean dua_01: dua_10
-Promiscuous Teleology,promisc_teleology,Promiscuous Teleology Score,numeric,Promiscuous Teleology,mean tel_01: tel_14
-Vividness of Mental Imagery,vividness_imagery,Vividness of mental imagery score,numeric,Vividness of Mental Imagery,mean vvi_01: vvi_32
-Existential Security (upbringing),ex_sec_upb,Upbringing existential security score,numeric,Existential Security,mean es_15: es_21
-Meaning in Life,meaning_life,Meaning in life score,numeric,Need for Meaning,mean mlq_01: mlq_10
-Cognitive Style (correct),crt_correct,Proportion correct cogntive styles questions,numeric/binomial,Thinking Style,The mean (proportion) of crt_01: crt_07 that are correct
-Cognitive Style (intuitive),crt_type,Proportion intuitive cogntive styles questions,numeric/binomial,Thinking Style,The mean (proportion) of crt_01:crt_07 that are intuitive
-Tolerance of Ambiguity,ambiguity_tol,Tolerance of ambiguity  score,numeric,Tolerance of Ambiguity,The mean of at_01: at_13
-Importance of Rationality,rationality_imp,Importance of rationality score,numeric,Importance of Rationality,The mean of imp_01 : imp_06
+Promiscuous Teleology,promiscuousTeleology,Promiscuous Teleology Score,numeric,Promiscuous Teleology,mean tel_01: tel_14
+Vividness of Mental Imagery,vividnessImagery,Vividness of mental imagery score,numeric,Vividness of Mental Imagery,mean vvi_01: vvi_32
+Existential Security (upbringing),existentialInsecurity,Upbringing existential security score,numeric,Existential Security,mean es_15: es_21
+Meaning in Life,meaningLife,Meaning in life score,numeric,Need for Meaning,mean mlq_01: mlq_10
+Cognitive Style (correct),crtCorrect,Proportion correct cogntive styles questions,numeric/binomial,Thinking Style,The mean (proportion) of crt_01: crt_07 that are correct
+Cognitive Style (intuitive),crtType,Proportion intuitive cogntive styles questions,numeric/binomial,Thinking Style,The mean (proportion) of crt_01:crt_07 that are intuitive
+Tolerance of Ambiguity,ambiguityTolerance,Tolerance of ambiguity  score,numeric,Tolerance of Ambiguity,The mean of at_01: at_13
+Importance of Rationality,rationalityImportance,Importance of rationality score,numeric,Importance of Rationality,The mean of imp_01 : imp_06

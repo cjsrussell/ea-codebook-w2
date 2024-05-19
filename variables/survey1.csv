@@ -8,7 +8,7 @@ CRED (Hometown) Exposure,credHometown,Hometown CRED exposure score,ordinal,CREDs
 CRED (High School) Exposure,credHighschool,Highschool CRED exposure score,ordinal,CREDs,cred_30
 Sincerity (Group Leader),sincerityGroupLeader,Sincerity of group leader question response ,ordinal,CREDs,mean of cred_10: cred_19*
 Sincerity (Group Members),sincerityGroupMember,Sincerity of group members question response,ordinal,CREDs,mean of cred_12: cred_21*
-Sincerity (Parents),sincerityParents,Sincerity of parents question response,ordinal,CREDs,cred_32
+Sincerity (Caregiver),sincerityCaregiver,Sincerity of parents question response,ordinal,CREDs,cred_32
 Sincerity (Hometown),sincerityHometown,Sincerity of hometown question response,ordinal,CREDs,cred_28
 Sincerity (High school),sincerityHighschool,Sincerity of highschool question response,ordinal,CREDs,cred_31
 Percentage Believers (Hometown),believersHometown,Percentage of hometown believers response,numeric,CREDs,cred_26

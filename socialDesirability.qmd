@@ -4,7 +4,7 @@ author: "Connair J. S. Russell"
 number-depth: 2
 ---
 
-```{r, echo=FALSE, message=FALSE, eval= FALSE}
+```{r, echo=FALSE, message=FALSE, eval= TRUE}
 
 # echo and message false so not shown on page
 
@@ -68,7 +68,7 @@ This questionnaire follows our standard coding for agreement based measures, wit
 
 The following variables are derived from this measure:
 
-```{r, echo=FALSE, message=FALSE, eval= FALSE}
+```{r, echo=FALSE, message=FALSE, eval= TRUE}
 if (knitr::pandoc_to("html")) {
 kbl(tab, booktabs = T) %>%
              kable_styling(full_width = T,
