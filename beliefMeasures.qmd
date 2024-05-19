@@ -29,6 +29,9 @@ colnames(big) <- c("Variable Name", "Variable Label", "Description", "Variable T
 rel <- read.csv("variables/religiosity.csv")
 colnames(rel) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Definition", "Response Options")
 
+ath <- read.csv("variables/atheism.csv")
+colnames(ath) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Definition", "Response Options")
+
 meta <- read.csv("variables/meta-belief.csv")
 colnames(meta) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Definition", "Response Options")
 

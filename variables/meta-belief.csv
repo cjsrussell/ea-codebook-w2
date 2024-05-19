@@ -5,5 +5,5 @@ Apatheism (God),apatheismGod,continuous/ ordinal,"Agreement with:  ""Whether or 
 Apatheism (life purpose),apatheismPurpose,continuous/ ordinal,"Agreement with: ""Whether or not there is an ultimate purpose to life is a question that doesn't interest me much.""",apth_02 default,1 to 7
 Apatheism (combined),apatheism,continuous/,Mean of apatheism_god + apatheism_purpose,mean of apth_01 and apth_02,1 to 7
 Possibility of Truth,truthPossibility,continuous/ ordinal,"Agreement with: ""For most things in the world, we will never be able to discover the real objective truth.""",mean_01 default,1 to 7
-Naturalism,naturalism,binary,Lack of agreement for any supernatural belief items,"dummy variable = 0 for cases where any of snb items (except 16, 17) are > 4 (agreement or neither)",1 to 7
+Naturalism,naturalism,binary,Lack of agreement for any supernatural belief items,"dummy variable = 0 for cases where any of snb items (except 16, 17) are > 4 (agreement or neither)","0, 1"
 Supernaturalism,supernaturalism,ordinal,agreement across all snb items,Response across all snb items,1 to 7

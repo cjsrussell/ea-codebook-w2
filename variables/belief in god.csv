@@ -12,7 +12,7 @@ Belief in God (categorical),beliefInGod_cat,Categorical,Categorical Response to 
 6. I know God really exists and I have no doubt about it.
 
 7. Don't know"
-Non-Belief Identity,beliefIdentity,Categorical,Cattegorical response to non-believers identity options,issp_02 default,"1.	Spiritual but not religious
+Non-Belief Identity,nonBeliefIdentity,Categorical,Categorical response to non-believers identity options,issp_02 default,"1.	Spiritual but not religious
 2.	Seeker
 3.	Non-religious
 4.	Atheist
@@ -33,5 +33,5 @@ Non-Belief Identity,beliefIdentity,Categorical,Cattegorical response to non-beli
 19.	Other (please specify)"
 Belief in God (binary),beliefInGod_bin,binary (dummy),"Categorisation of ""believers"" and ""non-believers"" from issp_01",dummy variable for yes responses to either 5 & 6 in issp_01,"0,1"
 Belief in God (ordinal),beliefInGod_ord,continuous/ ordinal,Likert measure of agreement with belief in god statement.,belief_01,1 to 7
-Agnosticism (ordinal),agnosticism_bin,continuous/ ordinal,Likert scale measure of agreement with agnosticism statement.,agn_01,1 to 7
+Agnosticism (ordinal),agnosticism_ord,continuous/ ordinal,Likert scale measure of agreement with agnosticism statement.,agn_01,1 to 7
 Agnostic Identity (binary),agnosticIdentity_bin,binary,"Categorisation of ""agnostics"" from issp_02",dummy/index variable for response 5 in issp_02,"0,1"
