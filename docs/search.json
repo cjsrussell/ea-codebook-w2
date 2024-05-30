@@ -20,6 +20,26 @@
     ]
   },
   {
+    "objectID": "allVariables.html",
+    "href": "allVariables.html",
+    "title": "1  All Variables",
+    "section": "",
+    "text": "1.1 Survey 1\nVariable NameVariable LabelDescriptionVariable TypeDefinitionResponse OptionsCRED ExposurecredCRED  exposure scorenumericCREDssum of cred_caregiver + cred_group + cred_hometown + cred_highschool*CRED (Caregiver) ExposurecredCaregiverCaregiver CRED exposure scorenumericCREDssum of cred_01: cred_06*CRED (Group Leader) ExposurecredGroupLeaderGroup leader CRED exposure scorenumericCREDscred_11 + cred_20*CRED (Group Member) ExposurecredGroupMemberGroup member CRED exposure scorenumericCREDssum of cred_13, 14, 15, 16, 22, 23, 24, 25)*CRED (Group) ExposurecredGroupGroup CRED exposure scorenumericCREDssum of cred_group_ldr + cred_group_mbr*CRED (Hometown) ExposurecredHometownHometown CRED exposure scoreordinalCREDscred_28CRED (High School) ExposurecredHighschoolHighschool CRED exposure scoreordinalCREDscred_30Sincerity (Group Leader)sincerityGroupLeaderSincerity of group leader question response ordinalCREDsmean of cred_10: cred_19*Sincerity (Group Members)sincerityGroupMemberSincerity of group members question responseordinalCREDsmean of cred_12: cred_21*Sincerity (Caregiver)sincerityCaregiverSincerity of parents question responseordinalCREDscred_32Sincerity (Hometown)sincerityHometownSincerity of hometown question responseordinalCREDscred_28Sincerity (High school)sincerityHighschoolSincerity of highschool question responseordinalCREDscred_31Percentage Believers (Hometown)believersHometownPercentage of hometown believers responsenumericCREDscred_26Percentage Believers (High School)believersHighschoolPercentage of highschool believers responsenumericCREDscred_29Non-Theistic SocialisationnontheisticSocialisationNon-theistic socialisation scorenumericNon Theistic Socialisationmean of nts_01: nts_08Normativity of Religion (all)normativityNormativity of religion scorenumericNormativity of Religionmean of norm_01: norm_12Normativity of Religion (Nation)nomrativityNationNation normativity of religion scoreordinalNormativity of Religionmean of norm_01: norm_03Normativity of Religion (Ethnicity)normativityEthnicityEthnicity normativity of religion scoreordinalNormativity of Religionmean of norm_04: norm_06Normativity of Religion (Peers)normativityPeersPeer normativity of religion scoreordinalNormativity of Religionmean of norm_07: norm_09Normativity of Religion (Group)normativityGroupGroup normativity of religion scoreordinalNormativity of Religionmean of norm_10: norm_12Religious EmphasisreligiousEmphasisReligious emphasis scorenumericReligious Emphasismean of re_01: re_09CollectivismcollectivismIndividualism scorenumericIndividualism & CollectivismThe mean of ic_01 : ic_16Rebelliousness (trolling)rebelliousnessTrollingRebelliousness trolling scorenumericRebelliousnessThe mean of rb_01 : rb_04Existential Insecurity (upbringing)existentialInsecurityUpbringing existential security scorenumericExistential Securitymean es_15: es_21Meaning in LifemeaningLifeMeaning in life scorenumericNeed for Meaningmean mlq_01: mlq_10Social DesirabilitysocialDesirabilitySocial Desirability scorenumericSocial Desirabilitymean sd_01: sd_08",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>All Variables</span>"
+    ]
+  },
+  {
+    "objectID": "allVariables.html#belief-measures",
+    "href": "allVariables.html#belief-measures",
+    "title": "1  All Variables",
+    "section": "1.2 Belief Measures",
+    "text": "1.2 Belief Measures\n\n1.2.1 Belief in God\n\n\nVariable NameVariable LabelDescriptionVariable TypeDefinitionResponse OptionsBelief in God (categorical)beliefInGod_catCategoricalCategorical Response to belief in god optionsissp_01 default1. I don't believe in God2. I don't know whether there is a God, and I don't believe there is any way to find out3. I don't believe in a personal God, but I do believe in a Higher Power of some kind4. I find myself believing in God some of the time, but not at others5. While I have doubts, I feel that I do believe in God.6. I know God really exists and I have no doubt about it.7. Don't knowNon-Belief IdentitynonBeliefIdentityCategoricalCategorical response to non-believers identity optionsissp_02 default1. Spiritual but not religious2. Seeker3. Non-religious4. Atheist5. Agnostic6. Humanist7. Sceptic8. Free thinker9. Rationalist10. Secular11. Christian12. Muslim13. Jewish14. Buddhist15. Hindu16. Daoist17. Shinto18. Confucian19. Other (please specify)Belief in God (binary)beliefInGod_binbinary (dummy)Categorisation of \"believers\" and \"non-believers\" from issp_01dummy variable for yes responses to either 5 & 6 in issp_010,1Belief in God (ordinal)beliefInGod_ordcontinuous/ ordinalLikert measure of agreement with belief in god statement.belief_011 to 7Agnosticism (ordinal)agnosticism_ordcontinuous/ ordinalLikert scale measure of agreement with agnosticism statement.agn_011 to 7Agnostic Identity (binary)agnosticIdentity_binbinaryCategorisation of \"agnostics\" from issp_02dummy/index variable for response 5 in issp_020,1Belief ChangebeliefChangeCategoricalcatgeorical response to issp_03isssp_03 default1. Generally speaking, I have always believed in God.2. Generally speaking, I have never believed in God.3. I believed in God in the past, but now I do not.4. I did not believe in God in the past, but now I do.New BelieverchangeNewBelieverbinarydummy categorisation from issp_03dummy variable for 4 on issp_030,1New Non-BelieverchangeNewNonBelieverbinarydummy categorisation from issp_03dummy variable for 3 on issp_030,1Always BelievernoChangeBelieverbinarydummy categorisation from issp_03dummy variable for 1 on issp_030,1Always Non-BelievernoChangeNonBelieverbinarydummy categorisation from issp_03dummy variable for 2 on issp_030,1\n\n\n\n\n\n1.2.2 Atheism\n\n\nVariable NameVariable LabelDescriptionVariable TypeDefinitionResponse OptionsAtheist MembershipatheistMembershipYes/no to membership of an atheist org.binaryam_01 response0,1Atheist IdentityatheistIDCategorisation of \"athetists\" from issp_02binarydummy variable from option 4 for issp_020,1\n\n\n\n\n1.2.3 Religiosity\n\n\nVariable NameVariable LabelDescriptionVariable TypeDefinitionResponse OptionsReligious IdentificationreligID_1binaryYes/no belong to a religionrid_01 default0,1Religious IdentityreligID_2categoricalWhich religion categoryrid_02 default1. Protestant2. Catholic3. Orthodox (e.g. Greek Orthodox, Russian Orthodox)4. Sunni5. Shiite6.Buddhist7. Confucian8. Daoist9. Hindu10. Jewish11. Shinto12. Other (please specify)Religious AttendancereligiousAttendancecontinuous/ ordinalFrequency of religious attendence likert scalerp_01 default1. More than once a week2. Once a week3. Once a month4. Only on special holy days5. Once a year6. Less often7. Never, practically neverPrayer FrequencyprayerFrequencycontinuous/ ordinalFrequency of prayer likert scalerp_02 default1. Several times a day2. Once a day3. Several times each week4. Only when attending religious services5. Only on special holy days6. Once a year7. Less often8. Never, practically neverReligious ObjectsreligiousObjectscategoricalPresence of religious objectsrp_03 default1. Yes, for religious reasons2. Yes, for non-religious reasons3. NoAnti-religiosityantiReligiositycontinuous/ ordinalAgreement with anti-religiosity statementar_01 default1 to 7Primary Caregiver Religiosity caregiverReligiositybinaryYes/no belong to a religionrid_03 default0,1Primary Caregiver Religios IdentitycaregiverReligiousIDcategoricalWhich religion categoryrid_04 default1. Protestant2. Catholic3. Orthodox (e.g. Greek Orthodox, Russian Orthodox)4. Sunni5. Shiite6.Buddhist7. Confucian8. Daoist9. Hindu10. Jewish11. Shinto12. Other (please specify)Additional Caregiver ReligiousitycaregiverReligiosity2binaryYes/no belong to a religionrid_05 default0,1Additional Caregiver Religiosity  IdentitycaregiverReligiousID2categoricalWhich religion categoryrid_06 default1. Protestant2. Catholic3. Orthodox (e.g. Greek Orthodox, Russian Orthodox)4. Sunni5. Shiite6.Buddhist7. Confucian8. Daoist9. Hindu10. Jewish11. Shinto12. Other (please specify)\n\n\n\n\n1.2.4 Meta-Belief\n\n\nVariable NameVariable LabelDescriptionVariable TypeDefinitionResponse OptionsPossibility of Knowing (God)godKnowingPossibilitycontinuous/ ordinalAgreement with: \"It is not possible to know if God exists\"belief_02 default1 to 7Confidence in BeliefbeliefConfidencecontinuous/ ordinalAgreement with: \"I am confident that my beliefs about God's existence are the right ones\"conf_01 default1 to 7Apatheism (God)apatheismGodcontinuous/ ordinalAgreement with:  \"Whether or not God exists is a question that doesn't interest me much\"apth_01 default1 to 7Apatheism (life purpose)apatheismPurposecontinuous/ ordinalAgreement with: \"Whether or not there is an ultimate purpose to life is a question that doesn't interest me much.\"apth_02 default1 to 7Apatheism (combined)apatheismcontinuous/Mean of apatheism_god + apatheism_purposemean of apth_01 and apth_021 to 7Possibility of TruthtruthPossibilitycontinuous/ ordinalAgreement with: \"For most things in the world, we will never be able to discover the real objective truth.\"mean_01 default1 to 7NaturalismnaturalismbinaryLack of agreement for any supernatural belief itemsdummy variable = 0 for cases where any of snb items (except 16, 17) are &gt; 4 (agreement or neither)0, 1Supernaturalismsupernaturalismordinalagreement across all snb itemsResponse across all snb items1 to 7\n\n\n\n\n\n1.2.5 Supernatural Belief\nSupernatural Belief measures use a 1-7 agreement scale\nAfterlife\n\n\n\nVariable NameVariable LabelDescriptionVariable TypeDefinitionResponse OptionsAfterlife ExistenceafterlifeExistenceAgreement with: \"There is some sort of life after death\"continuous/ ordinalsnb_01 default1 to 7Afterlife PunishmentafterlifePunishmentAgreement with: \"Some people will be punished after they die.\"continuous/ ordinalsnb_13 default1 to 7Afterlife RewardafterlifeRewardAgreement with: \"Some people will be rewarded after they die\"continuous/ ordinalsnb_14 default1 to 7ReincarnationreincarnationAgreement with: \"Sometime after I die, I expect that I'll be born again in another body.\"continuous/ ordinalsnb_02 default1 to 7AstrologyastrologyAgreement with: \"The positions of the stars and planets affect people's lives\"continuous/ ordinalsnb_03 default1 to 7Mystical PeoplemysticalPeopleAgreement with: \"Some people have mystical powers (e.g. to heal, harm, or bring good luck)\"continuous/ ordinalsnb_04 default1 to 7Mystical ObjectsmysticalObjectsAgreement with: \"Some objects have mystical powers (e.g. to heal, harm, or bring good luck)\"continuous/ ordinalsnb_05 default1 to 7Good and EvilgoodEvilAgreement with: \"There are underlying forces of good and evil in this world.\"continuous/ ordinalsnb_06 default1 to 7Universal spirit or life forceuniversalLifeforceAgreement with: \"There exists a universal spirit or life force.\"continuous/ ordinalsnb_07 default1 to 7KarmakarmaAgreement with: \"There is a power in the universe that causes good things to happen to people who behave morally and bad things to happen to people who behave immorally.\"continuous/ ordinalsnb_08 default1 to 7FatefateAgreement with: \"Most significant life events are meant to be and happen for a reason.\"continuous/ ordinalsnb_09 default1 to 7Supernatural Being ExistencesupernaturalBeingsAgreement with: \"Supernatural beings of some kind exist\"continuous/ ordinalsnb_10 default1 to 7Good Supernatural BeingsgoodSupernaturalBeingsAgreement with: \"There exist supernatural beings that are good/kind (e.g. COUNTRY SPECIFIC)\"continuous/ ordinalsnb_11 default1 to 7Harmful Supernatural BeingsharmfulSupernaturalBeingsAgreement with: \"There exist supernatural beings that are harmful. (e.g COUNTRY SPECIFIC)\"continuous/ ordinalsnb_12 default1 to 7Evil EyeevilEyeAgreement with: \"Making other people envious of you can cause illness or misfortune.\"continuous/ ordinalsnb_15 default1 to 7Spiritual Experience (personal)spiritualForceCategory response to: \"Have you ever felt as though you were connected to a powerful spiritual force?\"continuous/ ordinalsnb_16 default1. Yes, I've had an experience like this.2. I've had an experience like this, but I didn't associate it with a spiritual force.3. No, I've never had an experience like this.Lucky ObjectluckyObjectsYes/No to: \"Do you carry any objects for luck or protection?\"binarysnb_17 default0, 1\n\n\n\n\n1.2.5.1 Demographic Variables\n\n\nVariable NameVariable LabelDescriptionVariable TypeDefinitionResponse OptionsIncomeinc_01Response to: \"What was your household income last year, including casual and part-time income?\"ordinal/ categoricalinc_01 defaultcountry specific brackets (see full codebook)Years in Educationed_01Response to: \"For how many years were you in formal education (e.g. Schools, University)?\"Continuoused_01 defaultopen responseEthnicityeth_01Response to: \"What is your ethnicity?\"Categoricaleth_01 defaultcountry specific brackets (see full codebook)Sexual Orientationsexor_01Response to: \"Which of the following best describes your sexual orientation?\"Categoricalsexor_01 defaultHeterosexual (1)Homosexual (2)Bisexual (3)Other sexual orientation (4)(please specify)Martital Statusmar_01Response to: \" What is your marital status?\"Categoricalmar_01 defaultSingle, not in a committed relationship (1)Single, in a committed relationship (2)Living with a partner (3)Married or civil union (4)Divorced (5)Separated (6)Widowed (7)Homeshooling (primary)homeschool_pResponse to \"Between the ages of 5- 10 were you homeschooled?\"Binaryhomeschool_p defaultyes/noReligious Homeshooling (primary)relig_hs_pResponse to \"Was this schooling religious?\"Binaryrelig_hs_p defaultyes/noReligious Primary Schoolrelig_school_pResponse to: \"Was your school(s) affiliated with a religion/faith?\"Binaryrelig_school_p defaultyes/noHomeshooling (secondary)homeschool_sResponse to \"Between the ages of 11-16 were you homeschooled?\"Binaryhomeschool_s defaultyes/noReligious Homeshooling (seconday) relig_hs_sResponse to \"Was this schooling religious?\"Binaryrelig_hs_s defaultyes/noReligious Secondary Schoolrelig_school_sResponse to: \"Was your school(s) affiliated with a religion/faith?\"Binaryrelig_school_s defaultyes/noSESses_01Task, with the following response Q: \"Please select where on the rung you think you stand at this time in your life relative to other people in the [COUNTRY], with 1 being the top and 10 being the bottom.\"Continuousses_01 default1 to 10",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>All Variables</span>"
+    ]
+  },
+  {
     "objectID": "rebelliousness.html",
     "href": "rebelliousness.html",
     "title": "2  Rebelliousness",
@@ -55,551 +75,551 @@
   {
     "objectID": "creds.html",
     "href": "creds.html",
-    "title": "2  CREDs",
+    "title": "3  CREDs",
     "section": "",
-    "text": "2.1 Measure\nThe measure is a further development of the CREDs measure used by Lanman & Buhrmester (2017).",
+    "text": "3.1 Measure\nThe measure is a further development of the CREDs measure used by Lanman & Buhrmester (2017).",
     "crumbs": [
       "Survey 1",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>CREDs</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>CREDs</span>"
     ]
   },
   {
     "objectID": "creds.html#measure",
     "href": "creds.html#measure",
-    "title": "2  CREDs",
+    "title": "3  CREDs",
     "section": "",
     "text": "Modifications\nThe CRED measures that we use vary across the countries within our survey, as such the following sections are subset by nation. Specifically we have different questions for the historically Christian nations (Brazil, Denmark, United Kingdom, United States), Japan, and China, and we have nation specific examples in some cases.\nIn this round we added an additional question on perceived parental sincerity- cred_32.",
     "crumbs": [
       "Survey 1",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>CREDs</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>CREDs</span>"
     ]
   },
   {
     "objectID": "creds.html#implementation",
     "href": "creds.html#implementation",
-    "title": "2  CREDs",
-    "section": "2.2 Implementation",
-    "text": "2.2 Implementation\n\nQuestion wording\n\n\n\n\n\n\n\nQuestions\nQuestion Text\n\n\n\n\nintro\nThe following questions ask about experiences during your upbringing that relate to God.\n\n\ncred_01 - cred_06\nThese questions ask about your perceptions of your primary caregiver or caregivers (i.e., parents or guardians). Please answer each of the following according to your overall impression of your caregiver(s) on the following scale:\n\n\ncred_07\nStand alone question\n\n\ncred_26 - cred_31\nThese questions ask about your perceptions of your local area growing up (i.e., hometown, school). Please answer each of the following according to your overall impression of your caregiver(s) on the following scale:\n\n\n\n\n\nItems\nThe question items were as follows:\n\n\n\n\n\n\n\n\nQlabel\nquestion\nresponse\n\n\n\n\ncred_01\nTo what extent did your caregivers visit places sacred to God (e.g. temple, church, synagogue, mosque)?\nextent\n\n\ncred_02\nTo what extent did your caregivers engage in volunteer/charity work associated with their devotion to God. (e.g. Habitat for humanity, Salvation Army, Catholic Relief Services, local religious charities)?\nextent\n\n\ncred_03\nTo what extent did your caregivers give financial donations to Godly causes (e.g. to churches,emples, mosques, charities, etc.)?\nextent\n\n\ncred_04\nTo what extent did your caregivers make personal sacrifices as part of their devotion to God (e.g. fasting, abstaining from alcohol and caffeine, giving away wealth, etc.)?\nextent\n\n\ncred_05\nTo what extent did your caregivers perform acts of devotion to God in the home (e.g. Bible readings, visible prayer, etc.)?\nextent\n\n\ncred_06\nTo what extent do you think their devotion to God influenced important decisions in their lives (e.g. marriage, divorce, moving, changing jobs, having children, etc.)?\nextent\n\n\ncred_32\nHow sincere did you feel your caregivers were in their devotion to God?\nsincerity\n\n\n\n\n\n\n\n\n\n\n\ncred_07\nDid you attend or participate in any groups devoted to God] you were growing up? (e.g. churches, religious organisations, camps, etc.)\n\nIf yes, you will have the ability to answer for 2 different groups below.\nyes/no\n\n\ncred_08\nPlease name/describe the first group\nopen\n\n\ncred_09\nDid this group have leadership figures such as priests, pastors, imams, head counsellors, rabbis, gurus, etc.?\nyes/no\n\n\ncred_10\nHow sincere did you feel the leaders of this group were in their devotion to God?\nsincerity\n\n\ncred_11\nTo what extent did the leaders of this group make personal sacrifices as part of their devotion to God? (e.g. fasting, celibacy, abstaining from alcohol and/or caffeine)\nextent\n\n\ncred_12\nHow sincere did you feel the members of this group were in their devotion to God?\nsincerity\n\n\ncred_13\nTo what extent did members of this group engage in charitable work together?\nextent\n\n\ncred_14\nTo what extent did members of this group express emotion during group gatherings?\nextent\n\n\ncred_15\nHow often did members of this group appear to be in altered states of consciousness such as speaking in tongues, trance, or possession?\nfrequency\n\n\ncred_16\nTo what extent would members of this group wear particular clothes or clothing styles?\nextent\n\n\ncred_17 - 25\nREPEAT CRED 08 - 16\n-\n\n\n\n\n\n\n\n\n\n\n\ncred_26\nWhat percentage of people in your hometown/city do you think believed in God?\npercentage\n\n\ncred_27\nTo what extent did believers in God in your hometown demonstrate their beliefs in everyday life?\nextent\n\n\ncred_28\nHow sincere did you feel the believers in God in your hometown were in their devotion to God?\nsincerity\n\n\ncred_29\nWhat percentage of people in your high school do you think believed in God?\npercentage\n\n\ncred_30\nTo what extent did the believers in God in your high school demonstrate their beliefs in everyday life?\nextent\n\n\ncred_31\nHow sincere did you feel the believers in God in your high school were in their devotion to God?\nsincerity\n\n\n\n\n\nCountry Specific Variations:\n\n\nCoding\nThe above questions had a number of different response options, with no reverse coding:\n\nYes/No\n\n\n\n0\n1\n\n\n\n\nNo\nYes\n\n\n\n\n\nFrequency\n\n\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n\n\nNever\nVery Infrequently\nInfrequently\nSometimes\nFrequently\nVery Frequently\nAlways\n\n\n\n\n\nExtent\n\n\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n\n\n\n\nTo No Extent At All\n\n\n\n\n\nTo a Great Extent\n\n\n\n\n\nSincerity\n\n\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n\n\n\n\nCompletely Insincere\nVery Insincere\nInsincere\nNeutral\nSincere\nVery Sincere\nCompletely Sincere\n\n\n\n\n\nPercentage\n\n\n\n0 -100%\n\n\n\n\n\n\n\n\nScoring\nThe following variables are derived from this measure:\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nSource (Section)\nDefinition\n\n\n\n\nCRED Exposure\ncred\nCRED exposure score\nnumeric\nCREDs\nsum of cred_caregiver + cred_group + cred_hometown + cred_highschool*\n\n\nCRED (Caregiver) Exposure\ncredCaregiver\nCaregiver CRED exposure score\nnumeric\nCREDs\nsum of cred_01: cred_06*\n\n\nCRED (Group Leader) Exposure\ncredGroupLeader\nGroup leader CRED exposure score\nnumeric\nCREDs\ncred_11 + cred_20*\n\n\nCRED (Group Member) Exposure\ncredGroupMember\nGroup member CRED exposure score\nnumeric\nCREDs\nsum of cred_13, 14, 15, 16, 22, 23, 24, 25)*\n\n\nCRED (Group) Exposure\ncredGroup\nGroup CRED exposure score\nnumeric\nCREDs\nsum of cred_group_ldr + cred_group_mbr*\n\n\nCRED (Hometown) Exposure\ncredHometown\nHometown CRED exposure score\nordinal\nCREDs\ncred_28\n\n\nCRED (High School) Exposure\ncredHighschool\nHighschool CRED exposure score\nordinal\nCREDs\ncred_30\n\n\nSincerity (Group Leader)\nsincerityGroupLeader\nSincerity of group leader question response\nordinal\nCREDs\nmean of cred_10: cred_19*\n\n\nSincerity (Group Members)\nsincerityGroupMember\nSincerity of group members question response\nordinal\nCREDs\nmean of cred_12: cred_21*\n\n\nSincerity (Caregiver)\nsincerityCaregiver\nSincerity of parents question response\nordinal\nCREDs\ncred_32\n\n\nSincerity (Hometown)\nsincerityHometown\nSincerity of hometown question response\nordinal\nCREDs\ncred_28\n\n\nSincerity (High school)\nsincerityHighschool\nSincerity of highschool question response\nordinal\nCREDs\ncred_31\n\n\nPercentage Believers (Hometown)\nbelieversHometown\nPercentage of hometown believers response\nnumeric\nCREDs\ncred_26\n\n\nPercentage Believers (High School)\nbelieversHighschool\nPercentage of highschool believers response\nnumeric\nCREDs\ncred_29\n\n\n\n\n\n\n\n\n\n\n\nLanman, J. A., & Buhrmester, M. D. (2017). Religious actions speak louder than words: Exposure to credibility-enhancing displays predicts theism. Religion, Brain & Behavior, 7(1), 3–16. https://doi.org/10.1080/2153599X.2015.1117011",
+    "title": "3  CREDs",
+    "section": "3.2 Implementation",
+    "text": "3.2 Implementation\n\nQuestion wording\n\n\n\n\n\n\n\nQuestions\nQuestion Text\n\n\n\n\nintro\nThe following questions ask about experiences during your upbringing that relate to God.\n\n\ncred_01 - cred_06\nThese questions ask about your perceptions of your primary caregiver or caregivers (i.e., parents or guardians). Please answer each of the following according to your overall impression of your caregiver(s) on the following scale:\n\n\ncred_07\nStand alone question\n\n\ncred_26 - cred_31\nThese questions ask about your perceptions of your local area growing up (i.e., hometown, school). Please answer each of the following according to your overall impression of your caregiver(s) on the following scale:\n\n\n\n\n\nItems\nThe question items were as follows:\n\n\n\n\n\n\n\n\nQlabel\nquestion\nresponse\n\n\n\n\ncred_01\nTo what extent did your caregivers visit places sacred to God (e.g. temple, church, synagogue, mosque)?\nextent\n\n\ncred_02\nTo what extent did your caregivers engage in volunteer/charity work associated with their devotion to God. (e.g. Habitat for humanity, Salvation Army, Catholic Relief Services, local religious charities)?\nextent\n\n\ncred_03\nTo what extent did your caregivers give financial donations to Godly causes (e.g. to churches,emples, mosques, charities, etc.)?\nextent\n\n\ncred_04\nTo what extent did your caregivers make personal sacrifices as part of their devotion to God (e.g. fasting, abstaining from alcohol and caffeine, giving away wealth, etc.)?\nextent\n\n\ncred_05\nTo what extent did your caregivers perform acts of devotion to God in the home (e.g. Bible readings, visible prayer, etc.)?\nextent\n\n\ncred_06\nTo what extent do you think their devotion to God influenced important decisions in their lives (e.g. marriage, divorce, moving, changing jobs, having children, etc.)?\nextent\n\n\ncred_32\nHow sincere did you feel your caregivers were in their devotion to God?\nsincerity\n\n\n\n\n\n\n\n\n\n\n\ncred_07\nDid you attend or participate in any groups devoted to God] you were growing up? (e.g. churches, religious organisations, camps, etc.)\n\nIf yes, you will have the ability to answer for 2 different groups below.\nyes/no\n\n\ncred_08\nPlease name/describe the first group\nopen\n\n\ncred_09\nDid this group have leadership figures such as priests, pastors, imams, head counsellors, rabbis, gurus, etc.?\nyes/no\n\n\ncred_10\nHow sincere did you feel the leaders of this group were in their devotion to God?\nsincerity\n\n\ncred_11\nTo what extent did the leaders of this group make personal sacrifices as part of their devotion to God? (e.g. fasting, celibacy, abstaining from alcohol and/or caffeine)\nextent\n\n\ncred_12\nHow sincere did you feel the members of this group were in their devotion to God?\nsincerity\n\n\ncred_13\nTo what extent did members of this group engage in charitable work together?\nextent\n\n\ncred_14\nTo what extent did members of this group express emotion during group gatherings?\nextent\n\n\ncred_15\nHow often did members of this group appear to be in altered states of consciousness such as speaking in tongues, trance, or possession?\nfrequency\n\n\ncred_16\nTo what extent would members of this group wear particular clothes or clothing styles?\nextent\n\n\ncred_17 - 25\nREPEAT CRED 08 - 16\n-\n\n\n\n\n\n\n\n\n\n\n\ncred_26\nWhat percentage of people in your hometown/city do you think believed in God?\npercentage\n\n\ncred_27\nTo what extent did believers in God in your hometown demonstrate their beliefs in everyday life?\nextent\n\n\ncred_28\nHow sincere did you feel the believers in God in your hometown were in their devotion to God?\nsincerity\n\n\ncred_29\nWhat percentage of people in your high school do you think believed in God?\npercentage\n\n\ncred_30\nTo what extent did the believers in God in your high school demonstrate their beliefs in everyday life?\nextent\n\n\ncred_31\nHow sincere did you feel the believers in God in your high school were in their devotion to God?\nsincerity\n\n\n\n\n\nCountry Specific Variations:\n\n\nCoding\nThe above questions had a number of different response options, with no reverse coding:\n\nYes/No\n\n\n\n0\n1\n\n\n\n\nNo\nYes\n\n\n\n\n\nFrequency\n\n\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n\n\nNever\nVery Infrequently\nInfrequently\nSometimes\nFrequently\nVery Frequently\nAlways\n\n\n\n\n\nExtent\n\n\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n\n\n\n\nTo No Extent At All\n\n\n\n\n\nTo a Great Extent\n\n\n\n\n\nSincerity\n\n\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n\n\n\n\nCompletely Insincere\nVery Insincere\nInsincere\nNeutral\nSincere\nVery Sincere\nCompletely Sincere\n\n\n\n\n\nPercentage\n\n\n\n0 -100%\n\n\n\n\n\n\n\n\nScoring\nThe following variables are derived from this measure:\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nSource (Section)\nDefinition\n\n\n\n\nCRED Exposure\ncred\nCRED exposure score\nnumeric\nCREDs\nsum of cred_caregiver + cred_group + cred_hometown + cred_highschool*\n\n\nCRED (Caregiver) Exposure\ncredCaregiver\nCaregiver CRED exposure score\nnumeric\nCREDs\nsum of cred_01: cred_06*\n\n\nCRED (Group Leader) Exposure\ncredGroupLeader\nGroup leader CRED exposure score\nnumeric\nCREDs\ncred_11 + cred_20*\n\n\nCRED (Group Member) Exposure\ncredGroupMember\nGroup member CRED exposure score\nnumeric\nCREDs\nsum of cred_13, 14, 15, 16, 22, 23, 24, 25)*\n\n\nCRED (Group) Exposure\ncredGroup\nGroup CRED exposure score\nnumeric\nCREDs\nsum of cred_group_ldr + cred_group_mbr*\n\n\nCRED (Hometown) Exposure\ncredHometown\nHometown CRED exposure score\nordinal\nCREDs\ncred_28\n\n\nCRED (High School) Exposure\ncredHighschool\nHighschool CRED exposure score\nordinal\nCREDs\ncred_30\n\n\nSincerity (Group Leader)\nsincerityGroupLeader\nSincerity of group leader question response\nordinal\nCREDs\nmean of cred_10: cred_19*\n\n\nSincerity (Group Members)\nsincerityGroupMember\nSincerity of group members question response\nordinal\nCREDs\nmean of cred_12: cred_21*\n\n\nSincerity (Caregiver)\nsincerityCaregiver\nSincerity of parents question response\nordinal\nCREDs\ncred_32\n\n\nSincerity (Hometown)\nsincerityHometown\nSincerity of hometown question response\nordinal\nCREDs\ncred_28\n\n\nSincerity (High school)\nsincerityHighschool\nSincerity of highschool question response\nordinal\nCREDs\ncred_31\n\n\nPercentage Believers (Hometown)\nbelieversHometown\nPercentage of hometown believers response\nnumeric\nCREDs\ncred_26\n\n\nPercentage Believers (High School)\nbelieversHighschool\nPercentage of highschool believers response\nnumeric\nCREDs\ncred_29\n\n\n\n\n\n\n\n\n\n\n\nLanman, J. A., & Buhrmester, M. D. (2017). Religious actions speak louder than words: Exposure to credibility-enhancing displays predicts theism. Religion, Brain & Behavior, 7(1), 3–16. https://doi.org/10.1080/2153599X.2015.1117011",
     "crumbs": [
       "Survey 1",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>CREDs</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>CREDs</span>"
     ]
   },
   {
     "objectID": "normativity.html",
     "href": "normativity.html",
-    "title": "3  Normativity of Religion",
+    "title": "4  Normativity of Religion",
     "section": "",
-    "text": "3.1 Measure",
+    "text": "4.1 Measure",
     "crumbs": [
       "Survey 1",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Normativity of Religion</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Normativity of Religion</span>"
     ]
   },
   {
     "objectID": "normativity.html#measure",
     "href": "normativity.html#measure",
-    "title": "3  Normativity of Religion",
+    "title": "4  Normativity of Religion",
     "section": "",
     "text": "Modifications",
     "crumbs": [
       "Survey 1",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Normativity of Religion</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Normativity of Religion</span>"
     ]
   },
   {
     "objectID": "normativity.html#implementation",
     "href": "normativity.html#implementation",
-    "title": "3  Normativity of Religion",
-    "section": "3.2 Implementation",
-    "text": "3.2 Implementation\n\nQuestion wording\nParticipants are presented with the following text:\nPeople are a part of a number of groups that affect their lives, such as nation-states, ethnic groups, companies, friend/peer groups, and hobby groups (e.g. sports/music fandoms). For these groups, being a good, respected member often comes with expectations. Below, we will ask you how important certain personal qualities are to being a good, respected member of the groups to which you belong.\nAlong with subscale specific text:\n\n\n\n\n\n\n\n\nSubscale\ntext\nresponse\n\n\n\n\nNation\nThe following questions will ask you about your nation. There are no right or wrong answers and your responses remain anonymous.\nextent\n\n\nEthnic\nThe following questions will ask you about the ethnic group with which you identify (e.g. Black British, White (other), Han, Japanese, Pacific Islander). There are no right or wrong answers and your responses remain anonymous.\nextent\n\n\nFriends/peers\nThe following questions will ask you about your friendship/ peer group. There are no right or wrong answers and your responses remain anonymous.\nextent\n\n\nChoose own\nThe following questions will ask you about a hobby or interest group that is important to you (e.g. music, fashion, gaming communities). There are no right or wrong answers and your responses remain anonymous.\nextent\n\n\n\n\n\nItems\nThe question items were as follows, where [COUNTRY] is the name of the country:\n\n\n\n\n\n\n\n\n\nQlabel\nSubscale\nquestion\nresponse\n\n\n\n\nnorm_01\nNation\nTo what extent is it expected for a citizen of [COUNTRY] to believe in God?\nextent\n\n\nnorm_02\nNation\nTo what extent is it expected for a citizen of [COUNTRY] to perform rituals honouring God?\nextent\n\n\nnorm_03\nNation\nTo what extent is it expected for a citizen of [COUNTRY] to belong to a religion?\nextent\n\n\nnorm_04\nEthnic\nTo what extent is it expected of people in your ethnic group to believe in God?\nextent\n\n\nnorm_05\nEthnic\nTo what extent is it expected of people in your ethnic group to perform rituals honouring God?\nextent\n\n\nnorm_06\nEthnic\nTo what extent is it expected of people in your ethnic group to belong to a religion?\nextent\n\n\nnorm_07\nFriends/peers\nTo what extent is it expected amongst your friends to believe in God?\nextent\n\n\nnorm_08\nFriends/peers\nTo what extent is it expected amongst your friends to perform rituals honouring God?\nextent\n\n\nnorm_09\nFriends/peers\nTo what extent is it expected amongst your friends to belong to a religion?\nextent\n\n\nnorm_10\nChoose own\nTo what extent is it expected for members of the hobby or interest group most important to you to believe in God?\nextent\n\n\nnorm_11\nChoose own\nTo what extent is it expected for members of the hobby or interest group most important to you to perform rituals for God?\nextent\n\n\nnorm_12\nChoose own\nTo what extent is it expected for members of the hobby or interest group most important to you to belong to a religion?\nextent\n\n\n\n\n\nCoding\nThis questionnaire follows our standard coding for extent based measures, with To No Extent At All = 1, and To a Great Extent = 7.\n\n\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n\n\n\n\nTo No Extent At All\nTo a Slight Extent\nTo a Mild Extent\nTo a Moderate Extent\nTo an Appreciable Extent\nTo a Considerable Extent\nTo a Great Extent\n\n\n\nNo items are reverse coded\n\n\nScoring\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nSource (Section)\nDefinition\n\n\n\n\nNormativity of Religion (all)\nnormativity\nNormativity of religion score\nnumeric\nNormativity of Religion\nmean of norm_01: norm_12\n\n\nNormativity of Religion (Nation)\nnomrativityNation\nNation normativity of religion score\nordinal\nNormativity of Religion\nmean of norm_01: norm_03\n\n\nNormativity of Religion (Ethnicity)\nnormativityEthnicity\nEthnicity normativity of religion score\nordinal\nNormativity of Religion\nmean of norm_04: norm_06\n\n\nNormativity of Religion (Peers)\nnormativityPeers\nPeer normativity of religion score\nordinal\nNormativity of Religion\nmean of norm_07: norm_09\n\n\nNormativity of Religion (Group)\nnormativityGroup\nGroup normativity of religion score\nordinal\nNormativity of Religion\nmean of norm_10: norm_12",
+    "title": "4  Normativity of Religion",
+    "section": "4.2 Implementation",
+    "text": "4.2 Implementation\n\nQuestion wording\nParticipants are presented with the following text:\nPeople are a part of a number of groups that affect their lives, such as nation-states, ethnic groups, companies, friend/peer groups, and hobby groups (e.g. sports/music fandoms). For these groups, being a good, respected member often comes with expectations. Below, we will ask you how important certain personal qualities are to being a good, respected member of the groups to which you belong.\nAlong with subscale specific text:\n\n\n\n\n\n\n\n\nSubscale\ntext\nresponse\n\n\n\n\nNation\nThe following questions will ask you about your nation. There are no right or wrong answers and your responses remain anonymous.\nextent\n\n\nEthnic\nThe following questions will ask you about the ethnic group with which you identify (e.g. Black British, White (other), Han, Japanese, Pacific Islander). There are no right or wrong answers and your responses remain anonymous.\nextent\n\n\nFriends/peers\nThe following questions will ask you about your friendship/ peer group. There are no right or wrong answers and your responses remain anonymous.\nextent\n\n\nChoose own\nThe following questions will ask you about a hobby or interest group that is important to you (e.g. music, fashion, gaming communities). There are no right or wrong answers and your responses remain anonymous.\nextent\n\n\n\n\n\nItems\nThe question items were as follows, where [COUNTRY] is the name of the country:\n\n\n\n\n\n\n\n\n\nQlabel\nSubscale\nquestion\nresponse\n\n\n\n\nnorm_01\nNation\nTo what extent is it expected for a citizen of [COUNTRY] to believe in God?\nextent\n\n\nnorm_02\nNation\nTo what extent is it expected for a citizen of [COUNTRY] to perform rituals honouring God?\nextent\n\n\nnorm_03\nNation\nTo what extent is it expected for a citizen of [COUNTRY] to belong to a religion?\nextent\n\n\nnorm_04\nEthnic\nTo what extent is it expected of people in your ethnic group to believe in God?\nextent\n\n\nnorm_05\nEthnic\nTo what extent is it expected of people in your ethnic group to perform rituals honouring God?\nextent\n\n\nnorm_06\nEthnic\nTo what extent is it expected of people in your ethnic group to belong to a religion?\nextent\n\n\nnorm_07\nFriends/peers\nTo what extent is it expected amongst your friends to believe in God?\nextent\n\n\nnorm_08\nFriends/peers\nTo what extent is it expected amongst your friends to perform rituals honouring God?\nextent\n\n\nnorm_09\nFriends/peers\nTo what extent is it expected amongst your friends to belong to a religion?\nextent\n\n\nnorm_10\nChoose own\nTo what extent is it expected for members of the hobby or interest group most important to you to believe in God?\nextent\n\n\nnorm_11\nChoose own\nTo what extent is it expected for members of the hobby or interest group most important to you to perform rituals for God?\nextent\n\n\nnorm_12\nChoose own\nTo what extent is it expected for members of the hobby or interest group most important to you to belong to a religion?\nextent\n\n\n\n\n\nCoding\nThis questionnaire follows our standard coding for extent based measures, with To No Extent At All = 1, and To a Great Extent = 7.\n\n\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n\n\n\n\nTo No Extent At All\nTo a Slight Extent\nTo a Mild Extent\nTo a Moderate Extent\nTo an Appreciable Extent\nTo a Considerable Extent\nTo a Great Extent\n\n\n\nNo items are reverse coded\n\n\nScoring\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nSource (Section)\nDefinition\n\n\n\n\nNormativity of Religion (all)\nnormativity\nNormativity of religion score\nnumeric\nNormativity of Religion\nmean of norm_01: norm_12\n\n\nNormativity of Religion (Nation)\nnomrativityNation\nNation normativity of religion score\nordinal\nNormativity of Religion\nmean of norm_01: norm_03\n\n\nNormativity of Religion (Ethnicity)\nnormativityEthnicity\nEthnicity normativity of religion score\nordinal\nNormativity of Religion\nmean of norm_04: norm_06\n\n\nNormativity of Religion (Peers)\nnormativityPeers\nPeer normativity of religion score\nordinal\nNormativity of Religion\nmean of norm_07: norm_09\n\n\nNormativity of Religion (Group)\nnormativityGroup\nGroup normativity of religion score\nordinal\nNormativity of Religion\nmean of norm_10: norm_12",
     "crumbs": [
       "Survey 1",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Normativity of Religion</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Normativity of Religion</span>"
     ]
   },
   {
     "objectID": "collectivism.html",
     "href": "collectivism.html",
-    "title": "4  Collectivism",
+    "title": "5  Collectivism",
     "section": "",
-    "text": "4.1 Measure\nThe collectivism measure used was that of Triandis (1994), available in Gelfand & Realo (1999).",
+    "text": "5.1 Measure\nThe collectivism measure used was that of Triandis (1994), available in Gelfand & Realo (1999).",
     "crumbs": [
       "Survey 1",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Collectivism</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Collectivism</span>"
     ]
   },
   {
     "objectID": "collectivism.html#measure",
     "href": "collectivism.html#measure",
-    "title": "4  Collectivism",
+    "title": "5  Collectivism",
     "section": "",
     "text": "Modifications\nFor consistency with our other measures we used a 7-point likert scale for agreement, where the original measure used a 9-point scale.",
     "crumbs": [
       "Survey 1",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Collectivism</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Collectivism</span>"
     ]
   },
   {
     "objectID": "collectivism.html#implementation",
     "href": "collectivism.html#implementation",
-    "title": "4  Collectivism",
-    "section": "4.2 Implementation",
-    "text": "4.2 Implementation\n\nQuestion wording\nParticipants read the following text:\nWe want to know if you agree or disagree with the following statements. The statements sometimes refer to your ‘group,’ which refers to your group of friends or any other group that you are involved in. Read each one carefully. Indicate your agreement or disagreement with the statement by using the following scale:\n\n\nItems\n\n\n\n\n\n\n\nQlabel\nquestion\n\n\n\n\nic_01\nIt is important for me to maintain harmony within my group\n\n\nic_02\nI would sacrifice an activity that I enjoy very much if my family did not approve of it.\n\n\nic_03\nChildren should be taught to place duty before pleasure.\n\n\nic_04\nMy happiness depends very much on the happiness of those around\nme.\n\n\nic_05\nThe well-being of my group is a very important concern for me\n\n\nic_06\nI really like to cooperate with others\n\n\nic_07\nI usually sacrifice my self-interest for the benefit of my group\n\n\nic_08\nBefore making a decision, I like to consult with many others.\n\n\nic_09\nChildren should feel honored if their parents receive a distinguished\naward\n\n\nic_10\nIf any of my relatives were in financial difficulty, I would help them\neven if it made my life difficult.\n\n\nic_11\nIf a member of my group gets a prize, I would feel proud.\n\n\nic_12\nSharing little things with my group makes me very happy\n\n\nic_13\nI feel we should keep our aging parents with us at home\n\n\nic_14\nTo me, pleasure is spending time with others\n\n\nic_15\nI hate to disagree with others in my group\n\n\nic_16\nI would do what would please my family, even if I detested the activity\n\n\n\n\n\nCoding\nThis questionnaire used our standard response scale for agreement.\n\n\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n\n\nstrongly disagree\nmoderately disagree\nslightly disagree\nneither agree nor disagree\nslightly agree\nmoderately agree\nstrongly agree\n\n\n\nNo items are reverse coded\n\n\nScoring\nThe following variables were derived from this measure\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nSource (Section)\nDefinition\n\n\n\n\nCollectivism\ncollectivism\nIndividualism score\nnumeric\nIndividualism & Collectivism\nThe mean of ic_01 : ic_16",
+    "title": "5  Collectivism",
+    "section": "5.2 Implementation",
+    "text": "5.2 Implementation\n\nQuestion wording\nParticipants read the following text:\nWe want to know if you agree or disagree with the following statements. The statements sometimes refer to your ‘group,’ which refers to your group of friends or any other group that you are involved in. Read each one carefully. Indicate your agreement or disagreement with the statement by using the following scale:\n\n\nItems\n\n\n\n\n\n\n\nQlabel\nquestion\n\n\n\n\nic_01\nIt is important for me to maintain harmony within my group\n\n\nic_02\nI would sacrifice an activity that I enjoy very much if my family did not approve of it.\n\n\nic_03\nChildren should be taught to place duty before pleasure.\n\n\nic_04\nMy happiness depends very much on the happiness of those around\nme.\n\n\nic_05\nThe well-being of my group is a very important concern for me\n\n\nic_06\nI really like to cooperate with others\n\n\nic_07\nI usually sacrifice my self-interest for the benefit of my group\n\n\nic_08\nBefore making a decision, I like to consult with many others.\n\n\nic_09\nChildren should feel honored if their parents receive a distinguished\naward\n\n\nic_10\nIf any of my relatives were in financial difficulty, I would help them\neven if it made my life difficult.\n\n\nic_11\nIf a member of my group gets a prize, I would feel proud.\n\n\nic_12\nSharing little things with my group makes me very happy\n\n\nic_13\nI feel we should keep our aging parents with us at home\n\n\nic_14\nTo me, pleasure is spending time with others\n\n\nic_15\nI hate to disagree with others in my group\n\n\nic_16\nI would do what would please my family, even if I detested the activity\n\n\n\n\n\nCoding\nThis questionnaire used our standard response scale for agreement.\n\n\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n\n\nstrongly disagree\nmoderately disagree\nslightly disagree\nneither agree nor disagree\nslightly agree\nmoderately agree\nstrongly agree\n\n\n\nNo items are reverse coded\n\n\nScoring\nThe following variables were derived from this measure\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nSource (Section)\nDefinition\n\n\n\n\nCollectivism\ncollectivism\nIndividualism score\nnumeric\nIndividualism & Collectivism\nThe mean of ic_01 : ic_16",
     "crumbs": [
       "Survey 1",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Collectivism</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Collectivism</span>"
     ]
   },
   {
     "objectID": "collectivism.html#section",
     "href": "collectivism.html#section",
-    "title": "4  Collectivism",
-    "section": "4.3 ",
-    "text": "4.3 \n\n\n\n\nGelfand, M. J., & Realo, A. (1999). Individualism-collectivism and accountability in intergroup negotiations. Journal of Applied Psychology, 84(5), 721–736. https://doi.org/10.1037/0021-9010.84.5.721",
+    "title": "5  Collectivism",
+    "section": "5.3 ",
+    "text": "5.3 \n\n\n\n\nGelfand, M. J., & Realo, A. (1999). Individualism-collectivism and accountability in intergroup negotiations. Journal of Applied Psychology, 84(5), 721–736. https://doi.org/10.1037/0021-9010.84.5.721",
     "crumbs": [
       "Survey 1",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Collectivism</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Collectivism</span>"
     ]
   },
   {
     "objectID": "existentialInsecurity.html",
     "href": "existentialInsecurity.html",
-    "title": "5  Existential Insecurity",
+    "title": "6  Existential Insecurity",
     "section": "",
-    "text": "5.1 Measure\nThe initial existential insecurity measures were derived from those used by Baimel et al. (2022) and by Willard & Cingl (2017).",
+    "text": "6.1 Measure\nThe initial existential insecurity measures were derived from those used by Baimel et al. (2022) and by Willard & Cingl (2017).",
     "crumbs": [
       "Survey 1",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Existential Insecurity</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Existential Insecurity</span>"
     ]
   },
   {
     "objectID": "existentialInsecurity.html#measure",
     "href": "existentialInsecurity.html#measure",
-    "title": "5  Existential Insecurity",
+    "title": "6  Existential Insecurity",
     "section": "",
     "text": "Modifications\nThe food security measure from Baimel et al. (2022) was combined with financial and physical security from Willard & Cingl (2017), these were asked for ‘recently’ and ‘for the forthcoming months’.\nIn this wave we only included questions pertaining to childhood.",
     "crumbs": [
       "Survey 1",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Existential Insecurity</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Existential Insecurity</span>"
     ]
   },
   {
     "objectID": "existentialInsecurity.html#implementation",
     "href": "existentialInsecurity.html#implementation",
-    "title": "5  Existential Insecurity",
-    "section": "5.2 Implementation",
-    "text": "5.2 Implementation\n\nQuestion wording\nThe question wording was as follows:\n\n\n\n\n\n\n\nQuestions\nQuestion Text\n\n\n\n\nes_15 - es_21\nWhen growing up did you:\n\n\n\n\n\nItems\nThe question items were as follows:\nExistential Security\n\n\n\n\n\n\n\nQlabel\nquestion\n\n\n\n\nes_15\nworry that your household may not able to buy or produce enough food to eat?\n\n\nes_16\nfeel that your household may not be able to afford to buy items you need\n\n\nes_17\nworry that your household may not have enough money\n\n\nes_18\nworry about members of your household losing their job\n\n\nes_19\nfeel you will be safe walking alone in your local area after dark\n\n\nes_20\nworry about being burgled\n\n\nes_21\nworry about being a victim of violent crime\n\n\n\n\n\nCoding\nItems on the existential security subscale use the following frequency based Likert scale:\n\n\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n\n\nnever\nvery infrequently\ninfrequently\nsometimes\nfrequently\nvery frequently\nalways\n\n\n\nes_19 is reverse coded\n\n\nScoring\nThe following variables are derived form this measure:\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nSource (Section)\nDefinition\n\n\n\n\nExistential Security (upbringing)\nexistentialInsecurity\nUpbringing existential security score\nnumeric\nExistential Security\nmean es_15: es_21\n\n\n\n\n\n\n\n\n\n\n\nBaimel, A., Apicella, C., Atkinson, Q., Bolyanatz, A., Cohen, E., Handley, C., … Purzycki, B. (2022). Material insecurity predicts greater commitment to moralistic and less commitment to local deities: A cross-cultural investigation. Religion, Brain & Behavior, 12(1-2), 4–17. https://doi.org/10.1080/2153599X.2021.2006287\n\n\nWillard, A. K., & Cingl, L. (2017). Testing theories of secularization and religious belief in the Czech Republic and Slovakia. Evolution and Human Behavior, 38(5), 604–615. https://doi.org/10.1016/j.evolhumbehav.2017.01.002",
+    "title": "6  Existential Insecurity",
+    "section": "6.2 Implementation",
+    "text": "6.2 Implementation\n\nQuestion wording\nThe question wording was as follows:\n\n\n\n\n\n\n\nQuestions\nQuestion Text\n\n\n\n\nes_15 - es_21\nWhen growing up did you:\n\n\n\n\n\nItems\nThe question items were as follows:\nExistential Security\n\n\n\n\n\n\n\nQlabel\nquestion\n\n\n\n\nes_15\nworry that your household may not able to buy or produce enough food to eat?\n\n\nes_16\nfeel that your household may not be able to afford to buy items you need\n\n\nes_17\nworry that your household may not have enough money\n\n\nes_18\nworry about members of your household losing their job\n\n\nes_19\nfeel you will be safe walking alone in your local area after dark\n\n\nes_20\nworry about being burgled\n\n\nes_21\nworry about being a victim of violent crime\n\n\n\n\n\nCoding\nItems on the existential security subscale use the following frequency based Likert scale:\n\n\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n\n\nnever\nvery infrequently\ninfrequently\nsometimes\nfrequently\nvery frequently\nalways\n\n\n\nes_19 is reverse coded\n\n\nScoring\nThe following variables are derived form this measure:\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nSource (Section)\nDefinition\n\n\n\n\nExistential Security (upbringing)\nexistentialInsecurity\nUpbringing existential security score\nnumeric\nExistential Security\nmean es_15: es_21\n\n\n\n\n\n\n\n\n\n\n\nBaimel, A., Apicella, C., Atkinson, Q., Bolyanatz, A., Cohen, E., Handley, C., … Purzycki, B. (2022). Material insecurity predicts greater commitment to moralistic and less commitment to local deities: A cross-cultural investigation. Religion, Brain & Behavior, 12(1-2), 4–17. https://doi.org/10.1080/2153599X.2021.2006287\n\n\nWillard, A. K., & Cingl, L. (2017). Testing theories of secularization and religious belief in the Czech Republic and Slovakia. Evolution and Human Behavior, 38(5), 604–615. https://doi.org/10.1016/j.evolhumbehav.2017.01.002",
     "crumbs": [
       "Survey 1",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Existential Insecurity</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Existential Insecurity</span>"
     ]
   },
   {
     "objectID": "nonTheisticSocialisation.html",
     "href": "nonTheisticSocialisation.html",
-    "title": "6  Non-theistic Socialisation",
+    "title": "7  Non-theistic Socialisation",
     "section": "",
-    "text": "6.1 Measure",
+    "text": "7.1 Measure",
     "crumbs": [
       "Survey 1",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Non-theistic Socialisation</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Non-theistic Socialisation</span>"
     ]
   },
   {
     "objectID": "nonTheisticSocialisation.html#measure",
     "href": "nonTheisticSocialisation.html#measure",
-    "title": "6  Non-theistic Socialisation",
+    "title": "7  Non-theistic Socialisation",
     "section": "",
     "text": "Modifications",
     "crumbs": [
       "Survey 1",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Non-theistic Socialisation</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Non-theistic Socialisation</span>"
     ]
   },
   {
     "objectID": "nonTheisticSocialisation.html#implementation",
     "href": "nonTheisticSocialisation.html#implementation",
-    "title": "6  Non-theistic Socialisation",
-    "section": "6.2 Implementation",
-    "text": "6.2 Implementation\nThe Non-theistic Socialisation measure that we use vary across the countries within our survey, as such the following sections are subset by nation. Specifically we have different questions for the historically Christian nations (Brazil, Denmark, United Kingdom, United States), and for Japan and China.\n\nQuestion wording\n\n\n\n\n\n\n\nQuestions\nQuestion Text\n\n\n\n\nintro\nTo what extent did important people in your upbringing speak against the idea that God exists? That is, to what extent, adding it all up, did the important people in your life – such as your parents, teachers, and church officials (if any) – do the things listed below as you were growing up?\n\n\n\n\n\nItems\nThe items were as follows:\n\n\n\n\n\n\n\n\nQlabel\nquestion\nresponse\n\n\n\n\nnts_01\nState that God does not exist?\nextent\n\n\nnts_02\nState that prayers to God do not work?\nextent\n\n\nnts_03\nMock or joke about people’s religious belief?\nextent\n\n\nnts_04\nState that belief in God is not necessary for morality?\nextent\n\n\nnts_05\nState that one should not be religious?\nextent\n\n\nnts_06\nState that there are no good reasons to believe in God?\nextent\n\n\nnts_07\nState that religious belief does more harm than good in the world?\nextent\n\n\nnts_08\nState that religious practices are irrational?\nextent\n\n\n\n\n\nCoding\nThis measure uses our standard response scale for extent.\n\nExtent\n\n\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n\n\nTo No Extent At All\n\n\n\n\n\nTo a Great Extent\n\n\n\nNo items were reverse coded\n\n\n\nScoring\nThe following variables were derived from this measure:\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nSource (Section)\nDefinition\n\n\n\n\nNon-Theistic Socialisation\nnontheisticSocialisation\nNon-theistic socialisation score\nnumeric\nNon Theistic Socialisation\nmean of nts_01: nts_08",
+    "title": "7  Non-theistic Socialisation",
+    "section": "7.2 Implementation",
+    "text": "7.2 Implementation\nThe Non-theistic Socialisation measure that we use vary across the countries within our survey, as such the following sections are subset by nation. Specifically we have different questions for the historically Christian nations (Brazil, Denmark, United Kingdom, United States), and for Japan and China.\n\nQuestion wording\n\n\n\n\n\n\n\nQuestions\nQuestion Text\n\n\n\n\nintro\nTo what extent did important people in your upbringing speak against the idea that God exists? That is, to what extent, adding it all up, did the important people in your life – such as your parents, teachers, and church officials (if any) – do the things listed below as you were growing up?\n\n\n\n\n\nItems\nThe items were as follows:\n\n\n\n\n\n\n\n\nQlabel\nquestion\nresponse\n\n\n\n\nnts_01\nState that God does not exist?\nextent\n\n\nnts_02\nState that prayers to God do not work?\nextent\n\n\nnts_03\nMock or joke about people’s religious belief?\nextent\n\n\nnts_04\nState that belief in God is not necessary for morality?\nextent\n\n\nnts_05\nState that one should not be religious?\nextent\n\n\nnts_06\nState that there are no good reasons to believe in God?\nextent\n\n\nnts_07\nState that religious belief does more harm than good in the world?\nextent\n\n\nnts_08\nState that religious practices are irrational?\nextent\n\n\n\n\n\nCoding\nThis measure uses our standard response scale for extent.\n\nExtent\n\n\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n\n\nTo No Extent At All\n\n\n\n\n\nTo a Great Extent\n\n\n\nNo items were reverse coded\n\n\n\nScoring\nThe following variables were derived from this measure:\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nSource (Section)\nDefinition\n\n\n\n\nNon-Theistic Socialisation\nnontheisticSocialisation\nNon-theistic socialisation score\nnumeric\nNon Theistic Socialisation\nmean of nts_01: nts_08",
     "crumbs": [
       "Survey 1",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Non-theistic Socialisation</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Non-theistic Socialisation</span>"
     ]
   },
   {
     "objectID": "nonTheisticSocialisation.html#section",
     "href": "nonTheisticSocialisation.html#section",
-    "title": "6  Non-theistic Socialisation",
-    "section": "6.3 ",
-    "text": "6.3",
+    "title": "7  Non-theistic Socialisation",
+    "section": "7.3 ",
+    "text": "7.3",
     "crumbs": [
       "Survey 1",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Non-theistic Socialisation</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Non-theistic Socialisation</span>"
     ]
   },
   {
     "objectID": "religiousEmphasis.html",
     "href": "religiousEmphasis.html",
-    "title": "7  Religious Emphasis",
+    "title": "8  Religious Emphasis",
     "section": "",
-    "text": "7.1 Measure",
+    "text": "8.1 Measure",
     "crumbs": [
       "Survey 1",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Religious Emphasis</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Religious Emphasis</span>"
     ]
   },
   {
     "objectID": "religiousEmphasis.html#implementation",
     "href": "religiousEmphasis.html#implementation",
-    "title": "7  Religious Emphasis",
-    "section": "7.2 Implementation",
-    "text": "7.2 Implementation\nThe Religious Emphasis measure that we use vary across the countries within our survey. Specifically we have different question wording for the historically Christian nations (Brazil, Denmark, United Kingdom, United States), Japan, and China.\n\nQuestion wording\n\n\n\n\n\n\n\nQuestions\nQuestion Text\n\n\n\n\nintro\nTo what extent did you have an upbringing devoted to God? That is, to what extent, adding it all up, did the important people in your life – such as your parents, teachers, and church officials (if any) – do the things listed below as you were growing up?",
+    "title": "8  Religious Emphasis",
+    "section": "8.2 Implementation",
+    "text": "8.2 Implementation\nThe Religious Emphasis measure that we use vary across the countries within our survey. Specifically we have different question wording for the historically Christian nations (Brazil, Denmark, United Kingdom, United States), Japan, and China.\n\nQuestion wording\n\n\n\n\n\n\n\nQuestions\nQuestion Text\n\n\n\n\nintro\nTo what extent did you have an upbringing devoted to God? That is, to what extent, adding it all up, did the important people in your life – such as your parents, teachers, and church officials (if any) – do the things listed below as you were growing up?",
     "crumbs": [
       "Survey 1",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Religious Emphasis</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Religious Emphasis</span>"
     ]
   },
   {
     "objectID": "religiousEmphasis.html#items",
     "href": "religiousEmphasis.html#items",
-    "title": "7  Religious Emphasis",
-    "section": "7.3 Items",
-    "text": "7.3 Items\nThe items were as follows:\n\n\n\n\n\n\n\n\nQlabel\nquestion\nresponse\n\n\n\n\nre_01\nReview the teachings of Christianity, Judaism, Islam, Hinduism or another similar tradition at home?\nextent\n\n\nre_02\nEmphasize that you should read scripture or books associated with Christianity, Judaism, Islam, Hinduism or another similar tradition?\nextent\n\n\nre_03\nDiscuss moral do’s and don’ts in relation to God?\nextent\n\n\nre_04\nTell stories about God?\nextent\n\n\nre_05\nTalk about the afterlife?\nextent\n\n\nre_06\nEmphasise that spiritual matters were of high importance?\nextent\n\n\nre_07\nRelate stories about God to contemporary life?\nextent\n\n\nre_08\nTeach you to obey the wishes of God?\nextent\n\n\nre_09\nTeach you to obey the persons who act as representatives of God (e.g. priests, ministers, rabbis, imams, etc.)?\nextent\n\n\n\n\nCoding\nThis measure used our standard response scale for extent.\n\n\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n\n\nTo No Extent At All\nTo a Slight Extent\nTo a Mild Extent\nTo a Moderate Extent\nTo an Appreciable Extent\nTo a Considerable Extent\nTo a Great Extent\n\n\n\nNo items are reverse coded\n\n\nScoring\nThe following variables were derived from this measure.\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nSource (Section)\nDefinition\n\n\n\n\nReligious Emphasis\nreligiousEmphasis\nReligious emphasis score\nnumeric\nReligious Emphasis\nmean of re_01: re_09",
+    "title": "8  Religious Emphasis",
+    "section": "8.3 Items",
+    "text": "8.3 Items\nThe items were as follows:\n\n\n\n\n\n\n\n\nQlabel\nquestion\nresponse\n\n\n\n\nre_01\nReview the teachings of Christianity, Judaism, Islam, Hinduism or another similar tradition at home?\nextent\n\n\nre_02\nEmphasize that you should read scripture or books associated with Christianity, Judaism, Islam, Hinduism or another similar tradition?\nextent\n\n\nre_03\nDiscuss moral do’s and don’ts in relation to God?\nextent\n\n\nre_04\nTell stories about God?\nextent\n\n\nre_05\nTalk about the afterlife?\nextent\n\n\nre_06\nEmphasise that spiritual matters were of high importance?\nextent\n\n\nre_07\nRelate stories about God to contemporary life?\nextent\n\n\nre_08\nTeach you to obey the wishes of God?\nextent\n\n\nre_09\nTeach you to obey the persons who act as representatives of God (e.g. priests, ministers, rabbis, imams, etc.)?\nextent\n\n\n\n\nCoding\nThis measure used our standard response scale for extent.\n\n\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n\n\nTo No Extent At All\nTo a Slight Extent\nTo a Mild Extent\nTo a Moderate Extent\nTo an Appreciable Extent\nTo a Considerable Extent\nTo a Great Extent\n\n\n\nNo items are reverse coded\n\n\nScoring\nThe following variables were derived from this measure.\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nSource (Section)\nDefinition\n\n\n\n\nReligious Emphasis\nreligiousEmphasis\nReligious emphasis score\nnumeric\nReligious Emphasis\nmean of re_01: re_09",
     "crumbs": [
       "Survey 1",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Religious Emphasis</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Religious Emphasis</span>"
     ]
   },
   {
     "objectID": "socialDesirability.html",
     "href": "socialDesirability.html",
-    "title": "8  Social Desirability",
+    "title": "9  Social Desirability",
     "section": "",
-    "text": "8.1 Measure\nTo measure social desirability we use is the impression management subscale of the balanced Inventory of Desirable Responding Short Form (BIDR-16) from Hart, Ritchie, Hepper, & Gebauer (2015) . This itself is an abbreviated version of the larger 40-item BIDR measure which can be found here.",
+    "text": "9.1 Measure\nTo measure social desirability we use is the impression management subscale of the balanced Inventory of Desirable Responding Short Form (BIDR-16) from Hart, Ritchie, Hepper, & Gebauer (2015) . This itself is an abbreviated version of the larger 40-item BIDR measure which can be found here.",
     "crumbs": [
       "Survey 1",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Social Desirability</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Social Desirability</span>"
     ]
   },
   {
     "objectID": "socialDesirability.html#measure",
     "href": "socialDesirability.html#measure",
-    "title": "8  Social Desirability",
+    "title": "9  Social Desirability",
     "section": "",
     "text": "Modifications\nThe BIDR-16 used a truth based Likert scale. As with other measures we have standardized this to be a 7-point scale with anchors and response items consistent with the other truth-based Likert scales we used in the project.\nThe original BIDR measure asked participants to write a numbered response indicating the degree to which each statement is true. For consistency with other measures used, and the method of administration, we ask participants to respond by selecting their response.",
     "crumbs": [
       "Survey 1",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Social Desirability</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Social Desirability</span>"
     ]
   },
   {
     "objectID": "socialDesirability.html#implementation",
     "href": "socialDesirability.html#implementation",
-    "title": "8  Social Desirability",
-    "section": "8.2 Implementation",
-    "text": "8.2 Implementation\n\nQuestion wording\nParticipants read the following text:\nPlease read each of the following statements carefully and say to what degree they are true or untrue for you. There are no right or wrong answers and your responses remain anonymous.\n\n\nItems\n\n\n\n\n\n\n\nQlabel\nquestion\n\n\n\n\nsd_01\nI sometimes tell lies if I have to\n\n\nsd_02\nI never cover up my mistakes\n\n\nsd_03\nThere have been occasions when I have taken advantage of someone\n\n\nsd_04\nI sometimes try to get even rather than forgive and forget\n\n\nsd_05\nI have said something bad about a friend behind his/her back\n\n\nsd_06\nWhen I hear people talking privately, I avoid listening\n\n\nsd_07\nI never take things that don’t belong to me\n\n\nsd_08\nI don’t gossip about other people’s business\n\n\n\n\n\nCoding\nThis questionnaire follows our standard coding for agreement based measures, with absolutely untrue = 1, and absolutely true = 7.\n\n\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n\n\nabsolutely untrue\nmostly untrue\nsomewhat untrue\ncan’t say true or false\nsomewhat true\nmostly true\nabsolutely true\n\n\n\nItems sd_01, sd_03, sd_04, and sd_05 are reverse coded\n\n\nScoring\nThe following variables are derived from this measure:\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nSource (Section)\nDefinition\n\n\n\n\nSocial Desirability\nsocialDesirability\nSocial Desirability score\nnumeric\nSocial Desirability\nmean sd_01: sd_08\n\n\n\n\n\n\n\n\n\n\n\nHart, C. M., Ritchie, T. D., Hepper, E. G., & Gebauer, J. E. (2015). The Balanced Inventory of Desirable Responding Short Form (BIDR-16). SAGE Open, 5(4), 2158244015621113. https://doi.org/10.1177/2158244015621113",
+    "title": "9  Social Desirability",
+    "section": "9.2 Implementation",
+    "text": "9.2 Implementation\n\nQuestion wording\nParticipants read the following text:\nPlease read each of the following statements carefully and say to what degree they are true or untrue for you. There are no right or wrong answers and your responses remain anonymous.\n\n\nItems\n\n\n\n\n\n\n\nQlabel\nquestion\n\n\n\n\nsd_01\nI sometimes tell lies if I have to\n\n\nsd_02\nI never cover up my mistakes\n\n\nsd_03\nThere have been occasions when I have taken advantage of someone\n\n\nsd_04\nI sometimes try to get even rather than forgive and forget\n\n\nsd_05\nI have said something bad about a friend behind his/her back\n\n\nsd_06\nWhen I hear people talking privately, I avoid listening\n\n\nsd_07\nI never take things that don’t belong to me\n\n\nsd_08\nI don’t gossip about other people’s business\n\n\n\n\n\nCoding\nThis questionnaire follows our standard coding for agreement based measures, with absolutely untrue = 1, and absolutely true = 7.\n\n\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n\n\nabsolutely untrue\nmostly untrue\nsomewhat untrue\ncan’t say true or false\nsomewhat true\nmostly true\nabsolutely true\n\n\n\nItems sd_01, sd_03, sd_04, and sd_05 are reverse coded\n\n\nScoring\nThe following variables are derived from this measure:\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nSource (Section)\nDefinition\n\n\n\n\nSocial Desirability\nsocialDesirability\nSocial Desirability score\nnumeric\nSocial Desirability\nmean sd_01: sd_08\n\n\n\n\n\n\n\n\n\n\n\nHart, C. M., Ritchie, T. D., Hepper, E. G., & Gebauer, J. E. (2015). The Balanced Inventory of Desirable Responding Short Form (BIDR-16). SAGE Open, 5(4), 2158244015621113. https://doi.org/10.1177/2158244015621113",
     "crumbs": [
       "Survey 1",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Social Desirability</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Social Desirability</span>"
     ]
   },
   {
     "objectID": "meaningInLife.html",
     "href": "meaningInLife.html",
-    "title": "9  Meaning in Life",
+    "title": "10  Meaning in Life",
     "section": "",
-    "text": "9.1 Measure\nTo examine need for meaning we used The Meaning in Life Questionnaire (MLQ) by Steger, Frazier, Oishi, & Kaler (2006). THe original scale has a two factor structure, with the subscales noted below.",
+    "text": "10.1 Measure\nTo examine need for meaning we used The Meaning in Life Questionnaire (MLQ) by Steger, Frazier, Oishi, & Kaler (2006). THe original scale has a two factor structure, with the subscales noted below.",
     "crumbs": [
       "Survey 1",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Meaning in Life</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Meaning in Life</span>"
     ]
   },
   {
     "objectID": "meaningInLife.html#measure",
     "href": "meaningInLife.html#measure",
-    "title": "9  Meaning in Life",
+    "title": "10  Meaning in Life",
     "section": "",
     "text": "Modifications\nThe truth-based Likert scale in the MLQ is the standard 7-point truth scale we used throughout the project so this was not altered.\nWe used the original question wording for the MLQ.",
     "crumbs": [
       "Survey 1",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Meaning in Life</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Meaning in Life</span>"
     ]
   },
   {
     "objectID": "meaningInLife.html#implementation",
     "href": "meaningInLife.html#implementation",
-    "title": "9  Meaning in Life",
-    "section": "9.2 Implementation",
-    "text": "9.2 Implementation\n\nQuestion wording\nParticipants read the following text:\nPlease read each of the following statements carefully and rate how strongly you agree or disagree. There are no right or wrong answers and your responses remain anonymous.\n\n\nItems\nMeaning in Life Questionnaire\n\n\n\n\n\n\n\n\nQlabel\nSubscale\nquestion\n\n\n\n\nmlq_01\npresence\nI understand my life’s meaning.\n\n\nmlq_02\nsearch\nI am looking for something that makes my life feel meaningful.\n\n\nmlq_03\nsearch\nI am always looking to find my life’s purpose.\n\n\nmlq_04\npresence\nMy life has a clear sense of purpose\n\n\nmlq_05\npresence\nI have a good sense of what makes my life meaningful.\n\n\nmlq_06\npresence\nI have discovered a satisfying life purpose.\n\n\nmlq_07\nsearch\nI am always searching for something that makes my life feel significant.\n\n\nmlq_08\nsearch\nI am seeking a purpose or mission for my life.\n\n\nmlq_09\npresence\nMy life has no clear purpose.\n\n\nmlq_10\nsearch\nI am searching for meaning in my life.",
+    "title": "10  Meaning in Life",
+    "section": "10.2 Implementation",
+    "text": "10.2 Implementation\n\nQuestion wording\nParticipants read the following text:\nPlease read each of the following statements carefully and rate how strongly you agree or disagree. There are no right or wrong answers and your responses remain anonymous.\n\n\nItems\nMeaning in Life Questionnaire\n\n\n\n\n\n\n\n\nQlabel\nSubscale\nquestion\n\n\n\n\nmlq_01\npresence\nI understand my life’s meaning.\n\n\nmlq_02\nsearch\nI am looking for something that makes my life feel meaningful.\n\n\nmlq_03\nsearch\nI am always looking to find my life’s purpose.\n\n\nmlq_04\npresence\nMy life has a clear sense of purpose\n\n\nmlq_05\npresence\nI have a good sense of what makes my life meaningful.\n\n\nmlq_06\npresence\nI have discovered a satisfying life purpose.\n\n\nmlq_07\nsearch\nI am always searching for something that makes my life feel significant.\n\n\nmlq_08\nsearch\nI am seeking a purpose or mission for my life.\n\n\nmlq_09\npresence\nMy life has no clear purpose.\n\n\nmlq_10\nsearch\nI am searching for meaning in my life.",
     "crumbs": [
       "Survey 1",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Meaning in Life</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Meaning in Life</span>"
     ]
   },
   {
     "objectID": "meaningInLife.html#coding",
     "href": "meaningInLife.html#coding",
-    "title": "9  Meaning in Life",
-    "section": "9.3 Coding",
-    "text": "9.3 Coding\nThe Meaning in Life Questionnaire (mlq_ items) used our standard response scale for truth:\n\n\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n\n\nabsolutely untrue\nmostly untrue\nsomewhat untrue\ncan’t say true or false\nsomewhat true\nmostly true\nabsolutely true\n\n\n\nItem mlq_09 is reverse coded",
+    "title": "10  Meaning in Life",
+    "section": "10.3 Coding",
+    "text": "10.3 Coding\nThe Meaning in Life Questionnaire (mlq_ items) used our standard response scale for truth:\n\n\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n\n\nabsolutely untrue\nmostly untrue\nsomewhat untrue\ncan’t say true or false\nsomewhat true\nmostly true\nabsolutely true\n\n\n\nItem mlq_09 is reverse coded",
     "crumbs": [
       "Survey 1",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Meaning in Life</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Meaning in Life</span>"
     ]
   },
   {
     "objectID": "meaningInLife.html#scoring",
     "href": "meaningInLife.html#scoring",
-    "title": "9  Meaning in Life",
-    "section": "9.4 Scoring",
-    "text": "9.4 Scoring\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nSource (Section)\nDefinition\n\n\n\n\nMeaning in Life\nmeaningLife\nMeaning in life score\nnumeric\nNeed for Meaning\nmean mlq_01: mlq_10\n\n\n\n\n\n\n\n\n\n\n\nSteger, M. F., Frazier, P., Oishi, S., & Kaler, M. (2006). The Meaning in Life Questionnaire: Assessing the presence of and search for meaning in life. Journal of Counseling Psychology, 53(1), 80–93. https://doi.org/10.1037/0022-0167.53.1.80",
+    "title": "10  Meaning in Life",
+    "section": "10.4 Scoring",
+    "text": "10.4 Scoring\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nSource (Section)\nDefinition\n\n\n\n\nMeaning in Life\nmeaningLife\nMeaning in life score\nnumeric\nNeed for Meaning\nmean mlq_01: mlq_10\n\n\n\n\n\n\n\n\n\n\n\nSteger, M. F., Frazier, P., Oishi, S., & Kaler, M. (2006). The Meaning in Life Questionnaire: Assessing the presence of and search for meaning in life. Journal of Counseling Psychology, 53(1), 80–93. https://doi.org/10.1037/0022-0167.53.1.80",
     "crumbs": [
       "Survey 1",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Meaning in Life</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Meaning in Life</span>"
     ]
   },
   {
     "objectID": "anthropomorphism.html",
     "href": "anthropomorphism.html",
-    "title": "10  Anthropomorphism",
+    "title": "11  Anthropomorphism",
     "section": "",
-    "text": "10.1 Measure",
+    "text": "11.1 Measure",
     "crumbs": [
       "Survey 2",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Anthropomorphism</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Anthropomorphism</span>"
     ]
   },
   {
     "objectID": "anthropomorphism.html#measure",
     "href": "anthropomorphism.html#measure",
-    "title": "10  Anthropomorphism",
+    "title": "11  Anthropomorphism",
     "section": "",
     "text": "Modifications\nThe original measure used by Neave, Jackson, Saxton, & Hönekopp (2015) questions pertaining to childhood and adulthood experiences. For the sake of brevity only questions pertaining to adulthood were included.\nFor consistency with the other agreement based measures used in the project the anchors and response items were altered to be a 7-point Likert scale.",
     "crumbs": [
       "Survey 2",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Anthropomorphism</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Anthropomorphism</span>"
     ]
   },
   {
     "objectID": "anthropomorphism.html#implementation",
     "href": "anthropomorphism.html#implementation",
-    "title": "10  Anthropomorphism",
-    "section": "10.2 Implementation",
-    "text": "10.2 Implementation\n\nQuestion wording\nParticipants read the following text:\nPlease read each of the following statements carefully and rate how strongly you agree or disagree. There are no right or wrong answers and your responses remain anonymous.\n\n\nItems\n\n\n\n\n\n\n\nQlabel\nquestion\n\n\n\n\nanth_01\nI sometimes wonder if my computer deliberately runs more slowly after I have shouted at it\n\n\nanth_02\nOn occasions I feel that my computer/printer is being deliberately awkward\n\n\nanth_03\nI sometimes wonder if my personal possessions appreciate it when I have given them a good clean\n\n\nanth_04\nOn occasion I feel that the weather conditions are being deliberately bad in order to ruin a social event\n\n\nanth_05\nI do think that certain cars have a specific personality\n\n\nanth_06\nIf I accidentally break one of my favourite possessions I make sure that I apologise to it for my clumsiness\n\n\nanth_07\nI think that some trees are friendly while others have an air of menace\n\n\nanth_08\nI sometimes think that if my computer/printer is made to feel happy and/or wanted, then they will be less likely to malfunction\n\n\nanth_09\nI sometimes feel that the sea can be angry\n\n\nanth_10\nPart of the reason why I picked a new car/electrical item was because when I first saw it I felt that it had a friendly personality\n\n\n\n\n\nCoding\nThis questionnaire follows our standard coding for agreement based measures, with strongly disagree = 1, and strongly agree = 7.\n\n\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n\n\nstrongly disagree\nmoderately disagree\nslightly disagree\nneither agree nor disagree\nslightly agree\nmoderately agree\nstrongly agree\n\n\n\nNo items are reverse coded\n\n\nScoring\nThe following variables were derived from this measure\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nSource (Section)\nDefinition\n\n\n\n\nAnthropomorphism\nanthropomorphism\nAnthropomorphism score\nnumeric\nAnthropomorphism\nmean anth_01: anth_10\n\n\n\n\n\n\n\n\n\n\n\nNeave, N., Jackson, R., Saxton, T., & Hönekopp, J. (2015). The influence of anthropomorphic tendencies on human hoarding behaviours. Personality and Individual Differences, 72, 214–219. https://doi.org/10.1016/j.paid.2014.08.041",
+    "title": "11  Anthropomorphism",
+    "section": "11.2 Implementation",
+    "text": "11.2 Implementation\n\nQuestion wording\nParticipants read the following text:\nPlease read each of the following statements carefully and rate how strongly you agree or disagree. There are no right or wrong answers and your responses remain anonymous.\n\n\nItems\n\n\n\n\n\n\n\nQlabel\nquestion\n\n\n\n\nanth_01\nI sometimes wonder if my computer deliberately runs more slowly after I have shouted at it\n\n\nanth_02\nOn occasions I feel that my computer/printer is being deliberately awkward\n\n\nanth_03\nI sometimes wonder if my personal possessions appreciate it when I have given them a good clean\n\n\nanth_04\nOn occasion I feel that the weather conditions are being deliberately bad in order to ruin a social event\n\n\nanth_05\nI do think that certain cars have a specific personality\n\n\nanth_06\nIf I accidentally break one of my favourite possessions I make sure that I apologise to it for my clumsiness\n\n\nanth_07\nI think that some trees are friendly while others have an air of menace\n\n\nanth_08\nI sometimes think that if my computer/printer is made to feel happy and/or wanted, then they will be less likely to malfunction\n\n\nanth_09\nI sometimes feel that the sea can be angry\n\n\nanth_10\nPart of the reason why I picked a new car/electrical item was because when I first saw it I felt that it had a friendly personality\n\n\n\n\n\nCoding\nThis questionnaire follows our standard coding for agreement based measures, with strongly disagree = 1, and strongly agree = 7.\n\n\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n\n\nstrongly disagree\nmoderately disagree\nslightly disagree\nneither agree nor disagree\nslightly agree\nmoderately agree\nstrongly agree\n\n\n\nNo items are reverse coded\n\n\nScoring\nThe following variables were derived from this measure\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nSource (Section)\nDefinition\n\n\n\n\nAnthropomorphism\nanthropomorphism\nAnthropomorphism score\nnumeric\nAnthropomorphism\nmean anth_01: anth_10\n\n\n\n\n\n\n\n\n\n\n\nNeave, N., Jackson, R., Saxton, T., & Hönekopp, J. (2015). The influence of anthropomorphic tendencies on human hoarding behaviours. Personality and Individual Differences, 72, 214–219. https://doi.org/10.1016/j.paid.2014.08.041",
     "crumbs": [
       "Survey 2",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Anthropomorphism</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Anthropomorphism</span>"
     ]
   },
   {
     "objectID": "mentalizing.html",
     "href": "mentalizing.html",
-    "title": "11  Mentalizing",
+    "title": "12  Mentalizing",
     "section": "",
-    "text": "11.1 Measure\nThe Mentalizing measure used was the EQ-Short (Wakabayashi et al., 2006), which is an abbreviated version of the original Empathy Quotient measure (Baron-Cohen & Wheelwright, 2004).",
+    "text": "12.1 Measure\nThe Mentalizing measure used was the EQ-Short (Wakabayashi et al., 2006), which is an abbreviated version of the original Empathy Quotient measure (Baron-Cohen & Wheelwright, 2004).",
     "crumbs": [
       "Survey 2",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Mentalizing</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Mentalizing</span>"
     ]
   },
   {
     "objectID": "mentalizing.html#measure",
     "href": "mentalizing.html#measure",
-    "title": "11  Mentalizing",
+    "title": "12  Mentalizing",
     "section": "",
     "text": "Modifications\nIn contrast with other agreement based measures we used, the selected mentalizing measure used a unique scoring system, and as such was not altered to be consistent with our other Likert measures.\nThe wording of the question was altered to reflect the manner of administration (“select” your answer instead of the original “circle”)",
     "crumbs": [
       "Survey 2",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Mentalizing</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Mentalizing</span>"
     ]
   },
   {
     "objectID": "mentalizing.html#implementation",
     "href": "mentalizing.html#implementation",
-    "title": "11  Mentalizing",
-    "section": "11.2 Implementation",
-    "text": "11.2 Implementation\n\nQuestion wording\nParticipants read the following text:\nPlease read each of the following statements carefully and rate how strongly you agree or disagree. There are no right or wrong answers and your responses remain anonymous.\n\n\nItems\n\n\n\n\n\n\n\nQlabel\nquestion\n\n\n\n\nmnt_01\nI can easily tell if someone else wants to enter a conversation.\n\n\nmnt_02\nI really enjoy caring for other people\n\n\nmnt_03\nI find it hard to know what to do in a social situation\n\n\nmnt_04\nI often find it difficult to judge if something is rude or polite\n\n\nmnt_05\nIn a conversation, I tend to focus on my own thoughts rather than on what my listener might be thinking\n\n\nmnt_06\nI can pick up quickly if someone says one thing but means another.\n\n\nmnt_07\nIt is hard for me to see why some things upset people so much\n\n\nmnt_08\nI find it easy to put myself in somebody else’s shoes\n\n\nmnt_09\nI am good at predicting how someone will feel.\n\n\nmnt_10\nI am quick to spot when someone in a group is feeling awkward or uncomfortable\n\n\nmnt_11\nI can’t always see why someone should have felt offended by a remark\n\n\nmnt_12\nI don’t tend to find social situations confusing.\n\n\nmnt_13\nOther people tell me I am good at understanding how they are feeling and what they are thinking\n\n\nmnt_14\nI can easily tell if someone else is interested or bored with what I am saying\n\n\nmnt_15\nFriends usually talk to me about their problems as they say that I am very understanding.\n\n\nmnt_16\nI can sense if I am intruding, even if the other person doesn’t tell me\n\n\nmnt_17\nOther people often say that I am insensitive, though I don’t always see why\n\n\nmnt_18\nI can tune into how someone else feels rapidly and intuitively.\n\n\nmnt_19\nI can easily work out what another person might want to talk about\n\n\nmnt_20\nI can tell if someone is masking their true emotion\n\n\nmnt_21\nI am good at predicting what someone will do\n\n\nmnt_22\nI tend to get emotionally involved with a friend’s problems\n\n\n\n\n\nCoding\nThe mentalizing measure follows a bespoke 4 point agreement scale and uses a the following coding scheme:\n\n\n\n\n\n\n\n\n\ndefinitely disagree\nslightly disagree\nslightly agree\ndefinitely agree\n\n\n\n\n0\n0\n1\n2\n\n\n\nItems 03, 04, 05, 07, 11, and 17 are reverse coded.\n\n\nScoring\nThe following variables are derived from this measure:\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nSource (Section)\nDefinition\n\n\n\n\nMentalizing\nmentalizing\nMentalizing score\nnumeric\nMentalizing\nmean mnt_01: mnt_22\n\n\n\n\n\n\n\n\n\n\n\nBaron-Cohen, S., & Wheelwright, S. (2004). The Empathy Quotient: An Investigation of Adults with Asperger Syndrome or High Functioning Autism, and Normal Sex Differences. Journal of Autism and Developmental Disorders, 34(2), 163–175. https://doi.org/10.1023/B:JADD.0000022607.19833.00\n\n\nWakabayashi, A., Baron-Cohen, S., Wheelwright, S., Goldenfeld, N., Delaney, J., Fine, D., … Weil, L. (2006). Development of short forms of the Empathy Quotient (EQ-Short) and the Systemizing Quotient (SQ-Short). Personality and Individual Differences, 41(5), 929–940. https://doi.org/10.1016/j.paid.2006.03.017",
+    "title": "12  Mentalizing",
+    "section": "12.2 Implementation",
+    "text": "12.2 Implementation\n\nQuestion wording\nParticipants read the following text:\nPlease read each of the following statements carefully and rate how strongly you agree or disagree. There are no right or wrong answers and your responses remain anonymous.\n\n\nItems\n\n\n\n\n\n\n\nQlabel\nquestion\n\n\n\n\nmnt_01\nI can easily tell if someone else wants to enter a conversation.\n\n\nmnt_02\nI really enjoy caring for other people\n\n\nmnt_03\nI find it hard to know what to do in a social situation\n\n\nmnt_04\nI often find it difficult to judge if something is rude or polite\n\n\nmnt_05\nIn a conversation, I tend to focus on my own thoughts rather than on what my listener might be thinking\n\n\nmnt_06\nI can pick up quickly if someone says one thing but means another.\n\n\nmnt_07\nIt is hard for me to see why some things upset people so much\n\n\nmnt_08\nI find it easy to put myself in somebody else’s shoes\n\n\nmnt_09\nI am good at predicting how someone will feel.\n\n\nmnt_10\nI am quick to spot when someone in a group is feeling awkward or uncomfortable\n\n\nmnt_11\nI can’t always see why someone should have felt offended by a remark\n\n\nmnt_12\nI don’t tend to find social situations confusing.\n\n\nmnt_13\nOther people tell me I am good at understanding how they are feeling and what they are thinking\n\n\nmnt_14\nI can easily tell if someone else is interested or bored with what I am saying\n\n\nmnt_15\nFriends usually talk to me about their problems as they say that I am very understanding.\n\n\nmnt_16\nI can sense if I am intruding, even if the other person doesn’t tell me\n\n\nmnt_17\nOther people often say that I am insensitive, though I don’t always see why\n\n\nmnt_18\nI can tune into how someone else feels rapidly and intuitively.\n\n\nmnt_19\nI can easily work out what another person might want to talk about\n\n\nmnt_20\nI can tell if someone is masking their true emotion\n\n\nmnt_21\nI am good at predicting what someone will do\n\n\nmnt_22\nI tend to get emotionally involved with a friend’s problems\n\n\n\n\n\nCoding\nThe mentalizing measure follows a bespoke 4 point agreement scale and uses a the following coding scheme:\n\n\n\n\n\n\n\n\n\ndefinitely disagree\nslightly disagree\nslightly agree\ndefinitely agree\n\n\n\n\n0\n0\n1\n2\n\n\n\nItems 03, 04, 05, 07, 11, and 17 are reverse coded.\n\n\nScoring\nThe following variables are derived from this measure:\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nSource (Section)\nDefinition\n\n\n\n\nMentalizing\nmentalizing\nMentalizing score\nnumeric\nMentalizing\nmean mnt_01: mnt_22\n\n\n\n\n\n\n\n\n\n\n\nBaron-Cohen, S., & Wheelwright, S. (2004). The Empathy Quotient: An Investigation of Adults with Asperger Syndrome or High Functioning Autism, and Normal Sex Differences. Journal of Autism and Developmental Disorders, 34(2), 163–175. https://doi.org/10.1023/B:JADD.0000022607.19833.00\n\n\nWakabayashi, A., Baron-Cohen, S., Wheelwright, S., Goldenfeld, N., Delaney, J., Fine, D., … Weil, L. (2006). Development of short forms of the Empathy Quotient (EQ-Short) and the Systemizing Quotient (SQ-Short). Personality and Individual Differences, 41(5), 929–940. https://doi.org/10.1016/j.paid.2006.03.017",
     "crumbs": [
       "Survey 2",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Mentalizing</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Mentalizing</span>"
     ]
   },
   {
     "objectID": "vividness.html",
     "href": "vividness.html",
-    "title": "12  Vividness of Mental Imagery",
+    "title": "13  Vividness of Mental Imagery",
     "section": "",
-    "text": "12.1 Measure\nThe measure of vividness of mental imagery we use is the Vividness of Mental Imagery scale Marks (1973).",
+    "text": "13.1 Measure\nThe measure of vividness of mental imagery we use is the Vividness of Mental Imagery scale Marks (1973).",
     "crumbs": [
       "Survey 2",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Vividness of Mental Imagery</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Vividness of Mental Imagery</span>"
     ]
   },
   {
     "objectID": "vividness.html#measure",
     "href": "vividness.html#measure",
-    "title": "12  Vividness of Mental Imagery",
+    "title": "13  Vividness of Mental Imagery",
     "section": "",
     "text": "Modifications",
     "crumbs": [
       "Survey 2",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Vividness of Mental Imagery</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Vividness of Mental Imagery</span>"
     ]
   },
   {
     "objectID": "vividness.html#implementation",
     "href": "vividness.html#implementation",
-    "title": "12  Vividness of Mental Imagery",
-    "section": "12.2 Implementation",
-    "text": "12.2 Implementation\nFor this questionnaire each subscale appeared on its own page with the subscale specific text above\n\nQuestion wording\nParticipants read the following text:\n\n\n\n\n\n\n\nItems\nText\n\n\n\n\n\n\n\n\nvvi_01 - vvi_16\nFor each scenario try to form a mental picture of the people, objects, or setting. Consider carefully the vividness of your visual imagery experience. Does some type of image come to mind? Rate how vivid the image is using the 5-point scale. If you do not have a visual image, rate vividness as ‘1’. Only use ‘5’ for images that are as lively and vivid as real seeing.\nPlease try to form the mental image of the following items with your eyes closed.\n\n\n\nadditional text was also presented prior to each subscale:\n\n\n\n\n\n\n\nSubscale (items)\nText\n\n\n\n\nRelative or friend (vvi_01 - vvi_04)\nFor items 1 to 4, think of some relative or friend whom you frequently see (but who is not with you at present) and consider carefully the picture that comes before your mind’s eye.\n\n\nNatural scene: Rising sun (vvi_05 - vvi_08)\nVisualize a rising sun. Consider carefully the picture that comes before your mind’s eye.\n\n\nShop (vvi_09 - vvi_12)\nThink of the front of a shop which you often go to. Consider the picture that comes before your mind’s eye.\n\n\nNatural scene: Lake (vvi_13 - vvi_16)\nFinally, think of a country scene which involves trees, mountains, and a lake. Consider the picture that comes before your mind’s eye.\n\n\n\n\n\nItems\n\n\n\n\n\n\n\n\nQlabel\nSubscale\nquestion\n\n\n\n\nvvi_01\nRelative or friend\nThe exact contour of face, head, shoulders, and body.\n\n\nvvi_02\nRelative or friend\nCharacteristic poses of head, attitudes of body, etc.\n\n\nvvi_03\nRelative or friend\nThe precise carriage, length of step, etc. in walking.\n\n\nvvi_04\nRelative or friend\nThe different colors worn in some familiar clothes.\n\n\nvvi_05\nNatural scene: Rising sun\nThe sun is rising above the horizon into a hazy sky.\n\n\nvvi_06\nNatural scene: Rising sun\nThe sky clears and surrounds the sun with blueness.\n\n\nvvi_07\nNatural scene: Rising sun\nClouds. A storm blows up, with flashes of lightening.\n\n\nvvi_08\nNatural scene: Rising sun\nA rainbow appears.\n\n\nvvi_09\nShop\nThe overall appearance of the shop from the opposite side of the road.\n\n\nvvi_10\nShop\nA window display including colors, shape, and details of individual items for sale.\n\n\nvvi_11\nShop\nYou are near the entrance. The color, shape, and details of the door.\n\n\nvvi_12\nShop\nYou enter the shop and go to the counter. The counter assistant serves you. Money changes hands.\n\n\nvvi_13\nNatural scene: Lake\nThe contours of the landscape.\n\n\nvvi_14\nNatural scene: Lake\nThe color and shape of the trees.\n\n\nvvi_15\nNatural scene: Lake\nThe color and shape of the lake.\n\n\nvvi_16\nNatural scene: Lake\nA strong wind blows on the tree and on the lake causing waves.\n\n\n\n\n\nCoding\nThis questionnaire follows a unique scoring scheme for vividness\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n\n\n\n\nPerfectly clear and as vivid as normal vision\nClear and reasonably vivid\nModerately clear and vivid\nVague and dim\nNo image at all, you only “know” that you are thinking of an object\n\n\n\nNo items are reverse coded\n\n\nScoring\nThe following variables are derived from this measure:\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nSource (Section)\nDefinition\n\n\n\n\nVividness of Mental Imagery\nvividnessImagery\nVividness of mental imagery score\nnumeric\nVividness of Mental Imagery\nmean vvi_01: vvi_32",
+    "title": "13  Vividness of Mental Imagery",
+    "section": "13.2 Implementation",
+    "text": "13.2 Implementation\nFor this questionnaire each subscale appeared on its own page with the subscale specific text above\n\nQuestion wording\nParticipants read the following text:\n\n\n\n\n\n\n\nItems\nText\n\n\n\n\n\n\n\n\nvvi_01 - vvi_16\nFor each scenario try to form a mental picture of the people, objects, or setting. Consider carefully the vividness of your visual imagery experience. Does some type of image come to mind? Rate how vivid the image is using the 5-point scale. If you do not have a visual image, rate vividness as ‘1’. Only use ‘5’ for images that are as lively and vivid as real seeing.\nPlease try to form the mental image of the following items with your eyes closed.\n\n\n\nadditional text was also presented prior to each subscale:\n\n\n\n\n\n\n\nSubscale (items)\nText\n\n\n\n\nRelative or friend (vvi_01 - vvi_04)\nFor items 1 to 4, think of some relative or friend whom you frequently see (but who is not with you at present) and consider carefully the picture that comes before your mind’s eye.\n\n\nNatural scene: Rising sun (vvi_05 - vvi_08)\nVisualize a rising sun. Consider carefully the picture that comes before your mind’s eye.\n\n\nShop (vvi_09 - vvi_12)\nThink of the front of a shop which you often go to. Consider the picture that comes before your mind’s eye.\n\n\nNatural scene: Lake (vvi_13 - vvi_16)\nFinally, think of a country scene which involves trees, mountains, and a lake. Consider the picture that comes before your mind’s eye.\n\n\n\n\n\nItems\n\n\n\n\n\n\n\n\nQlabel\nSubscale\nquestion\n\n\n\n\nvvi_01\nRelative or friend\nThe exact contour of face, head, shoulders, and body.\n\n\nvvi_02\nRelative or friend\nCharacteristic poses of head, attitudes of body, etc.\n\n\nvvi_03\nRelative or friend\nThe precise carriage, length of step, etc. in walking.\n\n\nvvi_04\nRelative or friend\nThe different colors worn in some familiar clothes.\n\n\nvvi_05\nNatural scene: Rising sun\nThe sun is rising above the horizon into a hazy sky.\n\n\nvvi_06\nNatural scene: Rising sun\nThe sky clears and surrounds the sun with blueness.\n\n\nvvi_07\nNatural scene: Rising sun\nClouds. A storm blows up, with flashes of lightening.\n\n\nvvi_08\nNatural scene: Rising sun\nA rainbow appears.\n\n\nvvi_09\nShop\nThe overall appearance of the shop from the opposite side of the road.\n\n\nvvi_10\nShop\nA window display including colors, shape, and details of individual items for sale.\n\n\nvvi_11\nShop\nYou are near the entrance. The color, shape, and details of the door.\n\n\nvvi_12\nShop\nYou enter the shop and go to the counter. The counter assistant serves you. Money changes hands.\n\n\nvvi_13\nNatural scene: Lake\nThe contours of the landscape.\n\n\nvvi_14\nNatural scene: Lake\nThe color and shape of the trees.\n\n\nvvi_15\nNatural scene: Lake\nThe color and shape of the lake.\n\n\nvvi_16\nNatural scene: Lake\nA strong wind blows on the tree and on the lake causing waves.\n\n\n\n\n\nCoding\nThis questionnaire follows a unique scoring scheme for vividness\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n\n\n\n\nPerfectly clear and as vivid as normal vision\nClear and reasonably vivid\nModerately clear and vivid\nVague and dim\nNo image at all, you only “know” that you are thinking of an object\n\n\n\nNo items are reverse coded\n\n\nScoring\nThe following variables are derived from this measure:\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nSource (Section)\nDefinition\n\n\n\n\nVividness of Mental Imagery\nvividnessImagery\nVividness of mental imagery score\nnumeric\nVividness of Mental Imagery\nmean vvi_01: vvi_32",
     "crumbs": [
       "Survey 2",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Vividness of Mental Imagery</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Vividness of Mental Imagery</span>"
     ]
   },
   {
     "objectID": "vividness.html#section",
     "href": "vividness.html#section",
-    "title": "12  Vividness of Mental Imagery",
-    "section": "12.3 ",
-    "text": "12.3 \n\n\n\n\nMarks, D. F. (1973). Visual Imagery Differences in the Recall of Pictures. British Journal of Psychology, 64(1), 17–24. https://doi.org/10.1111/j.2044-8295.1973.tb01322.x",
+    "title": "13  Vividness of Mental Imagery",
+    "section": "13.3 ",
+    "text": "13.3 \n\n\n\n\nMarks, D. F. (1973). Visual Imagery Differences in the Recall of Pictures. British Journal of Psychology, 64(1), 17–24. https://doi.org/10.1111/j.2044-8295.1973.tb01322.x",
     "crumbs": [
       "Survey 2",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Vividness of Mental Imagery</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Vividness of Mental Imagery</span>"
     ]
   },
   {
     "objectID": "dualism.html",
     "href": "dualism.html",
-    "title": "13  Dualism",
+    "title": "14  Dualism",
     "section": "",
-    "text": "13.1 Measure\nThe Dualism measure used is an abbreviation of The Dualism Scale by Stanovich (1989). As with previous research the scale has been shortened for brevity (Willard & Cingl, 2017; Willard, Cingl, & Norenzayan, 2020).",
+    "text": "14.1 Measure\nThe Dualism measure used is an abbreviation of The Dualism Scale by Stanovich (1989). As with previous research the scale has been shortened for brevity (Willard & Cingl, 2017; Willard, Cingl, & Norenzayan, 2020).",
     "crumbs": [
       "Survey 2",
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Dualism</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Dualism</span>"
     ]
   },
   {
     "objectID": "dualism.html#measure",
     "href": "dualism.html#measure",
-    "title": "13  Dualism",
+    "title": "14  Dualism",
     "section": "",
     "text": "Modifications.\nFor consistency with the other agreement based measures used in the project the anchors and response items were altered to be a 7-point Likert scale",
     "crumbs": [
       "Survey 2",
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Dualism</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Dualism</span>"
     ]
   },
   {
     "objectID": "dualism.html#implementation",
     "href": "dualism.html#implementation",
-    "title": "13  Dualism",
-    "section": "13.2 Implementation",
-    "text": "13.2 Implementation\n\nQuestion wording\nParticipants read the following text, adapted and shortened from Stanovich (1989):\nPlease read each of the following statements carefully and rate how strongly you agree or disagree. There are no right or wrong answers and your responses remain anonymous\n\n\nItems\n\n\n\n\n\n\n\nQlabel\nquestion\n\n\n\n\ndua_01\nThe mind is not part of the brain but it affects the brain.\n\n\ndua_02\nWhen I imagine a scene in my mind, I am in a state that will forever be beyond explanation by science.\n\n\ndua_03\nThe mind is a special form of energy (currently unknown to man) that is in contact with the brain and affects it.\n\n\ndua_04\nWhen people talk about their minds they are really just talking about what their brains seem to be doing.\n\n\ndua_05\nThe fact that I can know my own thought processes (that I can introspect) means that my thought processes cannot be just brain processes\n\n\ndua_06\nThe mind is a nonmaterial substance that interact with the brain to determine behavior\n\n\ndua_07\nMinds are inside brains but are not the same as brains.\n\n\ndua_08\nSome mental processes have no connection to brain processes\n\n\ndua_09\nMental processes are the result of activity in the nervous system\n\n\ndua_10\nThe mind and the brain are two totally separate things\n\n\n\n\n\nCoding\nThis questionnaire follows our standard scoring for agreement based measures, with strongly disagree = 1, and strongly agree = 7.\n\n\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n\n\nstrongly disagree\nmoderately disagree\nslightly disagree\nneither agree nor disagree\nslightly agree\nmoderately agree\nstrongly agree\n\n\n\ndua_04 and dua_09 are reverse coded",
+    "title": "14  Dualism",
+    "section": "14.2 Implementation",
+    "text": "14.2 Implementation\n\nQuestion wording\nParticipants read the following text, adapted and shortened from Stanovich (1989):\nPlease read each of the following statements carefully and rate how strongly you agree or disagree. There are no right or wrong answers and your responses remain anonymous\n\n\nItems\n\n\n\n\n\n\n\nQlabel\nquestion\n\n\n\n\ndua_01\nThe mind is not part of the brain but it affects the brain.\n\n\ndua_02\nWhen I imagine a scene in my mind, I am in a state that will forever be beyond explanation by science.\n\n\ndua_03\nThe mind is a special form of energy (currently unknown to man) that is in contact with the brain and affects it.\n\n\ndua_04\nWhen people talk about their minds they are really just talking about what their brains seem to be doing.\n\n\ndua_05\nThe fact that I can know my own thought processes (that I can introspect) means that my thought processes cannot be just brain processes\n\n\ndua_06\nThe mind is a nonmaterial substance that interact with the brain to determine behavior\n\n\ndua_07\nMinds are inside brains but are not the same as brains.\n\n\ndua_08\nSome mental processes have no connection to brain processes\n\n\ndua_09\nMental processes are the result of activity in the nervous system\n\n\ndua_10\nThe mind and the brain are two totally separate things\n\n\n\n\n\nCoding\nThis questionnaire follows our standard scoring for agreement based measures, with strongly disagree = 1, and strongly agree = 7.\n\n\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n\n\nstrongly disagree\nmoderately disagree\nslightly disagree\nneither agree nor disagree\nslightly agree\nmoderately agree\nstrongly agree\n\n\n\ndua_04 and dua_09 are reverse coded",
     "crumbs": [
       "Survey 2",
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Dualism</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Dualism</span>"
     ]
   },
   {
     "objectID": "dualism.html#scoring",
     "href": "dualism.html#scoring",
-    "title": "13  Dualism",
-    "section": "13.3 Scoring",
-    "text": "13.3 Scoring\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nSource (Section)\nDefinition\n\n\n\n\nDualism\ndualism\nDualism score\nnumeric\nDualism\nmean dua_01: dua_10",
+    "title": "14  Dualism",
+    "section": "14.3 Scoring",
+    "text": "14.3 Scoring\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nSource (Section)\nDefinition\n\n\n\n\nDualism\ndualism\nDualism score\nnumeric\nDualism\nmean dua_01: dua_10",
     "crumbs": [
       "Survey 2",
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Dualism</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Dualism</span>"
     ]
   },
   {
     "objectID": "dualism.html#script",
     "href": "dualism.html#script",
-    "title": "13  Dualism",
-    "section": "13.4 Script",
-    "text": "13.4 Script\n\n\n\n\nStanovich, K. E. (1989). Implicit Philosophies of Mind: The Dualism Scale and Its Relation to Religiosity and Belief in Extrasensory Perception. The Journal of Psychology, 123(1), 5–23. https://doi.org/10.1080/00223980.1989.10542958\n\n\nWillard, A. K., & Cingl, L. (2017). Testing theories of secularization and religious belief in the Czech Republic and Slovakia. Evolution and Human Behavior, 38(5), 604–615. https://doi.org/10.1016/j.evolhumbehav.2017.01.002\n\n\nWillard, A. K., Cingl, L., & Norenzayan, A. (2020). Cognitive Biases and Religious Belief: A Path Model Replication in the Czech Republic and Slovakia With a Focus on Anthropomorphism. Social Psychological and Personality Science, 11(1), 97–106. https://doi.org/10.1177/1948550619841629",
+    "title": "14  Dualism",
+    "section": "14.4 Script",
+    "text": "14.4 Script\n\n\n\n\nStanovich, K. E. (1989). Implicit Philosophies of Mind: The Dualism Scale and Its Relation to Religiosity and Belief in Extrasensory Perception. The Journal of Psychology, 123(1), 5–23. https://doi.org/10.1080/00223980.1989.10542958\n\n\nWillard, A. K., & Cingl, L. (2017). Testing theories of secularization and religious belief in the Czech Republic and Slovakia. Evolution and Human Behavior, 38(5), 604–615. https://doi.org/10.1016/j.evolhumbehav.2017.01.002\n\n\nWillard, A. K., Cingl, L., & Norenzayan, A. (2020). Cognitive Biases and Religious Belief: A Path Model Replication in the Czech Republic and Slovakia With a Focus on Anthropomorphism. Social Psychological and Personality Science, 11(1), 97–106. https://doi.org/10.1177/1948550619841629",
     "crumbs": [
       "Survey 2",
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Dualism</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Dualism</span>"
     ]
   },
   {
     "objectID": "promisctel_temp.html",
     "href": "promisctel_temp.html",
-    "title": "14  Promiscuous Teleology",
+    "title": "15  Promiscuous Teleology",
     "section": "",
-    "text": "14.1 Measure\nThe promiscuous teleology measure we use is the short form of the Teleological Ideas about Nature Scale (TINS), which is an as yet unpublished scale by Kelemen, Brown, Burnham & Rottman (2023, in prep).\nPAGE WILL BE UPDATED WHEN THE SCALE IS PUBLISHED",
+    "text": "15.1 Measure\nThe promiscuous teleology measure we use is the short form of the Teleological Ideas about Nature Scale (TINS), which is an as yet unpublished scale by Kelemen, Brown, Burnham & Rottman (2023, in prep).\nPAGE WILL BE UPDATED WHEN THE SCALE IS PUBLISHED",
     "crumbs": [
       "Survey 2",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Promiscuous Teleology</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Promiscuous Teleology</span>"
     ]
   },
   {
     "objectID": "promisctel_temp.html#measure",
     "href": "promisctel_temp.html#measure",
-    "title": "14  Promiscuous Teleology",
+    "title": "15  Promiscuous Teleology",
     "section": "",
     "text": "Modifications",
     "crumbs": [
       "Survey 2",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Promiscuous Teleology</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Promiscuous Teleology</span>"
     ]
   },
   {
     "objectID": "promisctel_temp.html#implementation",
     "href": "promisctel_temp.html#implementation",
-    "title": "14  Promiscuous Teleology",
-    "section": "14.2 Implementation",
-    "text": "14.2 Implementation\n\nQuestion wording\nParticipants read the following text:\nPlease read each of the following statements carefully and state to what extent you agree. There are no right or wrong answers and your responses remain anonymous.\n\n\nItems\n\n\nCoding\nThis questionnaire used the standard response scale for agreement\nNo items are reverse coded\n\n\nScoring\nThe following variables are derived from this measure:\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nSource (Section)\nDefinition\n\n\n\n\nPromiscuous Teleology\npromiscuousTeleology\nPromiscuous Teleology Score\nnumeric\nPromiscuous Teleology\nmean tel_01: tel_14",
+    "title": "15  Promiscuous Teleology",
+    "section": "15.2 Implementation",
+    "text": "15.2 Implementation\n\nQuestion wording\nParticipants read the following text:\nPlease read each of the following statements carefully and state to what extent you agree. There are no right or wrong answers and your responses remain anonymous.\n\n\nItems\n\n\nCoding\nThis questionnaire used the standard response scale for agreement\nNo items are reverse coded\n\n\nScoring\nThe following variables are derived from this measure:\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nSource (Section)\nDefinition\n\n\n\n\nPromiscuous Teleology\npromiscuousTeleology\nPromiscuous Teleology Score\nnumeric\nPromiscuous Teleology\nmean tel_01: tel_14",
     "crumbs": [
       "Survey 2",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Promiscuous Teleology</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Promiscuous Teleology</span>"
     ]
   },
   {
     "objectID": "promisctel_temp.html#script",
     "href": "promisctel_temp.html#script",
-    "title": "14  Promiscuous Teleology",
-    "section": "14.3 Script",
-    "text": "14.3 Script",
+    "title": "15  Promiscuous Teleology",
+    "section": "15.3 Script",
+    "text": "15.3 Script",
     "crumbs": [
       "Survey 2",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Promiscuous Teleology</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Promiscuous Teleology</span>"
     ]
   },
   {
     "objectID": "thinkingStyle.html",
     "href": "thinkingStyle.html",
-    "title": "15  Thinking Style",
+    "title": "16  Thinking Style",
     "section": "",
-    "text": "15.1 Measure\nWe use the original Cognitive Reflection Task by Frederick (2005), and an updated version, the Cognitive Reflection Task 2,from Thomson & Oppenheimer (2016).",
+    "text": "16.1 Measure\nWe use the original Cognitive Reflection Task by Frederick (2005), and an updated version, the Cognitive Reflection Task 2,from Thomson & Oppenheimer (2016).",
     "crumbs": [
       "Survey 2",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Thinking Style</span>"
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Thinking Style</span>"
     ]
   },
   {
     "objectID": "thinkingStyle.html#measure",
     "href": "thinkingStyle.html#measure",
-    "title": "15  Thinking Style",
+    "title": "16  Thinking Style",
     "section": "",
     "text": "Modifications",
     "crumbs": [
       "Survey 2",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Thinking Style</span>"
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Thinking Style</span>"
     ]
   },
   {
     "objectID": "thinkingStyle.html#implementation",
     "href": "thinkingStyle.html#implementation",
-    "title": "15  Thinking Style",
-    "section": "15.2 Implementation",
-    "text": "15.2 Implementation\n\nQuestion wording\nParticipants read the following text:\nIn the following section you will be asked a series of questions. Please do your best to answer as accurately as possible.\n\n\nItems\n\n\n\n\n\n\n\nQlabel\nquestion\n\n\n\n\ncrt_01\nYou’re running a race and you pass the person in second place, what place are you in?\n\n\ncrt_02\nA farmer had 15 sheep and all but 8 died. How many are left?\n\n\ncrt_03\nEmily’s father has three daughters. The first two are named April and May. What is the third daughter’s name?\n\n\ncrt_04\nHow many cubic feet of dirt are there in a hole that is 3’ deep x 3’ wide x 3’ long?\n\n\ncrt_05\nA bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost?\n\n\ncrt_06\nIf it takes 5 machines 5 min to make 5 widgets, how long would it take 100 machines to make 100 widgets?\n\n\ncrt_07\nIn a lake, there is a patch of lily pads. Every day, the patch doubles in size. If it takes 48 days for the patch to cover the entire lake, how long would it take for the patch to cover half of the lake?\n\n\n\n\n\nCoding\nThis questionnaire uses open responses for crt items.\nFor scoring responses are labelled as either “Correct”, “Intuitive” or “Incorrect”. Correct and intuitive answers are as follows:\n`we also code any typos/variations accordingly for all items, see rows 1:3 as illustration)\n\n\n\n\n\n\n\n\nItem\nCorrect (including variations/typos)\nIntuitive (!!CHECK THESE!!)\n\n\n\n\ncrt_01\nsecond (or 2nd, 2 or any variation therein)\nfirst (or 1st, 1 or any variation of)\n\n\ncrt_02\n8 (or eight or other variations of/typos)\n7 (or seven or variations of)\n\n\ncrt_03\nEmily (or typos of)\nJune (or typos)\n\n\ncrt_04\n0\n3\n\n\ncrt_04\n5 cents\n10 cents\n\n\ncrt_05\n5 minutes\n1 minute\n\n\ncrt_06\n47 days\n24 days\n\n\n\n\n\nScoring\nThe following variables are derived from this measure:\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nSource (Section)\nDefinition\n\n\n\n\nCognitive Style (correct)\ncrtCorrect\nProportion correct cogntive styles questions\nnumeric/binomial\nThinking Style\nThe mean (proportion) of crt_01: crt_07 that are correct\n\n\nCognitive Style (intuitive)\ncrtType\nProportion intuitive cogntive styles questions\nnumeric/binomial\nThinking Style\nThe mean (proportion) of crt_01:crt_07 that are intuitive\n\n\n\n\n\n\n\n\n\n\n\nFrederick, S. (2005). Cognitive Reflection and Decision Making. Journal of Economic Perspectives, 19(4), 25–42. https://doi.org/10.1257/089533005775196732\n\n\nThomson, K. S., & Oppenheimer, D. M. (2016). Investigating an alternate form of the cognitive reflection test. Judgment and Decision Making, 11, 99–113.",
+    "title": "16  Thinking Style",
+    "section": "16.2 Implementation",
+    "text": "16.2 Implementation\n\nQuestion wording\nParticipants read the following text:\nIn the following section you will be asked a series of questions. Please do your best to answer as accurately as possible.\n\n\nItems\n\n\n\n\n\n\n\nQlabel\nquestion\n\n\n\n\ncrt_01\nYou’re running a race and you pass the person in second place, what place are you in?\n\n\ncrt_02\nA farmer had 15 sheep and all but 8 died. How many are left?\n\n\ncrt_03\nEmily’s father has three daughters. The first two are named April and May. What is the third daughter’s name?\n\n\ncrt_04\nHow many cubic feet of dirt are there in a hole that is 3’ deep x 3’ wide x 3’ long?\n\n\ncrt_05\nA bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost?\n\n\ncrt_06\nIf it takes 5 machines 5 min to make 5 widgets, how long would it take 100 machines to make 100 widgets?\n\n\ncrt_07\nIn a lake, there is a patch of lily pads. Every day, the patch doubles in size. If it takes 48 days for the patch to cover the entire lake, how long would it take for the patch to cover half of the lake?\n\n\n\n\n\nCoding\nThis questionnaire uses open responses for crt items.\nFor scoring responses are labelled as either “Correct”, “Intuitive” or “Incorrect”. Correct and intuitive answers are as follows:\n`we also code any typos/variations accordingly for all items, see rows 1:3 as illustration)\n\n\n\n\n\n\n\n\nItem\nCorrect (including variations/typos)\nIntuitive (!!CHECK THESE!!)\n\n\n\n\ncrt_01\nsecond (or 2nd, 2 or any variation therein)\nfirst (or 1st, 1 or any variation of)\n\n\ncrt_02\n8 (or eight or other variations of/typos)\n7 (or seven or variations of)\n\n\ncrt_03\nEmily (or typos of)\nJune (or typos)\n\n\ncrt_04\n0\n3\n\n\ncrt_04\n5 cents\n10 cents\n\n\ncrt_05\n5 minutes\n1 minute\n\n\ncrt_06\n47 days\n24 days\n\n\n\n\n\nScoring\nThe following variables are derived from this measure:\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nSource (Section)\nDefinition\n\n\n\n\nCognitive Style (correct)\ncrtCorrect\nProportion correct cogntive styles questions\nnumeric/binomial\nThinking Style\nThe mean (proportion) of crt_01: crt_07 that are correct\n\n\nCognitive Style (intuitive)\ncrtType\nProportion intuitive cogntive styles questions\nnumeric/binomial\nThinking Style\nThe mean (proportion) of crt_01:crt_07 that are intuitive\n\n\n\n\n\n\n\n\n\n\n\nFrederick, S. (2005). Cognitive Reflection and Decision Making. Journal of Economic Perspectives, 19(4), 25–42. https://doi.org/10.1257/089533005775196732\n\n\nThomson, K. S., & Oppenheimer, D. M. (2016). Investigating an alternate form of the cognitive reflection test. Judgment and Decision Making, 11, 99–113.",
     "crumbs": [
       "Survey 2",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Thinking Style</span>"
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Thinking Style</span>"
     ]
   },
   {
@@ -638,34 +658,34 @@
   {
     "objectID": "importanceRationality.html",
     "href": "importanceRationality.html",
-    "title": "18  Importance of Rationality",
+    "title": "19  Importance of Rationality",
     "section": "",
-    "text": "18.1 Measure\nHere we include the Importance of Rationality Scale from Ståhl, Zaal, & Skitka (2016)",
+    "text": "19.1 Measure\nHere we include the Importance of Rationality Scale from Ståhl, Zaal, & Skitka (2016)",
     "crumbs": [
       "Survey 2",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Importance of Rationality</span>"
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Importance of Rationality</span>"
     ]
   },
   {
     "objectID": "importanceRationality.html#measure",
     "href": "importanceRationality.html#measure",
-    "title": "18  Importance of Rationality",
+    "title": "19  Importance of Rationality",
     "section": "",
     "text": "Modifications",
     "crumbs": [
       "Survey 2",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Importance of Rationality</span>"
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Importance of Rationality</span>"
     ]
   },
   {
     "objectID": "importanceRationality.html#implementation",
     "href": "importanceRationality.html#implementation",
-    "title": "18  Importance of Rationality",
-    "section": "18.2 Implementation",
-    "text": "18.2 Implementation\n\nQuestion wording\nParticipants read the following text:\nPlease read each of the following statements carefully and state to what extent you agree. There are no right or wrong answers and your responses remain anonymous.\nINSERT\n\n\nItems\n\n\n\n\n\n\n\nimp_01\nIt is important to me personally to be skeptical about claims that are not backed up by evidence.\n\n\nimp_02\nIt is important to me personally to remain rational and levelheaded even in heated arguments.\n\n\nimp_03\nIt is important to me personally to examine traditionally held beliefs using logic and evidence.\n\n\nimp_04\nIt is important to me personally that I can justify my beliefs using rational arguments and evidence.\n\n\nimp_05\nIt is important to me personally to critically examine my long-held beliefs.\n\n\nimp_06\nIt is important to me personally to be a rational person.\n\n\n\n\n\nCoding\nThis questionnaire uses our standard agreement scale.\n\n\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n\n\n\n\nstrongly disagree\nmoderately disagree\nslightly disagree\nneither agree nor disagree\nslightly agree\nmoderately agree\nstrongly agree\n\n\n\nNo items are reverse coded\n\n\nScoring\nThe following variables are derived form this measure:\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nSource (Section)\nDefinition\n\n\n\n\nImportance of Rationality\nrationalityImportance\nImportance of rationality score\nnumeric\nImportance of Rationality\nThe mean of imp_01 : imp_06\n\n\n\n\n\n\n\n\n\n\n\nStåhl, T., Zaal, M. P., & Skitka, L. J. (2016). Moralized rationality: Relying on logic and evidence in the formation and evaluation of belief can be seen as a moral issue. PLoS ONE, 11. https://doi.org/10.1371/journal.pone.0166332",
+    "title": "19  Importance of Rationality",
+    "section": "19.2 Implementation",
+    "text": "19.2 Implementation\n\nQuestion wording\nParticipants read the following text:\nPlease read each of the following statements carefully and state to what extent you agree. There are no right or wrong answers and your responses remain anonymous.\nINSERT\n\n\nItems\n\n\n\n\n\n\n\nimp_01\nIt is important to me personally to be skeptical about claims that are not backed up by evidence.\n\n\nimp_02\nIt is important to me personally to remain rational and levelheaded even in heated arguments.\n\n\nimp_03\nIt is important to me personally to examine traditionally held beliefs using logic and evidence.\n\n\nimp_04\nIt is important to me personally that I can justify my beliefs using rational arguments and evidence.\n\n\nimp_05\nIt is important to me personally to critically examine my long-held beliefs.\n\n\nimp_06\nIt is important to me personally to be a rational person.\n\n\n\n\n\nCoding\nThis questionnaire uses our standard agreement scale.\n\n\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n\n\n\n\nstrongly disagree\nmoderately disagree\nslightly disagree\nneither agree nor disagree\nslightly agree\nmoderately agree\nstrongly agree\n\n\n\nNo items are reverse coded\n\n\nScoring\nThe following variables are derived form this measure:\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nSource (Section)\nDefinition\n\n\n\n\nImportance of Rationality\nrationalityImportance\nImportance of rationality score\nnumeric\nImportance of Rationality\nThe mean of imp_01 : imp_06\n\n\n\n\n\n\n\n\n\n\n\nStåhl, T., Zaal, M. P., & Skitka, L. J. (2016). Moralized rationality: Relying on logic and evidence in the formation and evaluation of belief can be seen as a moral issue. PLoS ONE, 11. https://doi.org/10.1371/journal.pone.0166332",
     "crumbs": [
       "Survey 2",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Importance of Rationality</span>"
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Importance of Rationality</span>"
     ]
   },
   {
@@ -683,7 +703,7 @@
     "href": "beliefMeasures.html#belief-variables",
     "title": "Belief Measures",
     "section": "",
-    "text": "Belief in God\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nDefinition\nResponse Options\n\n\n\n\nBelief in God (categorical)\nbeliefInGod_cat\nCategorical\nCategorical Response to belief in god options\nissp_01 default\n1. I don't believe in God 2. I don't know whether there is a God, and I don't believe there is any way to find out 3. I don't believe in a personal God, but I do believe in a Higher Power of some kind 4. I find myself believing in God some of the time, but not at others 5. While I have doubts, I feel that I do believe in God. 6. I know God really exists and I have no doubt about it. 7. Don't know\n\n\nNon-Belief Identity\nnonBeliefIdentity\nCategorical\nCategorical response to non-believers identity options\nissp_02 default\n1. Spiritual but not religious 2. Seeker 3. Non-religious 4. Atheist 5. Agnostic 6. Humanist 7. Sceptic 8. Free thinker 9. Rationalist 10. Secular 11. Christian 12. Muslim 13. Jewish 14. Buddhist 15. Hindu 16. Daoist 17. Shinto 18. Confucian 19. Other (please specify)\n\n\nBelief in God (binary)\nbeliefInGod_bin\nbinary (dummy)\nCategorisation of \"believers\" and \"non-believers\" from issp_01\ndummy variable for yes responses to either 5 & 6 in issp_01\n0,1\n\n\nBelief in God (ordinal)\nbeliefInGod_ord\ncontinuous/ ordinal\nLikert measure of agreement with belief in god statement.\nbelief_01\n1 to 7\n\n\nAgnosticism (ordinal)\nagnosticism_ord\ncontinuous/ ordinal\nLikert scale measure of agreement with agnosticism statement.\nagn_01\n1 to 7\n\n\nAgnostic Identity (binary)\nagnosticIdentity_bin\nbinary\nCategorisation of \"agnostics\" from issp_02\ndummy/index variable for response 5 in issp_02\n0,1\n\n\n\n\n\n\n\n\n\nReligiosity\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nDefinition\nResponse Options\n\n\n\n\nReligious Identification\nreligID_1\nbinary\nYes/no belong to a religion\nrid_01 default\n0,1\n\n\nReligious Identity\nreligID_2\ncategorical\nWhich religion category\nrid_02 default\n1. Protestant 2. Catholic 3. Orthodox (e.g. Greek Orthodox, Russian Orthodox) 4. Sunni 5. Shiite 6.Buddhist 7. Confucian 8. Daoist 9. Hindu 10. Jewish 11. Shinto 12. Other (please specify)\n\n\nReligious Attendance\nreligiousAttendance\ncontinuous/ ordinal\nFrequency of religious attendence likert scale\nrp_01 default\n1. More than once a week 2. Once a week 3. Once a month 4. Only on special holy days 5. Once a year 6. Less often 7. Never, practically never\n\n\nPrayer Frequency\nprayerFrequency\ncontinuous/ ordinal\nFrequency of prayer likert scale\nrp_02 default\n1. Several times a day 2. Once a day 3. Several times each week 4. Only when attending religious services 5. Only on special holy days 6. Once a year 7. Less often 8. Never, practically never\n\n\nReligious Objects\nreligiousObjects\ncategorical\nPresence of religious objects\nrp_03 default\n1. Yes, for religious reasons 2. Yes, for non-religious reasons 3. No\n\n\nAnti-religiosity\nantiReligiosity\ncontinuous/ ordinal\nAgreement with anti-religiosity statement\nar_01 default\n1 to 7\n\n\nPrimary Caregiver Religiosity\ncaregiverReligiosity\nbinary\nYes/no belong to a religion\nrid_03 default\n0,1\n\n\nPrimary Caregiver Religios Identity\ncaregiverReligiousID\ncategorical\nWhich religion category\nrid_04 default\n1. Protestant 2. Catholic 3. Orthodox (e.g. Greek Orthodox, Russian Orthodox) 4. Sunni 5. Shiite 6.Buddhist 7. Confucian 8. Daoist 9. Hindu 10. Jewish 11. Shinto 12. Other (please specify)\n\n\nAdditional Caregiver Religiousity\ncaregiverReligiosity2\nbinary\nYes/no belong to a religion\nrid_05 default\n0,1\n\n\nAdditional Caregiver Religiosity Identity\ncaregiverReligiousID2\ncategorical\nWhich religion category\nrid_06 default\n1. Protestant 2. Catholic 3. Orthodox (e.g. Greek Orthodox, Russian Orthodox) 4. Sunni 5. Shiite 6.Buddhist 7. Confucian 8. Daoist 9. Hindu 10. Jewish 11. Shinto 12. Other (please specify)\n\n\n\n\n\n\n\n\n\nAtheism\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nDefinition\nResponse Options\n\n\n\n\nReligious Identification\nreligID_1\nbinary\nYes/no belong to a religion\nrid_01 default\n0,1\n\n\nReligious Identity\nreligID_2\ncategorical\nWhich religion category\nrid_02 default\n1. Protestant 2. Catholic 3. Orthodox (e.g. Greek Orthodox, Russian Orthodox) 4. Sunni 5. Shiite 6.Buddhist 7. Confucian 8. Daoist 9. Hindu 10. Jewish 11. Shinto 12. Other (please specify)\n\n\nReligious Attendance\nreligiousAttendance\ncontinuous/ ordinal\nFrequency of religious attendence likert scale\nrp_01 default\n1. More than once a week 2. Once a week 3. Once a month 4. Only on special holy days 5. Once a year 6. Less often 7. Never, practically never\n\n\nPrayer Frequency\nprayerFrequency\ncontinuous/ ordinal\nFrequency of prayer likert scale\nrp_02 default\n1. Several times a day 2. Once a day 3. Several times each week 4. Only when attending religious services 5. Only on special holy days 6. Once a year 7. Less often 8. Never, practically never\n\n\nReligious Objects\nreligiousObjects\ncategorical\nPresence of religious objects\nrp_03 default\n1. Yes, for religious reasons 2. Yes, for non-religious reasons 3. No\n\n\nAnti-religiosity\nantiReligiosity\ncontinuous/ ordinal\nAgreement with anti-religiosity statement\nar_01 default\n1 to 7\n\n\nPrimary Caregiver Religiosity\ncaregiverReligiosity\nbinary\nYes/no belong to a religion\nrid_03 default\n0,1\n\n\nPrimary Caregiver Religios Identity\ncaregiverReligiousID\ncategorical\nWhich religion category\nrid_04 default\n1. Protestant 2. Catholic 3. Orthodox (e.g. Greek Orthodox, Russian Orthodox) 4. Sunni 5. Shiite 6.Buddhist 7. Confucian 8. Daoist 9. Hindu 10. Jewish 11. Shinto 12. Other (please specify)\n\n\nAdditional Caregiver Religiousity\ncaregiverReligiosity2\nbinary\nYes/no belong to a religion\nrid_05 default\n0,1\n\n\nAdditional Caregiver Religiosity Identity\ncaregiverReligiousID2\ncategorical\nWhich religion category\nrid_06 default\n1. Protestant 2. Catholic 3. Orthodox (e.g. Greek Orthodox, Russian Orthodox) 4. Sunni 5. Shiite 6.Buddhist 7. Confucian 8. Daoist 9. Hindu 10. Jewish 11. Shinto 12. Other (please specify)\n\n\n\n\n\n\n\n\n\nMeta-Belief\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nDefinition\nResponse Options\n\n\n\n\nPossibility of Knowing (God)\ngodKnowingPossibility\ncontinuous/ ordinal\nAgreement with: \"It is not possible to know if God exists\"\nbelief_02 default\n1 to 7\n\n\nConfidence in Belief\nbeliefConfidence\ncontinuous/ ordinal\nAgreement with: \"I am confident that my beliefs about God's existence are the right ones\"\nconf_01 default\n1 to 7\n\n\nApatheism (God)\napatheismGod\ncontinuous/ ordinal\nAgreement with: \"Whether or not God exists is a question that doesn't interest me much\"\napth_01 default\n1 to 7\n\n\nApatheism (life purpose)\napatheismPurpose\ncontinuous/ ordinal\nAgreement with: \"Whether or not there is an ultimate purpose to life is a question that doesn't interest me much.\"\napth_02 default\n1 to 7\n\n\nApatheism (combined)\napatheism\ncontinuous/\nMean of apatheism_god + apatheism_purpose\nmean of apth_01 and apth_02\n1 to 7\n\n\nPossibility of Truth\ntruthPossibility\ncontinuous/ ordinal\nAgreement with: \"For most things in the world, we will never be able to discover the real objective truth.\"\nmean_01 default\n1 to 7\n\n\nNaturalism\nnaturalism\nbinary\nLack of agreement for any supernatural belief items\ndummy variable = 0 for cases where any of snb items (except 16, 17) are &gt; 4 (agreement or neither)\n0, 1\n\n\nSupernaturalism\nsupernaturalism\nordinal\nagreement across all snb items\nResponse across all snb items\n1 to 7\n\n\n\n\n\n\n\n\n\nSupernatural Belief\nSupernatural Belief measures use our 1-7 agreement scale:\n\n\n\n\n\nStrongly Disagree\nModerately Disagree\nSlightly Disagree\nNeither Agree nor Disagree\nSlightly Agree\nModerately Agree\nStrongly Agree\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n\n\n\n\n\n\n\n\nSupernatural Belief Variables\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nDefinition\nResponse Options\n\n\n\n\nAfterlife Existence\nafterlifeExistence\nAgreement with: \"There is some sort of life after death\"\ncontinuous/ ordinal\nsnb_01 default\n1 to 7\n\n\nAfterlife Punishment\nafterlifePunishment\nAgreement with: \"Some people will be punished after they die.\"\ncontinuous/ ordinal\nsnb_13 default\n1 to 7\n\n\nAfterlife Reward\nafterlifeReward\nAgreement with: \"Some people will be rewarded after they die\"\ncontinuous/ ordinal\nsnb_14 default\n1 to 7\n\n\nReincarnation\nreincarnation\nAgreement with: \"Sometime after I die, I expect that I'll be born again in another body.\"\ncontinuous/ ordinal\nsnb_02 default\n1 to 7\n\n\nAstrology\nastrology\nAgreement with: \"The positions of the stars and planets affect people's lives\"\ncontinuous/ ordinal\nsnb_03 default\n1 to 7\n\n\nMystical People\nmysticalPeople\nAgreement with: \"Some people have mystical powers (e.g. to heal, harm, or bring good luck)\"\ncontinuous/ ordinal\nsnb_04 default\n1 to 7\n\n\nMystical Objects\nmysticalObjects\nAgreement with: \"Some objects have mystical powers (e.g. to heal, harm, or bring good luck)\"\ncontinuous/ ordinal\nsnb_05 default\n1 to 7\n\n\nGood and Evil\ngoodEvil\nAgreement with: \"There are underlying forces of good and evil in this world.\"\ncontinuous/ ordinal\nsnb_06 default\n1 to 7\n\n\nUniversal spirit or life force\nuniversalLifeforce\nAgreement with: \"There exists a universal spirit or life force.\"\ncontinuous/ ordinal\nsnb_07 default\n1 to 7\n\n\nKarma\nkarma\nAgreement with: \"There is a power in the universe that causes good things to happen to people who behave morally and bad things to happen to people who behave immorally.\"\ncontinuous/ ordinal\nsnb_08 default\n1 to 7\n\n\nFate\nfate\nAgreement with: \"Most significant life events are meant to be and happen for a reason.\"\ncontinuous/ ordinal\nsnb_09 default\n1 to 7\n\n\nSupernatural Being Existence\nsupernaturalBeings\nAgreement with: \"Supernatural beings of some kind exist\"\ncontinuous/ ordinal\nsnb_10 default\n1 to 7\n\n\nGood Supernatural Beings\ngoodSupernaturalBeings\nAgreement with: \"There exist supernatural beings that are good/kind (e.g. COUNTRY SPECIFIC)\"\ncontinuous/ ordinal\nsnb_11 default\n1 to 7\n\n\nHarmful Supernatural Beings\nharmfulSupernaturalBeings\nAgreement with: \"There exist supernatural beings that are harmful. (e.g COUNTRY SPECIFIC)\"\ncontinuous/ ordinal\nsnb_12 default\n1 to 7\n\n\nEvil Eye\nevilEye\nAgreement with: \"Making other people envious of you can cause illness or misfortune.\"\ncontinuous/ ordinal\nsnb_15 default\n1 to 7\n\n\nSpiritual Experience (personal)\nspiritualForce\nCategory response to: \"Have you ever felt as though you were connected to a powerful spiritual force?\"\ncontinuous/ ordinal\nsnb_16 default\n1. Yes, I've had an experience like this. 2. I've had an experience like this, but I didn't associate it with a spiritual force. 3. No, I've never had an experience like this.\n\n\nLucky Object\nluckyObjects\nYes/No to: \"Do you carry any objects for luck or protection?\"\nbinary\nsnb_17 default\n0, 1",
+    "text": "Belief in God\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nDefinition\nResponse Options\n\n\n\n\nBelief in God (categorical)\nbeliefInGod_cat\nCategorical\nCategorical Response to belief in god options\nissp_01 default\n1. I don't believe in God 2. I don't know whether there is a God, and I don't believe there is any way to find out 3. I don't believe in a personal God, but I do believe in a Higher Power of some kind 4. I find myself believing in God some of the time, but not at others 5. While I have doubts, I feel that I do believe in God. 6. I know God really exists and I have no doubt about it. 7. Don't know\n\n\nNon-Belief Identity\nnonBeliefIdentity\nCategorical\nCategorical response to non-believers identity options\nissp_02 default\n1. Spiritual but not religious 2. Seeker 3. Non-religious 4. Atheist 5. Agnostic 6. Humanist 7. Sceptic 8. Free thinker 9. Rationalist 10. Secular 11. Christian 12. Muslim 13. Jewish 14. Buddhist 15. Hindu 16. Daoist 17. Shinto 18. Confucian 19. Other (please specify)\n\n\nBelief in God (binary)\nbeliefInGod_bin\nbinary (dummy)\nCategorisation of \"believers\" and \"non-believers\" from issp_01\ndummy variable for yes responses to either 5 & 6 in issp_01\n0,1\n\n\nBelief in God (ordinal)\nbeliefInGod_ord\ncontinuous/ ordinal\nLikert measure of agreement with belief in god statement.\nbelief_01\n1 to 7\n\n\nAgnosticism (ordinal)\nagnosticism_ord\ncontinuous/ ordinal\nLikert scale measure of agreement with agnosticism statement.\nagn_01\n1 to 7\n\n\nAgnostic Identity (binary)\nagnosticIdentity_bin\nbinary\nCategorisation of \"agnostics\" from issp_02\ndummy/index variable for response 5 in issp_02\n0,1\n\n\nBelief Change\nbeliefChange\nCategorical\ncatgeorical response to issp_03\nisssp_03 default\n1. Generally speaking, I have always believed in God. 2. Generally speaking, I have never believed in God. 3. I believed in God in the past, but now I do not. 4. I did not believe in God in the past, but now I do.\n\n\nNew Believer\nchangeNewBeliever\nbinary\ndummy categorisation from issp_03\ndummy variable for 4 on issp_03\n0,1\n\n\nNew Non-Believer\nchangeNewNonBeliever\nbinary\ndummy categorisation from issp_03\ndummy variable for 3 on issp_03\n0,1\n\n\nAlways Believer\nnoChangeBeliever\nbinary\ndummy categorisation from issp_03\ndummy variable for 1 on issp_03\n0,1\n\n\nAlways Non-Believer\nnoChangeNonBeliever\nbinary\ndummy categorisation from issp_03\ndummy variable for 2 on issp_03\n0,1\n\n\n\n\n\n\n\n\n\nReligiosity\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nDefinition\nResponse Options\n\n\n\n\nReligious Identification\nreligID_1\nbinary\nYes/no belong to a religion\nrid_01 default\n0,1\n\n\nReligious Identity\nreligID_2\ncategorical\nWhich religion category\nrid_02 default\n1. Protestant 2. Catholic 3. Orthodox (e.g. Greek Orthodox, Russian Orthodox) 4. Sunni 5. Shiite 6.Buddhist 7. Confucian 8. Daoist 9. Hindu 10. Jewish 11. Shinto 12. Other (please specify)\n\n\nReligious Attendance\nreligiousAttendance\ncontinuous/ ordinal\nFrequency of religious attendence likert scale\nrp_01 default\n1. More than once a week 2. Once a week 3. Once a month 4. Only on special holy days 5. Once a year 6. Less often 7. Never, practically never\n\n\nPrayer Frequency\nprayerFrequency\ncontinuous/ ordinal\nFrequency of prayer likert scale\nrp_02 default\n1. Several times a day 2. Once a day 3. Several times each week 4. Only when attending religious services 5. Only on special holy days 6. Once a year 7. Less often 8. Never, practically never\n\n\nReligious Objects\nreligiousObjects\ncategorical\nPresence of religious objects\nrp_03 default\n1. Yes, for religious reasons 2. Yes, for non-religious reasons 3. No\n\n\nAnti-religiosity\nantiReligiosity\ncontinuous/ ordinal\nAgreement with anti-religiosity statement\nar_01 default\n1 to 7\n\n\nPrimary Caregiver Religiosity\ncaregiverReligiosity\nbinary\nYes/no belong to a religion\nrid_03 default\n0,1\n\n\nPrimary Caregiver Religios Identity\ncaregiverReligiousID\ncategorical\nWhich religion category\nrid_04 default\n1. Protestant 2. Catholic 3. Orthodox (e.g. Greek Orthodox, Russian Orthodox) 4. Sunni 5. Shiite 6.Buddhist 7. Confucian 8. Daoist 9. Hindu 10. Jewish 11. Shinto 12. Other (please specify)\n\n\nAdditional Caregiver Religiousity\ncaregiverReligiosity2\nbinary\nYes/no belong to a religion\nrid_05 default\n0,1\n\n\nAdditional Caregiver Religiosity Identity\ncaregiverReligiousID2\ncategorical\nWhich religion category\nrid_06 default\n1. Protestant 2. Catholic 3. Orthodox (e.g. Greek Orthodox, Russian Orthodox) 4. Sunni 5. Shiite 6.Buddhist 7. Confucian 8. Daoist 9. Hindu 10. Jewish 11. Shinto 12. Other (please specify)\n\n\n\n\n\n\n\n\n\nAtheism\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nDefinition\nResponse Options\n\n\n\n\nReligious Identification\nreligID_1\nbinary\nYes/no belong to a religion\nrid_01 default\n0,1\n\n\nReligious Identity\nreligID_2\ncategorical\nWhich religion category\nrid_02 default\n1. Protestant 2. Catholic 3. Orthodox (e.g. Greek Orthodox, Russian Orthodox) 4. Sunni 5. Shiite 6.Buddhist 7. Confucian 8. Daoist 9. Hindu 10. Jewish 11. Shinto 12. Other (please specify)\n\n\nReligious Attendance\nreligiousAttendance\ncontinuous/ ordinal\nFrequency of religious attendence likert scale\nrp_01 default\n1. More than once a week 2. Once a week 3. Once a month 4. Only on special holy days 5. Once a year 6. Less often 7. Never, practically never\n\n\nPrayer Frequency\nprayerFrequency\ncontinuous/ ordinal\nFrequency of prayer likert scale\nrp_02 default\n1. Several times a day 2. Once a day 3. Several times each week 4. Only when attending religious services 5. Only on special holy days 6. Once a year 7. Less often 8. Never, practically never\n\n\nReligious Objects\nreligiousObjects\ncategorical\nPresence of religious objects\nrp_03 default\n1. Yes, for religious reasons 2. Yes, for non-religious reasons 3. No\n\n\nAnti-religiosity\nantiReligiosity\ncontinuous/ ordinal\nAgreement with anti-religiosity statement\nar_01 default\n1 to 7\n\n\nPrimary Caregiver Religiosity\ncaregiverReligiosity\nbinary\nYes/no belong to a religion\nrid_03 default\n0,1\n\n\nPrimary Caregiver Religios Identity\ncaregiverReligiousID\ncategorical\nWhich religion category\nrid_04 default\n1. Protestant 2. Catholic 3. Orthodox (e.g. Greek Orthodox, Russian Orthodox) 4. Sunni 5. Shiite 6.Buddhist 7. Confucian 8. Daoist 9. Hindu 10. Jewish 11. Shinto 12. Other (please specify)\n\n\nAdditional Caregiver Religiousity\ncaregiverReligiosity2\nbinary\nYes/no belong to a religion\nrid_05 default\n0,1\n\n\nAdditional Caregiver Religiosity Identity\ncaregiverReligiousID2\ncategorical\nWhich religion category\nrid_06 default\n1. Protestant 2. Catholic 3. Orthodox (e.g. Greek Orthodox, Russian Orthodox) 4. Sunni 5. Shiite 6.Buddhist 7. Confucian 8. Daoist 9. Hindu 10. Jewish 11. Shinto 12. Other (please specify)\n\n\n\n\n\n\n\n\n\nMeta-Belief\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nDefinition\nResponse Options\n\n\n\n\nPossibility of Knowing (God)\ngodKnowingPossibility\ncontinuous/ ordinal\nAgreement with: \"It is not possible to know if God exists\"\nbelief_02 default\n1 to 7\n\n\nConfidence in Belief\nbeliefConfidence\ncontinuous/ ordinal\nAgreement with: \"I am confident that my beliefs about God's existence are the right ones\"\nconf_01 default\n1 to 7\n\n\nApatheism (God)\napatheismGod\ncontinuous/ ordinal\nAgreement with: \"Whether or not God exists is a question that doesn't interest me much\"\napth_01 default\n1 to 7\n\n\nApatheism (life purpose)\napatheismPurpose\ncontinuous/ ordinal\nAgreement with: \"Whether or not there is an ultimate purpose to life is a question that doesn't interest me much.\"\napth_02 default\n1 to 7\n\n\nApatheism (combined)\napatheism\ncontinuous/\nMean of apatheism_god + apatheism_purpose\nmean of apth_01 and apth_02\n1 to 7\n\n\nPossibility of Truth\ntruthPossibility\ncontinuous/ ordinal\nAgreement with: \"For most things in the world, we will never be able to discover the real objective truth.\"\nmean_01 default\n1 to 7\n\n\nNaturalism\nnaturalism\nbinary\nLack of agreement for any supernatural belief items\ndummy variable = 0 for cases where any of snb items (except 16, 17) are &gt; 4 (agreement or neither)\n0, 1\n\n\nSupernaturalism\nsupernaturalism\nordinal\nagreement across all snb items\nResponse across all snb items\n1 to 7\n\n\n\n\n\n\n\n\n\nSupernatural Belief\nSupernatural Belief measures use our 1-7 agreement scale:\n\n\n\n\n\nStrongly Disagree\nModerately Disagree\nSlightly Disagree\nNeither Agree nor Disagree\nSlightly Agree\nModerately Agree\nStrongly Agree\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n\n\n\n\n\n\n\n\nSupernatural Belief Variables\n\n\n\n\n\nVariable Name\nVariable Label\nDescription\nVariable Type\nDefinition\nResponse Options\n\n\n\n\nAfterlife Existence\nafterlifeExistence\nAgreement with: \"There is some sort of life after death\"\ncontinuous/ ordinal\nsnb_01 default\n1 to 7\n\n\nAfterlife Punishment\nafterlifePunishment\nAgreement with: \"Some people will be punished after they die.\"\ncontinuous/ ordinal\nsnb_13 default\n1 to 7\n\n\nAfterlife Reward\nafterlifeReward\nAgreement with: \"Some people will be rewarded after they die\"\ncontinuous/ ordinal\nsnb_14 default\n1 to 7\n\n\nReincarnation\nreincarnation\nAgreement with: \"Sometime after I die, I expect that I'll be born again in another body.\"\ncontinuous/ ordinal\nsnb_02 default\n1 to 7\n\n\nAstrology\nastrology\nAgreement with: \"The positions of the stars and planets affect people's lives\"\ncontinuous/ ordinal\nsnb_03 default\n1 to 7\n\n\nMystical People\nmysticalPeople\nAgreement with: \"Some people have mystical powers (e.g. to heal, harm, or bring good luck)\"\ncontinuous/ ordinal\nsnb_04 default\n1 to 7\n\n\nMystical Objects\nmysticalObjects\nAgreement with: \"Some objects have mystical powers (e.g. to heal, harm, or bring good luck)\"\ncontinuous/ ordinal\nsnb_05 default\n1 to 7\n\n\nGood and Evil\ngoodEvil\nAgreement with: \"There are underlying forces of good and evil in this world.\"\ncontinuous/ ordinal\nsnb_06 default\n1 to 7\n\n\nUniversal spirit or life force\nuniversalLifeforce\nAgreement with: \"There exists a universal spirit or life force.\"\ncontinuous/ ordinal\nsnb_07 default\n1 to 7\n\n\nKarma\nkarma\nAgreement with: \"There is a power in the universe that causes good things to happen to people who behave morally and bad things to happen to people who behave immorally.\"\ncontinuous/ ordinal\nsnb_08 default\n1 to 7\n\n\nFate\nfate\nAgreement with: \"Most significant life events are meant to be and happen for a reason.\"\ncontinuous/ ordinal\nsnb_09 default\n1 to 7\n\n\nSupernatural Being Existence\nsupernaturalBeings\nAgreement with: \"Supernatural beings of some kind exist\"\ncontinuous/ ordinal\nsnb_10 default\n1 to 7\n\n\nGood Supernatural Beings\ngoodSupernaturalBeings\nAgreement with: \"There exist supernatural beings that are good/kind (e.g. COUNTRY SPECIFIC)\"\ncontinuous/ ordinal\nsnb_11 default\n1 to 7\n\n\nHarmful Supernatural Beings\nharmfulSupernaturalBeings\nAgreement with: \"There exist supernatural beings that are harmful. (e.g COUNTRY SPECIFIC)\"\ncontinuous/ ordinal\nsnb_12 default\n1 to 7\n\n\nEvil Eye\nevilEye\nAgreement with: \"Making other people envious of you can cause illness or misfortune.\"\ncontinuous/ ordinal\nsnb_15 default\n1 to 7\n\n\nSpiritual Experience (personal)\nspiritualForce\nCategory response to: \"Have you ever felt as though you were connected to a powerful spiritual force?\"\ncontinuous/ ordinal\nsnb_16 default\n1. Yes, I've had an experience like this. 2. I've had an experience like this, but I didn't associate it with a spiritual force. 3. No, I've never had an experience like this.\n\n\nLucky Object\nluckyObjects\nYes/No to: \"Do you carry any objects for luck or protection?\"\nbinary\nsnb_17 default\n0, 1",
     "crumbs": [
       "Belief Measures"
     ]
@@ -691,254 +711,254 @@
   {
     "objectID": "issp.html",
     "href": "issp.html",
-    "title": "19  ISSP",
+    "title": "20  ISSP",
     "section": "",
-    "text": "19.1 Measure",
+    "text": "20.1 Measure",
     "crumbs": [
       "Belief Measures",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>ISSP</span>"
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>ISSP</span>"
     ]
   },
   {
     "objectID": "issp.html#measure",
     "href": "issp.html#measure",
-    "title": "19  ISSP",
+    "title": "20  ISSP",
     "section": "",
     "text": "Modifications\nNote ISSP_03 was not originally an ISSP question. This is a question created by us and added to this section for practical purposes.",
     "crumbs": [
       "Belief Measures",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>ISSP</span>"
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>ISSP</span>"
     ]
   },
   {
     "objectID": "issp.html#implementation",
     "href": "issp.html#implementation",
-    "title": "19  ISSP",
-    "section": "19.2 Implementation",
-    "text": "19.2 Implementation\nissp_02 only appears if issp_01 = 1 or 2\n\n\n\n\n\n\n\n\nQlabel\nQuestion\nResponse options\n\n\n\n\nissp_01\nWhich statement comes closes to expressing what you believe about God?\n\nI don’t believe in God\nI don’t know whether there is a God, and I don’t believe there is any way to find out\nI don’t believe in a personal God, but I do believe in a Higher Power of some kind\nI find myself believing in God some of the time, but not at others\nWhile I have doubts, I feel that I do believe in God.\nI know God really exists and I have no doubt about it.\nDon’t know\n\n\n\nissp_02\nHere are some examples of how different people who do not believe in God or gods identify themselves. If you had to pick a label, which of these comes closest to how you identify yourself?\n\nSpiritual but not religious\nSeeker\nNon-religious\nAtheist\nAgnostic\nHumanist\nSceptic\nFree thinker\nRationalist\nSecular\nChristian\nMuslim\nJewish\nBuddhist\nHindu\nDaoist\nShinto\nConfucian\nOther (please specify)\n\n\n\nissp_03\nWhich of the following best describes your belief in god?\n\nGenerally speaking, I have always believed in God.\nGenerally speaking, I have never believed in God.\nI believed in God in the past, but now I do not.\nI did not believe in God in the past, but now I do.",
+    "title": "20  ISSP",
+    "section": "20.2 Implementation",
+    "text": "20.2 Implementation\nissp_02 only appears if issp_01 = 1 or 2\n\n\n\n\n\n\n\n\nQlabel\nQuestion\nResponse options\n\n\n\n\nissp_01\nWhich statement comes closes to expressing what you believe about God?\n\nI don’t believe in God\nI don’t know whether there is a God, and I don’t believe there is any way to find out\nI don’t believe in a personal God, but I do believe in a Higher Power of some kind\nI find myself believing in God some of the time, but not at others\nWhile I have doubts, I feel that I do believe in God.\nI know God really exists and I have no doubt about it.\nDon’t know\n\n\n\nissp_02\nHere are some examples of how different people who do not believe in God or gods identify themselves. If you had to pick a label, which of these comes closest to how you identify yourself?\n\nSpiritual but not religious\nSeeker\nNon-religious\nAtheist\nAgnostic\nHumanist\nSceptic\nFree thinker\nRationalist\nSecular\nChristian\nMuslim\nJewish\nBuddhist\nHindu\nDaoist\nShinto\nConfucian\nOther (please specify)\n\n\n\nissp_03\nWhich of the following best describes your belief in god?\n\nGenerally speaking, I have always believed in God.\nGenerally speaking, I have never believed in God.\nI believed in God in the past, but now I do not.\nI did not believe in God in the past, but now I do.",
     "crumbs": [
       "Belief Measures",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>ISSP</span>"
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>ISSP</span>"
     ]
   },
   {
     "objectID": "issp.html#scoring",
     "href": "issp.html#scoring",
-    "title": "19  ISSP",
-    "section": "19.3 Scoring",
-    "text": "19.3 Scoring\nSee the Belief Measures landing page for all belief measures variables and their definitions.",
+    "title": "20  ISSP",
+    "section": "20.3 Scoring",
+    "text": "20.3 Scoring\nSee the Belief Measures landing page for all belief measures variables and their definitions.",
     "crumbs": [
       "Belief Measures",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>ISSP</span>"
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>ISSP</span>"
     ]
   },
   {
     "objectID": "religiousIdentity.html",
     "href": "religiousIdentity.html",
-    "title": "20  Religious Identity",
+    "title": "21  Religious Identity",
     "section": "",
-    "text": "20.1 Measure",
+    "text": "21.1 Measure",
     "crumbs": [
       "Belief Measures",
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Religious Identity</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Religious Identity</span>"
     ]
   },
   {
     "objectID": "religiousIdentity.html#implementation",
     "href": "religiousIdentity.html#implementation",
-    "title": "20  Religious Identity",
-    "section": "20.2 Implementation",
-    "text": "20.2 Implementation\nrid_02 only appears if rid_01 = Yes\n\n\n\n\n\n\n\n\nQlabel\nQuestion\nResponse options\n\n\n\n\nrid_01\nDo you regard yourself as belonging to a particular religion?\nYes/No\n\n\nrid_02\nIf yes, which?\n\nProtestant\nCatholic\nOrthodox (e.g. Greek Orthodox, Russian Orthodox)\nSunni\nShiite\nBuddhist\nConfucian\nDaoist\nHindu\nJewish\nShinto\nOther (please specify)\n\n\n\nrid_03\nWhilst growing up did your primary caregiver belong to a particular religion?\nYes/No\n\n\nrid_04\nIf yes, which?\n\nProtestant\nCatholic\nOrthodox (e.g. Greek Orthodox, Russian Orthodox)\nSunni\nShiite\nBuddhist\nConfucian\nDaoist\nHindu\nJewish\nShinto\nOther (please specify)\n\n\n\nrid_05\nWhilst growing up did an additional important caregiver belong to a particular religion?\nYes/No\n\n\nrid_06\nIf yes, which?\n\nProtestant\nCatholic\nOrthodox (e.g. Greek Orthodox, Russian Orthodox)\nSunni\nShiite\nBuddhist\nConfucian\nDaoist\nHindu\nJewish\nShinto\nOther (please specify)\n\n\n\n\n\nScoring/ Coding\nSee the Belief Measures landing page for all belief measures variables and their definitions.",
+    "title": "21  Religious Identity",
+    "section": "21.2 Implementation",
+    "text": "21.2 Implementation\nrid_02 only appears if rid_01 = Yes\n\n\n\n\n\n\n\n\nQlabel\nQuestion\nResponse options\n\n\n\n\nrid_01\nDo you regard yourself as belonging to a particular religion?\nYes/No\n\n\nrid_02\nIf yes, which?\n\nProtestant\nCatholic\nOrthodox (e.g. Greek Orthodox, Russian Orthodox)\nSunni\nShiite\nBuddhist\nConfucian\nDaoist\nHindu\nJewish\nShinto\nOther (please specify)\n\n\n\nrid_03\nWhilst growing up did your primary caregiver belong to a particular religion?\nYes/No\n\n\nrid_04\nIf yes, which?\n\nProtestant\nCatholic\nOrthodox (e.g. Greek Orthodox, Russian Orthodox)\nSunni\nShiite\nBuddhist\nConfucian\nDaoist\nHindu\nJewish\nShinto\nOther (please specify)\n\n\n\nrid_05\nWhilst growing up did an additional important caregiver belong to a particular religion?\nYes/No\n\n\nrid_06\nIf yes, which?\n\nProtestant\nCatholic\nOrthodox (e.g. Greek Orthodox, Russian Orthodox)\nSunni\nShiite\nBuddhist\nConfucian\nDaoist\nHindu\nJewish\nShinto\nOther (please specify)\n\n\n\n\n\nScoring/ Coding\nSee the Belief Measures landing page for all belief measures variables and their definitions.",
     "crumbs": [
       "Belief Measures",
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Religious Identity</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Religious Identity</span>"
     ]
   },
   {
     "objectID": "religiousIdentity.html#section",
     "href": "religiousIdentity.html#section",
-    "title": "20  Religious Identity",
-    "section": "20.3 ",
-    "text": "20.3",
+    "title": "21  Religious Identity",
+    "section": "21.3 ",
+    "text": "21.3",
     "crumbs": [
       "Belief Measures",
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Religious Identity</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Religious Identity</span>"
     ]
   },
   {
     "objectID": "religiousPractice.html",
     "href": "religiousPractice.html",
-    "title": "21  Religious Practice",
+    "title": "22  Religious Practice",
     "section": "",
-    "text": "21.1 Measure",
+    "text": "22.1 Measure",
     "crumbs": [
       "Belief Measures",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Religious Practice</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Religious Practice</span>"
     ]
   },
   {
     "objectID": "religiousPractice.html#measure",
     "href": "religiousPractice.html#measure",
-    "title": "21  Religious Practice",
+    "title": "22  Religious Practice",
     "section": "",
     "text": "Modifications",
     "crumbs": [
       "Belief Measures",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Religious Practice</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Religious Practice</span>"
     ]
   },
   {
     "objectID": "religiousPractice.html#implementation",
     "href": "religiousPractice.html#implementation",
-    "title": "21  Religious Practice",
-    "section": "21.2 Implementation",
-    "text": "21.2 Implementation\n\n\n\n\n\n\n\n\nQlabel\nQuestion\nResponse options\n\n\n\n\nrp_01\nApart from weddings and funerals, about how often do you attend religious services these days?\n\nMore than once a week\nOnce a week\nOnce a month\nOnly on special holy days\nOnce a year\nLess often\nNever, practically never\n\n\n\nrp_02\nApart from weddings and funerals, about how often do you pray?\n\nSeveral times a day\nOnce a day\nSeveral times each week\nOnly when attending religious services\nOnly on special holy days\nOnce a year\nLess often\nNever, practically never\n\n\n\nrp_03\nDo you have in your home a shrine, altar, or a religious object on display such as a (BIBLE OR CROSS/ COUNTRY SPECIFIC ITEM)?\n\nYes, for religious reasons\nYes, for non-religious reasons\nNo\n\n\n\n\nCountry Specific Examples\nBrazil\nrp_03: crucifix or an image of Iemanja\nChina\nrp_03: an ancestor tablet,  censer, Buddha statue, or statue of a deity?\nDenmark\nrp_03: a Bible or cross?\nJapan\nrp_03: butsudan, ihai, or kamidana?\nUK\nrp_03: cross, icon, mezuzah, or Bible?\nUSA\nrp_03: a cross, icon, mezuzah, Bible, or retablo?\n\nScoring/ Coding\nSee the General Belief landing page for all belief measures variables and their definitions.",
+    "title": "22  Religious Practice",
+    "section": "22.2 Implementation",
+    "text": "22.2 Implementation\n\n\n\n\n\n\n\n\nQlabel\nQuestion\nResponse options\n\n\n\n\nrp_01\nApart from weddings and funerals, about how often do you attend religious services these days?\n\nMore than once a week\nOnce a week\nOnce a month\nOnly on special holy days\nOnce a year\nLess often\nNever, practically never\n\n\n\nrp_02\nApart from weddings and funerals, about how often do you pray?\n\nSeveral times a day\nOnce a day\nSeveral times each week\nOnly when attending religious services\nOnly on special holy days\nOnce a year\nLess often\nNever, practically never\n\n\n\nrp_03\nDo you have in your home a shrine, altar, or a religious object on display such as a (BIBLE OR CROSS/ COUNTRY SPECIFIC ITEM)?\n\nYes, for religious reasons\nYes, for non-religious reasons\nNo\n\n\n\n\nCountry Specific Examples\nBrazil\nrp_03: crucifix or an image of Iemanja\nChina\nrp_03: an ancestor tablet,  censer, Buddha statue, or statue of a deity?\nDenmark\nrp_03: a Bible or cross?\nJapan\nrp_03: butsudan, ihai, or kamidana?\nUK\nrp_03: cross, icon, mezuzah, or Bible?\nUSA\nrp_03: a cross, icon, mezuzah, Bible, or retablo?\n\nScoring/ Coding\nSee the General Belief landing page for all belief measures variables and their definitions.",
     "crumbs": [
       "Belief Measures",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Religious Practice</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Religious Practice</span>"
     ]
   },
   {
     "objectID": "supernaturalBelief.html",
     "href": "supernaturalBelief.html",
-    "title": "22  Supernatural Belief",
+    "title": "23  Supernatural Belief",
     "section": "",
-    "text": "22.1 Measure",
+    "text": "23.1 Measure",
     "crumbs": [
       "Belief Measures",
-      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Supernatural Belief</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Supernatural Belief</span>"
     ]
   },
   {
     "objectID": "supernaturalBelief.html#measure",
     "href": "supernaturalBelief.html#measure",
-    "title": "22  Supernatural Belief",
+    "title": "23  Supernatural Belief",
     "section": "",
     "text": "Modifications",
     "crumbs": [
       "Belief Measures",
-      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Supernatural Belief</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Supernatural Belief</span>"
     ]
   },
   {
     "objectID": "supernaturalBelief.html#implementation",
     "href": "supernaturalBelief.html#implementation",
-    "title": "22  Supernatural Belief",
-    "section": "22.2 Implementation",
-    "text": "22.2 Implementation\n\nQuestion wording\nParticipants read the following text:\nPlease read each of the following statements carefully and state to what extent you agree. There are no right or wrong answers and your responses remain anonymous.\n\n\nItems\n\n\n\n\n\n\n\nQlabel\nquestion\n\n\n\n\nsnb_01\nThere is some sort of life after death\n\n\nsnb_02\nSometime after I die, I expect that I’ll be born again in another body.\n\n\nsnb_03\nThe positions of the stars and planets affect people’s lives\n\n\nsnb_04\nSome people have mystical powers (e.g. to heal, harm, or bring good luck)\n\n\nsnb_05\nSome objects have mystical powers (e.g. to heal, harm, or bring good luck)\n\n\nsnb_06\nThere are underlying forces of good and evil in this world.\n\n\nsnb_07\nThere exists a universal spirit or life force.\n\n\nsnb_08\nThere is a power in the universe that causes good things to happen to people who behave morally and bad things to happen to people who behave immorally.\n\n\nsnb_09\nMost significant life events are meant to be and happen for a reason.\n\n\nsnb_10\nSupernatural beings of some kind exist\n\n\nsnb_11\nThere exist supernatural beings that are good/kind (e.g. COUNTRY SPECIFIC)\n\n\nsnb_12\nThere exist supernatural beings that are harmful. (e.g COUNTRY SPECIFIC)\n\n\nsnb_13\nSome people will be punished after they die\n\n\nsnb_14\nSome people will be rewarded after they die\n\n\nsnb_15\nMaking other people envious of you can cause illness or misfortune.\n\n\nsnb_16\nHave you ever felt as though you were connected to a powerful spiritual force?\n\n\nsnb_17\nDo you carry any objects for luck or protection?\n\n\n\nCountry Specific Examples\nBrazil\nsnb_11: e.g. angels, nature spirits\nsnb_12: e.g. demons, ghosts\nChina\nsnb_11: e.g. ancestor spirits\nsnb_12: e.g. ghosts\nDenmark\nsnb_11: e.g. angels, nature spirits\nsnb_12: e.g. demons, ghosts\nJapan\nsnb_11: e.g. angels, spirits\nsnb_12: e.g.  ghosts, monsters\nUK\nsnb_11: e.g. angels, nature spirits\nsnb_12: e.g. demons, ghosts\nUSA\nsnb_11: e.g. angels, nature spirits\nsnb_12: e.g. demons, ghosts",
+    "title": "23  Supernatural Belief",
+    "section": "23.2 Implementation",
+    "text": "23.2 Implementation\n\nQuestion wording\nParticipants read the following text:\nPlease read each of the following statements carefully and state to what extent you agree. There are no right or wrong answers and your responses remain anonymous.\n\n\nItems\n\n\n\n\n\n\n\nQlabel\nquestion\n\n\n\n\nsnb_01\nThere is some sort of life after death\n\n\nsnb_02\nSometime after I die, I expect that I’ll be born again in another body.\n\n\nsnb_03\nThe positions of the stars and planets affect people’s lives\n\n\nsnb_04\nSome people have mystical powers (e.g. to heal, harm, or bring good luck)\n\n\nsnb_05\nSome objects have mystical powers (e.g. to heal, harm, or bring good luck)\n\n\nsnb_06\nThere are underlying forces of good and evil in this world.\n\n\nsnb_07\nThere exists a universal spirit or life force.\n\n\nsnb_08\nThere is a power in the universe that causes good things to happen to people who behave morally and bad things to happen to people who behave immorally.\n\n\nsnb_09\nMost significant life events are meant to be and happen for a reason.\n\n\nsnb_10\nSupernatural beings of some kind exist\n\n\nsnb_11\nThere exist supernatural beings that are good/kind (e.g. COUNTRY SPECIFIC)\n\n\nsnb_12\nThere exist supernatural beings that are harmful. (e.g COUNTRY SPECIFIC)\n\n\nsnb_13\nSome people will be punished after they die\n\n\nsnb_14\nSome people will be rewarded after they die\n\n\nsnb_15\nMaking other people envious of you can cause illness or misfortune.\n\n\nsnb_16\nHave you ever felt as though you were connected to a powerful spiritual force?\n\n\nsnb_17\nDo you carry any objects for luck or protection?\n\n\n\nCountry Specific Examples\nBrazil\nsnb_11: e.g. angels, nature spirits\nsnb_12: e.g. demons, ghosts\nChina\nsnb_11: e.g. ancestor spirits\nsnb_12: e.g. ghosts\nDenmark\nsnb_11: e.g. angels, nature spirits\nsnb_12: e.g. demons, ghosts\nJapan\nsnb_11: e.g. angels, spirits\nsnb_12: e.g.  ghosts, monsters\nUK\nsnb_11: e.g. angels, nature spirits\nsnb_12: e.g. demons, ghosts\nUSA\nsnb_11: e.g. angels, nature spirits\nsnb_12: e.g. demons, ghosts",
     "crumbs": [
       "Belief Measures",
-      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Supernatural Belief</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Supernatural Belief</span>"
     ]
   },
   {
     "objectID": "supernaturalBelief.html#coding",
     "href": "supernaturalBelief.html#coding",
-    "title": "22  Supernatural Belief",
-    "section": "22.3 Coding",
-    "text": "22.3 Coding\nItems snb_01 - snb_15 use our standard response scale for agreement\n\n\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n\n\nstrongly disagree\nmoderately disagree\nslightly disagree\nneither agree nor disagree\nslightly agree\nmoderately agree\nstrongly agree\n\n\n\nItem snb_16 uses the following bespoke scale\n\n\n\n\n\n\n\n\n1\n2\n3\n\n\n\n\nYes, I’ve had an experience like this.\nI’ve had an experience like this, but I didn’t associate it with a spiritual force.\nNo, I’ve never had an experience like this.\n\n\n\nItem snb_17 is a Yes/No response\n\nScoring\nSee the General Belief landing page for all belief measures variables and their definitions.",
+    "title": "23  Supernatural Belief",
+    "section": "23.3 Coding",
+    "text": "23.3 Coding\nItems snb_01 - snb_15 use our standard response scale for agreement\n\n\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n\n\nstrongly disagree\nmoderately disagree\nslightly disagree\nneither agree nor disagree\nslightly agree\nmoderately agree\nstrongly agree\n\n\n\nItem snb_16 uses the following bespoke scale\n\n\n\n\n\n\n\n\n1\n2\n3\n\n\n\n\nYes, I’ve had an experience like this.\nI’ve had an experience like this, but I didn’t associate it with a spiritual force.\nNo, I’ve never had an experience like this.\n\n\n\nItem snb_17 is a Yes/No response\n\nScoring\nSee the General Belief landing page for all belief measures variables and their definitions.",
     "crumbs": [
       "Belief Measures",
-      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Supernatural Belief</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Supernatural Belief</span>"
     ]
   },
   {
     "objectID": "generalBelief.html",
     "href": "generalBelief.html",
-    "title": "23  General Belief",
+    "title": "24  General Belief",
     "section": "",
-    "text": "23.1 Measure",
+    "text": "24.1 Measure",
     "crumbs": [
       "Belief Measures",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>General Belief</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>General Belief</span>"
     ]
   },
   {
     "objectID": "generalBelief.html#measure",
     "href": "generalBelief.html#measure",
-    "title": "23  General Belief",
+    "title": "24  General Belief",
     "section": "",
     "text": "Modifications",
     "crumbs": [
       "Belief Measures",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>General Belief</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>General Belief</span>"
     ]
   },
   {
     "objectID": "generalBelief.html#implementation",
     "href": "generalBelief.html#implementation",
-    "title": "23  General Belief",
-    "section": "23.2 Implementation",
-    "text": "23.2 Implementation\n\nQuestion wording\nParticipants read the following text:\n“The following section will list a number of statements regarding your attitudes towards God, religion, and belief. Please read each and state to what extent you agree. There are no right or wrong answers and your responses remain anonymous.”\n\n\nItems\n\n\n\n\n\n\n\nQlabel\nquestion\n\n\n\n\nbelief_01\nI believe that God exists\n\n\nbelief_02\nIt is not possible to know if God exists\n\n\nconf_01\nI am confident that my beliefs about God's existence are the right ones.\n\n\nar_01\nWe would all be better off if people left religion behind.\n\n\napth_01\nWhether or not God exists is a question that doesn’t interest me much\n\n\napth_02\nWhether or not there is an ultimate purpose to life is a question that doesn’t interest me much.\n\n\nagn_01\nI don’t know whether there is a God, and I don’t believe there is any way to find out.\n\n\nmean_01\nFor most things in the world, we will never be able to discover the real objective truth.",
+    "title": "24  General Belief",
+    "section": "24.2 Implementation",
+    "text": "24.2 Implementation\n\nQuestion wording\nParticipants read the following text:\n“The following section will list a number of statements regarding your attitudes towards God, religion, and belief. Please read each and state to what extent you agree. There are no right or wrong answers and your responses remain anonymous.”\n\n\nItems\n\n\n\n\n\n\n\nQlabel\nquestion\n\n\n\n\nbelief_01\nI believe that God exists\n\n\nbelief_02\nIt is not possible to know if God exists\n\n\nconf_01\nI am confident that my beliefs about God's existence are the right ones.\n\n\nar_01\nWe would all be better off if people left religion behind.\n\n\napth_01\nWhether or not God exists is a question that doesn’t interest me much\n\n\napth_02\nWhether or not there is an ultimate purpose to life is a question that doesn’t interest me much.\n\n\nagn_01\nI don’t know whether there is a God, and I don’t believe there is any way to find out.\n\n\nmean_01\nFor most things in the world, we will never be able to discover the real objective truth.",
     "crumbs": [
       "Belief Measures",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>General Belief</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>General Belief</span>"
     ]
   },
   {
     "objectID": "generalBelief.html#coding",
     "href": "generalBelief.html#coding",
-    "title": "23  General Belief",
-    "section": "23.3 Coding",
-    "text": "23.3 Coding\nThis scale uses our standard response scale for agreement\n\n\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n\n\nstrongly disagree\nmoderately disagree\nslightly disagree\nneither agree nor disagree\nslightly agree\nmoderately agree\nstrongly agree",
+    "title": "24  General Belief",
+    "section": "24.3 Coding",
+    "text": "24.3 Coding\nThis scale uses our standard response scale for agreement\n\n\n\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n\n\nstrongly disagree\nmoderately disagree\nslightly disagree\nneither agree nor disagree\nslightly agree\nmoderately agree\nstrongly agree",
     "crumbs": [
       "Belief Measures",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>General Belief</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>General Belief</span>"
     ]
   },
   {
     "objectID": "generalBelief.html#scoring",
     "href": "generalBelief.html#scoring",
-    "title": "23  General Belief",
-    "section": "23.4 Scoring",
-    "text": "23.4 Scoring\nSee the Belief Measures landing page for all belief measures variables and their definitions.",
+    "title": "24  General Belief",
+    "section": "24.4 Scoring",
+    "text": "24.4 Scoring\nSee the Belief Measures landing page for all belief measures variables and their definitions.",
     "crumbs": [
       "Belief Measures",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>General Belief</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>General Belief</span>"
     ]
   },
   {
     "objectID": "atheistMembership.html",
     "href": "atheistMembership.html",
-    "title": "24  Atheist Membership",
+    "title": "25  Atheist Membership",
     "section": "",
-    "text": "24.1 Measure",
+    "text": "25.1 Measure",
     "crumbs": [
       "Belief Measures",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Atheist Membership</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Atheist Membership</span>"
     ]
   },
   {
     "objectID": "atheistMembership.html#measure",
     "href": "atheistMembership.html#measure",
-    "title": "24  Atheist Membership",
+    "title": "25  Atheist Membership",
     "section": "",
     "text": "Modifications",
     "crumbs": [
       "Belief Measures",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Atheist Membership</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Atheist Membership</span>"
     ]
   },
   {
     "objectID": "atheistMembership.html#implementation",
     "href": "atheistMembership.html#implementation",
-    "title": "24  Atheist Membership",
-    "section": "24.2 Implementation",
-    "text": "24.2 Implementation\n\n\n\n\n\n\n\n\nQlabel\nQuestion\nResponse options\n\n\n\n\nam_01\nAre you currently a member of any atheist, secularist, humanist, or similar organization at a national or local level?\nY/N",
+    "title": "25  Atheist Membership",
+    "section": "25.2 Implementation",
+    "text": "25.2 Implementation\n\n\n\n\n\n\n\n\nQlabel\nQuestion\nResponse options\n\n\n\n\nam_01\nAre you currently a member of any atheist, secularist, humanist, or similar organization at a national or local level?\nY/N",
     "crumbs": [
       "Belief Measures",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Atheist Membership</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Atheist Membership</span>"
     ]
   },
   {
     "objectID": "atheistMembership.html#scoring",
     "href": "atheistMembership.html#scoring",
-    "title": "24  Atheist Membership",
-    "section": "24.3 Scoring",
-    "text": "24.3 Scoring\nSee the Belief Measures landing page for all belief measures variables and their definitions.",
+    "title": "25  Atheist Membership",
+    "section": "25.3 Scoring",
+    "text": "25.3 Scoring\nSee the Belief Measures landing page for all belief measures variables and their definitions.",
     "crumbs": [
       "Belief Measures",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Atheist Membership</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Atheist Membership</span>"
     ]
   },
   {
@@ -949,26 +969,6 @@
     "text": "Baimel, A., Apicella, C., Atkinson, Q., Bolyanatz, A., Cohen, E.,\nHandley, C., … Purzycki, B. (2022). Material insecurity predicts greater\ncommitment to moralistic and less commitment to local deities: A\ncross-cultural investigation. Religion, Brain & Behavior,\n12(1-2), 4–17. https://doi.org/10.1080/2153599X.2021.2006287\n\n\nBaron-Cohen, S., & Wheelwright, S. (2004). The Empathy\nQuotient: An Investigation of Adults\nwith Asperger Syndrome or High Functioning\nAutism, and Normal Sex Differences. Journal of\nAutism and Developmental Disorders, 34(2), 163–175. https://doi.org/10.1023/B:JADD.0000022607.19833.00\n\n\nFrederick, S. (2005). Cognitive Reflection and\nDecision Making. Journal of Economic Perspectives,\n19(4), 25–42. https://doi.org/10.1257/089533005775196732\n\n\nGelfand, M. J., & Realo, A. (1999). Individualism-collectivism and\naccountability in intergroup negotiations. Journal of Applied\nPsychology, 84(5), 721–736. https://doi.org/10.1037/0021-9010.84.5.721\n\n\nHart, C. M., Ritchie, T. D., Hepper, E. G., & Gebauer, J. E. (2015).\nThe Balanced Inventory of Desirable Responding Short\nForm (BIDR-16). SAGE Open, 5(4),\n2158244015621113. https://doi.org/10.1177/2158244015621113\n\n\nLanman, J. A., & Buhrmester, M. D. (2017). Religious actions speak\nlouder than words: Exposure to credibility-enhancing displays predicts\ntheism. Religion, Brain & Behavior, 7(1), 3–16. https://doi.org/10.1080/2153599X.2015.1117011\n\n\nMarks, D. F. (1973). Visual Imagery Differences in the\nRecall of Pictures. British Journal of\nPsychology, 64(1), 17–24. https://doi.org/10.1111/j.2044-8295.1973.tb01322.x\n\n\nMcDermott, M. R. (2001). Rebelliousness. In Motivational styles in\neveryday life: A guide to reversal theory (pp.\n167–185). Washington, DC, US: American Psychological\nAssociation. https://doi.org/10.1037/10427-009\n\n\nMcLain, D. L. (2009). Evidence of the properties of an ambiguity\ntolerance measure: The Multiple Stimulus Types Ambiguity Tolerance\nScale-II (MSTAT-II). Psychological Reports,\n105(3 Pt 1), 975–988. https://doi.org/10.2466/PR0.105.3.975-988\n\n\nNeave, N., Jackson, R., Saxton, T., & Hönekopp, J. (2015). The\ninfluence of anthropomorphic tendencies on human hoarding behaviours.\nPersonality and Individual Differences, 72, 214–219.\nhttps://doi.org/10.1016/j.paid.2014.08.041\n\n\nStåhl, T., Zaal, M. P., & Skitka, L. J. (2016). Moralized\nrationality: Relying on logic and evidence in the formation\nand evaluation of belief can be seen as a moral issue. PLoS\nONE, 11. https://doi.org/10.1371/journal.pone.0166332\n\n\nStanovich, K. E. (1989). Implicit Philosophies of\nMind: The Dualism Scale and Its\nRelation to Religiosity and Belief in\nExtrasensory Perception. The Journal of\nPsychology, 123(1), 5–23. https://doi.org/10.1080/00223980.1989.10542958\n\n\nSteger, M. F., Frazier, P., Oishi, S., & Kaler, M. (2006). The\nMeaning in Life Questionnaire:\nAssessing the presence of and search for meaning in life.\nJournal of Counseling Psychology, 53(1), 80–93. https://doi.org/10.1037/0022-0167.53.1.80\n\n\nThomson, K. S., & Oppenheimer, D. M. (2016). Investigating an\nalternate form of the cognitive reflection test. Judgment and\nDecision Making, 11, 99–113.\n\n\nWakabayashi, A., Baron-Cohen, S., Wheelwright, S., Goldenfeld, N.,\nDelaney, J., Fine, D., … Weil, L. (2006). Development of short forms of\nthe Empathy Quotient (EQ-Short) and the\nSystemizing Quotient (SQ-Short).\nPersonality and Individual Differences, 41(5),\n929–940. https://doi.org/10.1016/j.paid.2006.03.017\n\n\nWillard, A. K., & Cingl, L. (2017). Testing theories of\nsecularization and religious belief in the Czech Republic\nand Slovakia. Evolution and Human Behavior,\n38(5), 604–615. https://doi.org/10.1016/j.evolhumbehav.2017.01.002\n\n\nWillard, A. K., Cingl, L., & Norenzayan, A. (2020). Cognitive\nBiases and Religious Belief: A Path\nModel Replication in the Czech Republic and\nSlovakia With a Focus on\nAnthropomorphism. Social Psychological and Personality\nScience, 11(1), 97–106. https://doi.org/10.1177/1948550619841629",
     "crumbs": [
       "References"
-    ]
-  },
-  {
-    "objectID": "allVariables.html",
-    "href": "allVariables.html",
-    "title": "1  All Variables",
-    "section": "",
-    "text": "1.1 Survey 1\nVariable NameVariable LabelDescriptionVariable TypeDefinitionResponse OptionsCRED ExposurecredCRED  exposure scorenumericCREDssum of cred_caregiver + cred_group + cred_hometown + cred_highschool*CRED (Caregiver) ExposurecredCaregiverCaregiver CRED exposure scorenumericCREDssum of cred_01: cred_06*CRED (Group Leader) ExposurecredGroupLeaderGroup leader CRED exposure scorenumericCREDscred_11 + cred_20*CRED (Group Member) ExposurecredGroupMemberGroup member CRED exposure scorenumericCREDssum of cred_13, 14, 15, 16, 22, 23, 24, 25)*CRED (Group) ExposurecredGroupGroup CRED exposure scorenumericCREDssum of cred_group_ldr + cred_group_mbr*CRED (Hometown) ExposurecredHometownHometown CRED exposure scoreordinalCREDscred_28CRED (High School) ExposurecredHighschoolHighschool CRED exposure scoreordinalCREDscred_30Sincerity (Group Leader)sincerityGroupLeaderSincerity of group leader question response ordinalCREDsmean of cred_10: cred_19*Sincerity (Group Members)sincerityGroupMemberSincerity of group members question responseordinalCREDsmean of cred_12: cred_21*Sincerity (Caregiver)sincerityCaregiverSincerity of parents question responseordinalCREDscred_32Sincerity (Hometown)sincerityHometownSincerity of hometown question responseordinalCREDscred_28Sincerity (High school)sincerityHighschoolSincerity of highschool question responseordinalCREDscred_31Percentage Believers (Hometown)believersHometownPercentage of hometown believers responsenumericCREDscred_26Percentage Believers (High School)believersHighschoolPercentage of highschool believers responsenumericCREDscred_29Non-Theistic SocialisationnontheisticSocialisationNon-theistic socialisation scorenumericNon Theistic Socialisationmean of nts_01: nts_08Normativity of Religion (all)normativityNormativity of religion scorenumericNormativity of Religionmean of norm_01: norm_12Normativity of Religion (Nation)nomrativityNationNation normativity of religion scoreordinalNormativity of Religionmean of norm_01: norm_03Normativity of Religion (Ethnicity)normativityEthnicityEthnicity normativity of religion scoreordinalNormativity of Religionmean of norm_04: norm_06Normativity of Religion (Peers)normativityPeersPeer normativity of religion scoreordinalNormativity of Religionmean of norm_07: norm_09Normativity of Religion (Group)normativityGroupGroup normativity of religion scoreordinalNormativity of Religionmean of norm_10: norm_12Religious EmphasisreligiousEmphasisReligious emphasis scorenumericReligious Emphasismean of re_01: re_09CollectivismcollectivismIndividualism scorenumericIndividualism & CollectivismThe mean of ic_01 : ic_16Rebelliousness (trolling)rebelliousnessTrollingRebelliousness trolling scorenumericRebelliousnessThe mean of rb_01 : rb_04Existential Insecurity (upbringing)existentialInsecurityUpbringing existential security scorenumericExistential Securitymean es_15: es_21Meaning in LifemeaningLifeMeaning in life scorenumericNeed for Meaningmean mlq_01: mlq_10Social DesirabilitysocialDesirabilitySocial Desirability scorenumericSocial Desirabilitymean sd_01: sd_08",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>All Variables</span>"
-    ]
-  },
-  {
-    "objectID": "allVariables.html#belief-measures",
-    "href": "allVariables.html#belief-measures",
-    "title": "1  All Variables",
-    "section": "1.2 Belief Measures",
-    "text": "1.2 Belief Measures\n\n1.2.1 Belief in God\n\n\nVariable NameVariable LabelDescriptionVariable TypeDefinitionResponse OptionsBelief in God (categorical)beliefInGod_catCategoricalCategorical Response to belief in god optionsissp_01 default1. I don't believe in God2. I don't know whether there is a God, and I don't believe there is any way to find out3. I don't believe in a personal God, but I do believe in a Higher Power of some kind4. I find myself believing in God some of the time, but not at others5. While I have doubts, I feel that I do believe in God.6. I know God really exists and I have no doubt about it.7. Don't knowNon-Belief IdentitynonBeliefIdentityCategoricalCategorical response to non-believers identity optionsissp_02 default1. Spiritual but not religious2. Seeker3. Non-religious4. Atheist5. Agnostic6. Humanist7. Sceptic8. Free thinker9. Rationalist10. Secular11. Christian12. Muslim13. Jewish14. Buddhist15. Hindu16. Daoist17. Shinto18. Confucian19. Other (please specify)Belief in God (binary)beliefInGod_binbinary (dummy)Categorisation of \"believers\" and \"non-believers\" from issp_01dummy variable for yes responses to either 5 & 6 in issp_010,1Belief in God (ordinal)beliefInGod_ordcontinuous/ ordinalLikert measure of agreement with belief in god statement.belief_011 to 7Agnosticism (ordinal)agnosticism_ordcontinuous/ ordinalLikert scale measure of agreement with agnosticism statement.agn_011 to 7Agnostic Identity (binary)agnosticIdentity_binbinaryCategorisation of \"agnostics\" from issp_02dummy/index variable for response 5 in issp_020,1\n\n\n\n\n\n1.2.2 Atheism\n\n\nVariable NameVariable LabelDescriptionVariable TypeDefinitionResponse OptionsAtheist MembershipatheistMembershipYes/no to membership of an atheist org.binaryam_01 response0,1Atheist IdentityatheistIDCategorisation of \"athetists\" from issp_02binarydummy variable from option 4 for issp_020,1\n\n\n\n\n1.2.3 Religiosity\n\n\nVariable NameVariable LabelDescriptionVariable TypeDefinitionResponse OptionsReligious IdentificationreligID_1binaryYes/no belong to a religionrid_01 default0,1Religious IdentityreligID_2categoricalWhich religion categoryrid_02 default1. Protestant2. Catholic3. Orthodox (e.g. Greek Orthodox, Russian Orthodox)4. Sunni5. Shiite6.Buddhist7. Confucian8. Daoist9. Hindu10. Jewish11. Shinto12. Other (please specify)Religious AttendancereligiousAttendancecontinuous/ ordinalFrequency of religious attendence likert scalerp_01 default1. More than once a week2. Once a week3. Once a month4. Only on special holy days5. Once a year6. Less often7. Never, practically neverPrayer FrequencyprayerFrequencycontinuous/ ordinalFrequency of prayer likert scalerp_02 default1. Several times a day2. Once a day3. Several times each week4. Only when attending religious services5. Only on special holy days6. Once a year7. Less often8. Never, practically neverReligious ObjectsreligiousObjectscategoricalPresence of religious objectsrp_03 default1. Yes, for religious reasons2. Yes, for non-religious reasons3. NoAnti-religiosityantiReligiositycontinuous/ ordinalAgreement with anti-religiosity statementar_01 default1 to 7Primary Caregiver Religiosity caregiverReligiositybinaryYes/no belong to a religionrid_03 default0,1Primary Caregiver Religios IdentitycaregiverReligiousIDcategoricalWhich religion categoryrid_04 default1. Protestant2. Catholic3. Orthodox (e.g. Greek Orthodox, Russian Orthodox)4. Sunni5. Shiite6.Buddhist7. Confucian8. Daoist9. Hindu10. Jewish11. Shinto12. Other (please specify)Additional Caregiver ReligiousitycaregiverReligiosity2binaryYes/no belong to a religionrid_05 default0,1Additional Caregiver Religiosity  IdentitycaregiverReligiousID2categoricalWhich religion categoryrid_06 default1. Protestant2. Catholic3. Orthodox (e.g. Greek Orthodox, Russian Orthodox)4. Sunni5. Shiite6.Buddhist7. Confucian8. Daoist9. Hindu10. Jewish11. Shinto12. Other (please specify)\n\n\n\n\n1.2.4 Meta-Belief\n\n\nVariable NameVariable LabelDescriptionVariable TypeDefinitionResponse OptionsPossibility of Knowing (God)godKnowingPossibilitycontinuous/ ordinalAgreement with: \"It is not possible to know if God exists\"belief_02 default1 to 7Confidence in BeliefbeliefConfidencecontinuous/ ordinalAgreement with: \"I am confident that my beliefs about God's existence are the right ones\"conf_01 default1 to 7Apatheism (God)apatheismGodcontinuous/ ordinalAgreement with:  \"Whether or not God exists is a question that doesn't interest me much\"apth_01 default1 to 7Apatheism (life purpose)apatheismPurposecontinuous/ ordinalAgreement with: \"Whether or not there is an ultimate purpose to life is a question that doesn't interest me much.\"apth_02 default1 to 7Apatheism (combined)apatheismcontinuous/Mean of apatheism_god + apatheism_purposemean of apth_01 and apth_021 to 7Possibility of TruthtruthPossibilitycontinuous/ ordinalAgreement with: \"For most things in the world, we will never be able to discover the real objective truth.\"mean_01 default1 to 7NaturalismnaturalismbinaryLack of agreement for any supernatural belief itemsdummy variable = 0 for cases where any of snb items (except 16, 17) are &gt; 4 (agreement or neither)0, 1Supernaturalismsupernaturalismordinalagreement across all snb itemsResponse across all snb items1 to 7\n\n\n\n\n\n1.2.5 Supernatural Belief\nSupernatural Belief measures use a 1-7 agreement scale\nAfterlife\n\n\n\nVariable NameVariable LabelDescriptionVariable TypeDefinitionResponse OptionsAfterlife ExistenceafterlifeExistenceAgreement with: \"There is some sort of life after death\"continuous/ ordinalsnb_01 default1 to 7Afterlife PunishmentafterlifePunishmentAgreement with: \"Some people will be punished after they die.\"continuous/ ordinalsnb_13 default1 to 7Afterlife RewardafterlifeRewardAgreement with: \"Some people will be rewarded after they die\"continuous/ ordinalsnb_14 default1 to 7ReincarnationreincarnationAgreement with: \"Sometime after I die, I expect that I'll be born again in another body.\"continuous/ ordinalsnb_02 default1 to 7AstrologyastrologyAgreement with: \"The positions of the stars and planets affect people's lives\"continuous/ ordinalsnb_03 default1 to 7Mystical PeoplemysticalPeopleAgreement with: \"Some people have mystical powers (e.g. to heal, harm, or bring good luck)\"continuous/ ordinalsnb_04 default1 to 7Mystical ObjectsmysticalObjectsAgreement with: \"Some objects have mystical powers (e.g. to heal, harm, or bring good luck)\"continuous/ ordinalsnb_05 default1 to 7Good and EvilgoodEvilAgreement with: \"There are underlying forces of good and evil in this world.\"continuous/ ordinalsnb_06 default1 to 7Universal spirit or life forceuniversalLifeforceAgreement with: \"There exists a universal spirit or life force.\"continuous/ ordinalsnb_07 default1 to 7KarmakarmaAgreement with: \"There is a power in the universe that causes good things to happen to people who behave morally and bad things to happen to people who behave immorally.\"continuous/ ordinalsnb_08 default1 to 7FatefateAgreement with: \"Most significant life events are meant to be and happen for a reason.\"continuous/ ordinalsnb_09 default1 to 7Supernatural Being ExistencesupernaturalBeingsAgreement with: \"Supernatural beings of some kind exist\"continuous/ ordinalsnb_10 default1 to 7Good Supernatural BeingsgoodSupernaturalBeingsAgreement with: \"There exist supernatural beings that are good/kind (e.g. COUNTRY SPECIFIC)\"continuous/ ordinalsnb_11 default1 to 7Harmful Supernatural BeingsharmfulSupernaturalBeingsAgreement with: \"There exist supernatural beings that are harmful. (e.g COUNTRY SPECIFIC)\"continuous/ ordinalsnb_12 default1 to 7Evil EyeevilEyeAgreement with: \"Making other people envious of you can cause illness or misfortune.\"continuous/ ordinalsnb_15 default1 to 7Spiritual Experience (personal)spiritualForceCategory response to: \"Have you ever felt as though you were connected to a powerful spiritual force?\"continuous/ ordinalsnb_16 default1. Yes, I've had an experience like this.2. I've had an experience like this, but I didn't associate it with a spiritual force.3. No, I've never had an experience like this.Lucky ObjectluckyObjectsYes/No to: \"Do you carry any objects for luck or protection?\"binarysnb_17 default0, 1\n\n\n\n\n1.2.5.1 Demographic Variables\n\n\nVariable NameVariable LabelDescriptionVariable TypeDefinitionResponse OptionsIncomeinc_01Response to: \"What was your household income last year, including casual and part-time income?\"ordinal/ categoricalinc_01 defaultcountry specific brackets (see full codebook)Years in Educationed_01Response to: \"For how many years were you in formal education (e.g. Schools, University)?\"Continuoused_01 defaultopen responseEthnicityeth_01Response to: \"What is your ethnicity?\"Categoricaleth_01 defaultcountry specific brackets (see full codebook)Sexual Orientationsexor_01Response to: \"Which of the following best describes your sexual orientation?\"Categoricalsexor_01 defaultHeterosexual (1)Homosexual (2)Bisexual (3)Other sexual orientation (4)(please specify)Martital Statusmar_01Response to: \" What is your marital status?\"Categoricalmar_01 defaultSingle, not in a committed relationship (1)Single, in a committed relationship (2)Living with a partner (3)Married or civil union (4)Divorced (5)Separated (6)Widowed (7)Homeshooling (primary)homeschool_pResponse to \"Between the ages of 5- 10 were you homeschooled?\"Binaryhomeschool_p defaultyes/noReligious Homeshooling (primary)relig_hs_pResponse to \"Was this schooling religious?\"Binaryrelig_hs_p defaultyes/noReligious Primary Schoolrelig_school_pResponse to: \"Was your school(s) affiliated with a religion/faith?\"Binaryrelig_school_p defaultyes/noHomeshooling (secondary)homeschool_sResponse to \"Between the ages of 11-16 were you homeschooled?\"Binaryhomeschool_s defaultyes/noReligious Homeshooling (seconday) relig_hs_sResponse to \"Was this schooling religious?\"Binaryrelig_hs_s defaultyes/noReligious Secondary Schoolrelig_school_sResponse to: \"Was your school(s) affiliated with a religion/faith?\"Binaryrelig_school_s defaultyes/noSESses_01Task, with the following response Q: \"Please select where on the rung you think you stand at this time in your life relative to other people in the [COUNTRY], with 1 being the top and 10 being the bottom.\"Continuousses_01 default1 to 10",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>All Variables</span>"
     ]
   }
 ]

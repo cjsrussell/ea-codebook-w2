@@ -35,3 +35,11 @@ Belief in God (binary),beliefInGod_bin,binary (dummy),"Categorisation of ""belie
 Belief in God (ordinal),beliefInGod_ord,continuous/ ordinal,Likert measure of agreement with belief in god statement.,belief_01,1 to 7
 Agnosticism (ordinal),agnosticism_ord,continuous/ ordinal,Likert scale measure of agreement with agnosticism statement.,agn_01,1 to 7
 Agnostic Identity (binary),agnosticIdentity_bin,binary,"Categorisation of ""agnostics"" from issp_02",dummy/index variable for response 5 in issp_02,"0,1"
+Belief Change,beliefChange,Categorical,catgeorical response to issp_03,isssp_03 default,"1. Generally speaking, I have always believed in God.
+2. Generally speaking, I have never believed in God.
+3. I believed in God in the past, but now I do not.
+4. I did not believe in God in the past, but now I do."
+New Believer,changeNewBeliever,binary,dummy categorisation from issp_03,dummy variable for 4 on issp_03,"0,1"
+New Non-Believer,changeNewNonBeliever,binary,dummy categorisation from issp_03,dummy variable for 3 on issp_03,"0,1"
+Always Believer,noChangeBeliever,binary,dummy categorisation from issp_03,dummy variable for 1 on issp_03,"0,1"
+Always Non-Believer,noChangeNonBeliever,binary,dummy categorisation from issp_03,dummy variable for 2 on issp_03,"0,1"
