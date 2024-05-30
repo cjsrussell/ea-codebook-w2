@@ -1,0 +1,134 @@
+---
+title: "All Variables"
+editor: visual
+
+---
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+library(tidyverse)
+library(kableExtra)
+library(flextable)
+
+```
+
+```{r,  echo=FALSE}
+
+surv1 <- read.csv("variables/survey1.csv")
+colnames(surv1) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Definition", "Response Options")
+
+surv2 <- read.csv("variables/survey1.csv")
+colnames(surv2) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Definition", "Response Options")
+
+ath <- read.csv("variables/atheism.csv")
+colnames(ath) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Definition", "Response Options")
+
+big <- read.csv("variables/belief in god.csv")
+colnames(big) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Definition", "Response Options")
+
+rel <- read.csv("variables/religiosity.csv")
+colnames(rel) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Definition", "Response Options")
+
+meta <- read.csv("variables/meta-belief.csv")
+colnames(meta) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Definition", "Response Options")
+
+snb <- read.csv("variables/supernatural-belief.csv")
+colnames(snb) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Definition", "Response Options")
+
+dem <- read.csv("variables/demographics.csv", header = TRUE)
+colnames(dem) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Definition", "Response Options")
+  
+
+agreement <- read.csv("variables/agreement.csv", header = TRUE)
+colnames(agreement) <- c("Strongly Disagree", "Moderately Disagree", "Slightly Disagree", "Neither Agree nor Disagree", "Slightly Agree", "Moderately Agree", "Strongly Agree")
+
+```
+
+## Survey 1
+
+```{r, echo=FALSE, warning=FALSE}
+surv1 %>%
+  flextable() %>%
+  autofit() %>%
+  theme_vanilla()
+ 
+
+```
+
+## Belief Measures
+
+### Belief in God
+
+```{r, echo=FALSE}
+
+big %>%
+  flextable() %>%
+  autofit() %>%
+  theme_vanilla()
+
+```
+
+\newpage
+
+### Atheism
+
+```{r, echo=FALSE}
+ath %>%
+  flextable() %>%
+  autofit() %>%
+  theme_vanilla()
+```
+
+### Religiosity
+
+```{r, echo=FALSE}
+rel %>%
+  flextable() %>%
+  autofit() %>%
+  theme_vanilla()
+```
+
+
+### Meta-Belief
+
+```{r, echo=FALSE}
+meta %>%
+  flextable() %>%
+  autofit() %>%
+  theme_vanilla()
+```
+
+\newpage
+
+### Supernatural Belief
+
+Supernatural Belief measures use a 1-7 agreement scale
+
+*Afterlife*\
+
+```{r, echo=FALSE, warning=FALSE}
+
+#table is too long so we split it
+
+snb %>%
+  flextable() %>%
+  autofit() %>%
+  theme_vanilla()
+```
+\newpage
+
+#### Demographic Variables
+
+```{r, echo=FALSE, warning=FALSE}
+
+rownames(dem) <- NULL
+
+
+
+dem %>%
+  flextable() %>%
+  autofit() %>%
+  theme_vanilla()
+
+
+```

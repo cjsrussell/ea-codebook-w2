@@ -25,6 +25,7 @@ book:
     style: docked 
   chapters:
     - index.qmd
+    - allVariables.qmd
     - part: "Survey 1"
       chapters: 
       - rebelliousness.qmd

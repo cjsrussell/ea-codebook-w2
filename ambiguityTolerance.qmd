@@ -83,7 +83,6 @@ kbl(tab, booktabs = T) %>%
              column_spec(6, width = "3cm") 
 
 } else {
-  # do use gt
 tab %>%
   flextable() %>%
   width(j = 1, width = 3, unit = "cm") %>%

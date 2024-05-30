@@ -1,0 +1,558 @@
+---
+title: "Variable tables"
+format:
+  pdf:
+    documentclass: article
+    classoption: [landscape]
+    geometry:
+      - top=20mm
+      - bottom=20mm 
+      - left=20mm
+      - right=20mm    
+editor: visual
+
+---
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+library(tidyverse)
+library(kableExtra)
+library(flextable)
+
+```
+
+```{r,  echo=FALSE}
+
+surv1 <- read.csv("variables/survey1.csv")
+colnames(surv1) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Definition", "Response Options")
+
+surv2 <- read.csv("variables/survey1.csv")
+colnames(surv2) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Definition", "Response Options")
+
+ath <- read.csv("variables/atheism.csv")
+colnames(ath) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Definition", "Response Options")
+
+big <- read.csv("variables/belief in god.csv")
+colnames(big) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Definition", "Response Options")
+
+rel <- read.csv("variables/religiosity.csv")
+colnames(rel) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Definition", "Response Options")
+
+meta <- read.csv("variables/meta-belief.csv")
+colnames(meta) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Definition", "Response Options")
+
+snb <- read.csv("variables/supernatural-belief.csv")
+colnames(snb) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Definition", "Response Options")
+
+dem <- read.csv("variables/demographics.csv", header = TRUE)
+colnames(dem) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Definition", "Response Options")
+  
+
+agreement <- read.csv("variables/agreement.csv", header = TRUE)
+colnames(agreement) <- c("Strongly Disagree", "Moderately Disagree", "Slightly Disagree", "Neither Agree nor Disagree", "Slightly Agree", "Moderately Agree", "Strongly Agree")
+
+```
+
+## Survey 1
+
+```{r, echo=FALSE, warning=FALSE}
+
+#table is too long so we split it
+
+# tab 1
+
+surv1.1 <- surv1[1:13,]
+
+ kbl(surv1.1,
+     "latex",
+     booktabs = T) %>%
+              kable_styling(full_width = T,
+                            fixed_thead = T,
+                            latex_options = c("scale_down")) %>%
+              column_spec(1, width = "3cm") %>%
+              column_spec(2, width = "4cm") %>%
+              column_spec(3, width = "4cm") %>%
+              column_spec(4, width = "3cm") %>%
+              column_spec(5, width = "3cm") %>%
+              column_spec(6, width = "4cm") %>%
+              row_spec(0, hline_after = T, bold = TRUE)  %>%
+              row_spec(c(1:13), hline_after = T)
+ 
+
+```
+\newpage
+```{r, echo=FALSE, warning=FALSE}
+
+# tab 2
+
+surv1.2 <- surv1[13:26,]
+rownames(surv1.2) <- NULL
+
+
+kbl(surv1.2,
+     "latex",
+     booktabs = T) %>%
+              kable_styling(full_width = T,
+                            fixed_thead = T,
+                            latex_options = c("scale_down")) %>%
+              column_spec(1, width = "3cm") %>%
+              column_spec(2, width = "4cm") %>%
+              column_spec(3, width = "4cm") %>%
+              column_spec(4, width = "3cm") %>%
+              column_spec(5, width = "3cm") %>%
+              column_spec(6, width = "4cm") %>%
+              row_spec(0, hline_after = T, bold = TRUE)  %>%
+              row_spec(c(1:13), hline_after = T)
+
+
+```
+
+## Belief Measures
+
+### Belief in God
+
+```{r, echo=FALSE}
+
+big1 <- big[1:4,]
+
+rownames(big1) <- NULL
+
+kbl(big1,
+    "latex",
+     booktabs = T) %>%
+              kable_styling(full_width = T,
+                            fixed_thead = T,
+                            latex_options = c("scale_down")) %>%
+              column_spec(1, width = "3cm") %>%
+              column_spec(2, width = "4cm") %>%
+              column_spec(3, width = "4cm") %>%
+              column_spec(4, width = "3cm") %>%
+              column_spec(5, width = "3cm") %>%
+              column_spec(6, width = "4cm") %>%
+              row_spec(0, hline_after = T, bold = TRUE)  %>%
+              row_spec(c(1:4), hline_after = T)
+```
+
+\newpage
+
+```{r, echo=FALSE}
+
+big2 <- big[5:6,]
+
+rownames(big2) <- NULL
+
+kbl(big2, 
+    "latex",
+     booktabs = T) %>%
+              kable_styling(full_width = T,
+                            fixed_thead = T,
+                            latex_options = c("scale_down")) %>%
+              column_spec(1, width = "3cm") %>%
+              column_spec(2, width = "4cm") %>%
+              column_spec(3, width = "4cm") %>%
+              column_spec(4, width = "3cm") %>%
+              column_spec(5, width = "3cm") %>%
+              column_spec(6, width = "4cm") %>%
+              row_spec(0, hline_after = T, bold = TRUE)  %>%
+              row_spec(c(1:4), hline_after = T)
+```
+
+\newpage
+
+### Atheism
+
+```{r, echo=FALSE}
+kbl(ath, 
+     "latex",
+     booktabs = T) %>%
+              kable_styling(full_width = T,
+                            fixed_thead = T,
+                            latex_options = c("scale_down")) %>%
+              column_spec(1, width = "3cm") %>%
+              column_spec(2, width = "4cm") %>%
+              column_spec(3, width = "4cm") %>%
+              column_spec(4, width = "3cm") %>%
+              column_spec(5, width = "3cm") %>%
+              column_spec(6, width = "4cm") %>%
+              row_spec(0, hline_after = T, bold = TRUE)  %>%
+              row_spec(c(1:4), hline_after = T)
+```
+
+### Religiosity
+
+```{r, echo=FALSE}
+rel1 <- rel[1:6,]
+rownames(rel1) <- NULL
+
+kbl(rel1,  
+     "latex",
+     booktabs = T) %>%
+              kable_styling(full_width = T,
+                            fixed_thead = T,
+                            latex_options = c("scale_down")) %>%
+              column_spec(1, width = "3cm") %>%
+              column_spec(2, width = "4cm") %>%
+              column_spec(3, width = "4cm") %>%
+              column_spec(4, width = "3cm") %>%
+              column_spec(5, width = "3cm") %>%
+              column_spec(6, width = "4cm") %>%
+              row_spec(0, hline_after = T, bold = TRUE)  %>%
+              row_spec(c(1:10), hline_after = T)
+```
+
+```{r, echo=FALSE}
+rel2 <- rel[7:10,]
+rownames(rel2) <- NULL
+
+kbl(rel2,  
+     "latex",
+     booktabs = T) %>%
+              kable_styling(full_width = T,
+                            fixed_thead = T,
+                            latex_options = c("scale_down")) %>%
+              column_spec(1, width = "3cm") %>%
+              column_spec(2, width = "4cm") %>%
+              column_spec(3, width = "4cm") %>%
+              column_spec(4, width = "3cm") %>%
+              column_spec(5, width = "3cm") %>%
+              column_spec(6, width = "4cm") %>%
+              row_spec(0, hline_after = T, bold = TRUE)  %>%
+              row_spec(c(1:3), hline_after = T)
+```
+
+
+### Meta-Belief
+
+```{r, echo=FALSE}
+kbl(meta,  
+     "latex",
+     booktabs = T) %>%
+              kable_styling(full_width = T,
+                            fixed_thead = T,
+                            latex_options = c("scale_down")) %>%
+              column_spec(1, width = "3cm") %>%
+              column_spec(2, width = "4cm") %>%
+              column_spec(3, width = "4cm") %>%
+              column_spec(4, width = "3cm") %>%
+              column_spec(5, width = "3cm") %>%
+              column_spec(6, width = "4cm") %>%
+              row_spec(0, hline_after = T, bold = TRUE)  %>%
+              row_spec(c(1:7), hline_after = T)
+```
+
+\newpage
+
+### Supernatural Belief
+
+Supernatural Belief measures use a 1-7 agreement scale
+
+*Afterlife*\
+
+```{r, echo=FALSE, warning=FALSE}
+
+#table is too long so we split it
+
+snb1 <- snb[1:3,]
+
+rownames(snb1) <- NULL
+
+
+
+kbl(snb1,  
+     "latex",
+     booktabs = T) %>%
+              kable_styling(full_width = T,
+                            fixed_thead = T,
+                            latex_options = c("scale_down")) %>%
+              column_spec(1, width = "3cm") %>%
+              column_spec(2, width = "4cm") %>%
+              column_spec(3, width = "4cm") %>%
+              column_spec(4, width = "3cm") %>%
+              column_spec(5, width = "3cm") %>%
+              column_spec(6, width = "4cm") %>%
+              row_spec(0, hline_after = T, bold = TRUE)  %>%
+              row_spec(c(1:10), hline_after = T)
+
+
+```
+
+\
+
+*Reincarnation*\
+
+```{r, echo=FALSE, warning=FALSE}
+
+
+#table is too long so we split it
+
+snb2 <- snb[4,]
+rownames(snb2) <- NULL
+
+
+kbl(snb2,  
+     "latex",
+     booktabs = T) %>%
+              kable_styling(full_width = T,
+                            fixed_thead = T,
+                            latex_options = c("scale_down")) %>%
+              column_spec(1, width = "3cm") %>%
+              column_spec(2, width = "4cm") %>%
+              column_spec(3, width = "4cm") %>%
+              column_spec(4, width = "3cm") %>%
+              column_spec(5, width = "3cm") %>%
+              column_spec(6, width = "4cm") %>%
+              row_spec(0, hline_after = T, bold = TRUE)  %>%
+              row_spec(c(1:10), hline_after = T)
+
+
+```
+
+\newpage
+
+*Astrology*\
+
+```{r, echo=FALSE, warning=FALSE}
+
+
+#table is too long so we split it
+
+snb3 <- snb[5,]
+
+rownames(snb3) <- NULL
+
+
+
+kbl(snb3,  
+     "latex",
+     booktabs = T) %>%
+              kable_styling(full_width = T,
+                            fixed_thead = T,
+                            latex_options = c("scale_down")) %>%
+              column_spec(1, width = "3cm") %>%
+              column_spec(2, width = "4cm") %>%
+              column_spec(3, width = "4cm") %>%
+              column_spec(4, width = "3cm") %>%
+              column_spec(5, width = "3cm") %>%
+              column_spec(6, width = "4cm") %>%
+              row_spec(0, hline_after = T, bold = TRUE)  %>%
+              row_spec(c(1:10), hline_after = T)
+
+
+```
+
+\
+
+*Mystical Powers*\
+
+```{r, echo=FALSE, warning=FALSE}
+
+
+#table is too long so we split it
+
+snb4 <- snb[6:7,]
+rownames(snb4) <- NULL
+
+
+
+kbl(snb4,  
+     "latex",
+     booktabs = T) %>%
+              kable_styling(full_width = T,
+                            fixed_thead = T,
+                            latex_options = c("scale_down")) %>%
+              column_spec(1, width = "3cm") %>%
+              column_spec(2, width = "4cm") %>%
+              column_spec(3, width = "4cm") %>%
+              column_spec(4, width = "3cm") %>%
+              column_spec(5, width = "3cm") %>%
+              column_spec(6, width = "4cm") %>%
+              row_spec(0, hline_after = T, bold = TRUE)  %>%
+              row_spec(c(1:10), hline_after = T)
+
+```
+
+\newpage
+
+*Underlying Forces*\
+
+```{r, echo=FALSE, warning=FALSE}
+
+
+#table is too long so we split it
+
+snb5 <- snb[8:11,]
+rownames(snb5) <- NULL
+
+
+
+kbl(snb5,  
+     "latex",
+     booktabs = T) %>%
+              kable_styling(full_width = T,
+                            fixed_thead = T,
+                            latex_options = c("scale_down")) %>%
+              column_spec(1, width = "3cm") %>%
+              column_spec(2, width = "4cm") %>%
+              column_spec(3, width = "4cm") %>%
+              column_spec(4, width = "3cm") %>%
+              column_spec(5, width = "3cm") %>%
+              column_spec(6, width = "4cm") %>%
+              row_spec(0, hline_after = T, bold = TRUE)  %>%
+              row_spec(c(1:10), hline_after = T)
+
+
+```
+
+\newpage
+
+*Supernatural Beings*\
+
+```{r, echo=FALSE, warning=FALSE}
+
+
+#table is too long so we split it
+
+snb6 <- snb[12:14,]
+rownames(snb6) <- NULL
+
+
+
+kbl(snb6,  
+     "latex",
+     booktabs = T) %>%
+              kable_styling(full_width = T,
+                            fixed_thead = T,
+                            latex_options = c("scale_down")) %>%
+              column_spec(1, width = "3cm") %>%
+              column_spec(2, width = "4cm") %>%
+              column_spec(3, width = "4cm") %>%
+              column_spec(4, width = "3cm") %>%
+              column_spec(5, width = "3cm") %>%
+              column_spec(6, width = "4cm") %>%
+              row_spec(0, hline_after = T, bold = TRUE)  %>%
+              row_spec(c(1:10), hline_after = T)
+
+
+```
+
+\
+
+*Evil Eye*\
+
+```{r, echo=FALSE, warning=FALSE}
+
+
+#table is too long so we split it
+
+snb7 <- snb[15,]
+rownames(snb7) <- NULL
+
+
+
+kbl(snb7,  
+     "latex",
+     booktabs = T) %>%
+              kable_styling(full_width = T,
+                            fixed_thead = T,
+                            latex_options = c("scale_down")) %>%
+              column_spec(1, width = "3cm") %>%
+              column_spec(2, width = "4cm") %>%
+              column_spec(3, width = "4cm") %>%
+              column_spec(4, width = "3cm") %>%
+              column_spec(5, width = "3cm") %>%
+              column_spec(6, width = "4cm") %>%
+              row_spec(0, hline_after = T, bold = TRUE)  %>%
+              row_spec(c(1:10), hline_after = T)
+
+
+```
+
+\newpage
+
+*Spiritual Experience*\
+
+```{r, echo=FALSE, warning=FALSE}
+
+
+#table is too long so we split it
+
+snb8 <- snb[16,]
+rownames(snb8) <- NULL
+
+
+
+kbl(snb8,  
+     "latex",
+     booktabs = T) %>%
+              kable_styling(full_width = T,
+                            fixed_thead = T,
+                            latex_options = c("scale_down")) %>%
+              column_spec(1, width = "3cm") %>%
+              column_spec(2, width = "4cm") %>%
+              column_spec(3, width = "4cm") %>%
+              column_spec(4, width = "3cm") %>%
+              column_spec(5, width = "3cm") %>%
+              column_spec(6, width = "4cm") %>%
+              row_spec(0, hline_after = T, bold = TRUE)  %>%
+              row_spec(c(1:10), hline_after = T)
+
+```
+
+\
+
+*Lucky Objects*\
+
+```{r, echo=FALSE, warning=FALSE}
+
+
+#table is too long so we split it
+
+snb9 <- snb[17,]
+rownames(snb9) <- NULL
+
+
+
+kbl(snb9,  
+     "latex",
+     booktabs = T) %>%
+              kable_styling(full_width = T,
+                            fixed_thead = T,
+                            latex_options = c("scale_down")) %>%
+              column_spec(1, width = "3cm") %>%
+              column_spec(2, width = "4cm") %>%
+              column_spec(3, width = "4cm") %>%
+              column_spec(4, width = "3cm") %>%
+              column_spec(5, width = "3cm") %>%
+              column_spec(6, width = "4cm") %>%
+              row_spec(0, hline_after = T, bold = TRUE)  %>%
+              row_spec(c(1:10), hline_after = T)
+
+
+```
+\newpage
+
+#### Demographic Variables
+
+```{r, echo=FALSE, warning=FALSE}
+
+rownames(dem) <- NULL
+
+
+
+kbl(dem,  
+     "latex",
+     booktabs = T) %>%
+              kable_styling(full_width = T,
+                            fixed_thead = T,
+                            latex_options = c("scale_down")) %>%
+              column_spec(1, width = "3cm") %>%
+              column_spec(2, width = "4cm") %>%
+              column_spec(3, width = "4cm") %>%
+              column_spec(4, width = "3cm") %>%
+              column_spec(5, width = "3cm") %>%
+              column_spec(6, width = "4cm") %>%
+              row_spec(0, hline_after = T, bold = TRUE)  %>%
+              row_spec(c(1:10), hline_after = T)
+
+
+```
