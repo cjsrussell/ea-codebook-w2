@@ -1,23 +1,23 @@
 ﻿Variable Name,Variable Label,Description,Variable Type,Definition,Response Options
-Income,inc_01,"Response to: ""What was your household income last year, including casual and part-time income?""",ordinal/ categorical,inc_01 default,country specific brackets (see full codebook)
-Years in Education,ed_01,"Response to: ""For how many years were you in formal education (e.g. Schools, University)?""",Continuous,ed_01 default,open response
-Ethnicity,eth_01,"Response to: ""What is your ethnicity?""",Categorical,eth_01 default,country specific brackets (see full codebook)
-Sexual Orientation,sexor_01,"Response to: ""Which of the following best describes your sexual orientation?""",Categorical,sexor_01 default,"Heterosexual (1)
+Income,income,"Response to: ""What was your household income last year, including casual and part-time income?""",ordinal/ categorical,inc_01 default,country specific brackets (see full codebook)
+Years in Education,educationYears,"Response to: ""For how many years were you in formal education (e.g. Schools, University)?""",Continuous,ed_01 default,open response
+Ethnicity,ethnicity,"Response to: ""What is your ethnicity?""",Categorical,eth_01 default,country specific brackets (see full codebook)
+Sexual Orientation,sexualOrientation,"Response to: ""Which of the following best describes your sexual orientation?""",Categorical,sexor_01 default,"Heterosexual (1)
 Homosexual (2)
 Bisexual (3)
 Other sexual orientation (4)
 (please specify)"
-Martital Status,mar_01,"Response to: ""	What is your marital status?""",Categorical,mar_01 default,"Single, not in a committed relationship (1)
+Martital Status,maritalStatus,"Response to: ""	What is your marital status?""",Categorical,mar_01 default,"Single, not in a committed relationship (1)
 Single, in a committed relationship (2)
 Living with a partner (3)
 Married or civil union (4)
 Divorced (5)
 Separated (6)
 Widowed (7)"
-Homeshooling (primary),homeschool_p,"Response to ""Between the ages of 5- 10 were you homeschooled?""",Binary,homeschool_p default,yes/no
-Religious Homeshooling (primary),relig_hs_p,"Response to ""Was this schooling religious?""",Binary,relig_hs_p default,yes/no
-Religious Primary School,relig_school_p,"Response to: ""Was your school(s) affiliated with a religion/faith?""",Binary,relig_school_p default,yes/no
-Homeshooling (secondary),homeschool_s,"Response to ""Between the ages of 11-16 were you homeschooled?""",Binary,homeschool_s default,yes/no
-Religious Homeshooling (seconday) ,relig_hs_s,"Response to ""Was this schooling religious?""",Binary,relig_hs_s default,yes/no
-Religious Secondary School,relig_school_s,"Response to: ""Was your school(s) affiliated with a religion/faith?""",Binary,relig_school_s default,yes/no
-SES,ses_01,"Task, with the following response Q: ""Please select where on the rung you think you stand at this time in your life relative to other people in the [COUNTRY], with 1 being the top and 10 being the bottom.""",Continuous,ses_01 default,1 to 10 
+Homeshooling (primary),primaryHomeschooled,"Response to ""Between the ages of 5- 10 were you homeschooled?""",Binary,homeschool_p default,yes/no
+Religious Homeshooling (primary),primaryHomeschooledFaith,"Response to ""Was this schooling religious?""",Binary,relig_hs_p default,yes/no
+Religious Primary School,primarySchoolFaith,"Response to: ""Was your school(s) affiliated with a religion/faith?""",Binary,relig_school_p default,yes/no
+Homeshooling (secondary),secondaryHomeschooled,"Response to ""Between the ages of 11-16 were you homeschooled?""",Binary,homeschool_s default,yes/no
+Religious Homeshooling (seconday) ,secondaryHomeschooledFaith,"Response to ""Was this schooling religious?""",Binary,relig_hs_s default,yes/no
+Religious Secondary School,secondarySchoolFaith,"Response to: ""Was your school(s) affiliated with a religion/faith?""",Binary,relig_school_s default,yes/no
+SES,ses,"Task, with the following response Q: ""Please select where on the rung you think you stand at this time in your life relative to other people in the [COUNTRY], with 1 being the top and 10 being the bottom.""",Continuous,ses_01 default,1 to 10 

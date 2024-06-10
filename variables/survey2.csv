@@ -6,7 +6,7 @@ Promiscuous Teleology,promiscuousTeleology,Promiscuous Teleology Score,numeric,P
 Vividness of Mental Imagery,vividnessImagery,Vividness of mental imagery score,numeric,Vividness of Mental Imagery,mean vvi_01: vvi_32
 Existential Security (upbringing),existentialInsecurity,Upbringing existential security score,numeric,Existential Security,mean es_15: es_21
 Meaning in Life,meaningLife,Meaning in life score,numeric,Need for Meaning,mean mlq_01: mlq_10
-Cognitive Style (correct),crtCorrect,Proportion correct cogntive styles questions,numeric/binomial,Thinking Style,The mean (proportion) of crt_01: crt_07 that are correct
-Cognitive Style (intuitive),crtType,Proportion intuitive cogntive styles questions,numeric/binomial,Thinking Style,The mean (proportion) of crt_01:crt_07 that are intuitive
+Analytic Thinking,analyticThinking,Proportion correct cogntive styles questions,numeric/binomial,Thinking Style,The mean (proportion) of crt_01: crt_07 that are correct
+Intuitive Thinking,intuitiveThinking,Proportion intuitive cogntive styles questions,numeric/binomial,Thinking Style,The mean (proportion) of crt_01:crt_07 that are intuitive
 Tolerance of Ambiguity,ambiguityTolerance,Tolerance of ambiguity  score,numeric,Tolerance of Ambiguity,The mean of at_01: at_13
 Importance of Rationality,rationalityImportance,Importance of rationality score,numeric,Importance of Rationality,The mean of imp_01 : imp_06

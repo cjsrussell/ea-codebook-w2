@@ -1,6 +1,6 @@
 ﻿Variable Name,Variable Label,Variable Type,Description,Definition,Response Options
-Religious Identification,religID_1,binary,Yes/no belong to a religion,rid_01 default,"0,1"
-Religious Identity,religID_2,categorical,Which religion category,rid_02 default,"1. Protestant
+Religious Identification,religID1,binary,Yes/no belong to a religion,rid_01 default,"0,1"
+Religious Identity,religID2,categorical,Which religion category,rid_02 default,"1. Protestant
 2. Catholic
 3. Orthodox (e.g. Greek Orthodox, Russian Orthodox)
 4. Sunni

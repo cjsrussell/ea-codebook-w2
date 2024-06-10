@@ -55,6 +55,17 @@ surv1 %>%
 
 ```
 
+## Survey 1
+
+```{r, echo=FALSE, warning=FALSE}
+surv2 %>%
+  flextable() %>%
+  autofit() %>%
+  theme_vanilla()
+ 
+
+```
+
 ## Belief Measures
 
 ### Belief in God

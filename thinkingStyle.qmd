@@ -13,7 +13,7 @@ library(flextable)
 cogstyles <- read.csv("variables/survey2.csv")
 colnames(cogstyles) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
 
-tab <- cogstyles %>% filter(grepl("^Cognitive Style", `Variable Name`))
+tab <- cogstyles %>% filter(grepl("^Analytic Thinking", `Variable Name`))
 
 ```
 
