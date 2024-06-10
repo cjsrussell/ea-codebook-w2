@@ -55,7 +55,7 @@ surv1 %>%
 
 ```
 
-## Survey 1
+## Survey 2
 
 ```{r, echo=FALSE, warning=FALSE}
 surv2 %>%
