@@ -10,7 +10,6 @@ format:
       - left=20mm
       - right=20mm    
 editor: visual
-
 ---
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
@@ -26,7 +25,7 @@ library(flextable)
 surv1 <- read.csv("variables/survey1.csv")
 colnames(surv1) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Definition", "Response Options")
 
-surv2 <- read.csv("variables/survey1.csv")
+surv2 <- read.csv("variables/survey2.csv")
 colnames(surv2) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Definition", "Response Options")
 
 ath <- read.csv("variables/atheism.csv")
@@ -61,7 +60,7 @@ colnames(agreement) <- c("Strongly Disagree", "Moderately Disagree", "Slightly D
 
 # tab 1
 
-surv1.1 <- surv1[1:13,]
+surv1.1 <- surv1[1:10,]
 
  kbl(surv1.1,
      "latex",
@@ -76,16 +75,18 @@ surv1.1 <- surv1[1:13,]
               column_spec(5, width = "3cm") %>%
               column_spec(6, width = "4cm") %>%
               row_spec(0, hline_after = T, bold = TRUE)  %>%
-              row_spec(c(1:13), hline_after = T)
+              row_spec(c(1:10), hline_after = T)
  
 
 ```
+
 \newpage
+
 ```{r, echo=FALSE, warning=FALSE}
 
 # tab 2
 
-surv1.2 <- surv1[13:26,]
+surv1.2 <- surv1[11:20,]
 rownames(surv1.2) <- NULL
 
 
@@ -102,10 +103,67 @@ kbl(surv1.2,
               column_spec(5, width = "3cm") %>%
               column_spec(6, width = "4cm") %>%
               row_spec(0, hline_after = T, bold = TRUE)  %>%
-              row_spec(c(1:13), hline_after = T)
+              row_spec(c(1:10), hline_after = T)
 
 
 ```
+\newpage
+
+```{r, echo=FALSE, warning=FALSE}
+
+# tab 3
+
+surv1.3 <- surv1[21:28,]
+rownames(surv1.3) <- NULL
+
+
+kbl(surv1.3,
+     "latex",
+     booktabs = T) %>%
+              kable_styling(full_width = T,
+                            fixed_thead = T,
+                            latex_options = c("scale_down")) %>%
+              column_spec(1, width = "3cm") %>%
+              column_spec(2, width = "4cm") %>%
+              column_spec(3, width = "4cm") %>%
+              column_spec(4, width = "3cm") %>%
+              column_spec(5, width = "3cm") %>%
+              column_spec(6, width = "4cm") %>%
+              row_spec(0, hline_after = T, bold = TRUE)  %>%
+              row_spec(c(1:8), hline_after = T)
+
+
+```
+
+## Survey 2
+
+
+```{r, echo=FALSE, warning=FALSE}
+
+
+surv2<- surv2[1:11,]
+rownames(surv2) <- NULL
+
+
+ kbl(surv2,
+     "latex",
+     booktabs = T) %>%
+              kable_styling(full_width = T,
+                            fixed_thead = T,
+                            latex_options = c("scale_down")) %>%
+              column_spec(1, width = "3cm") %>%
+              column_spec(2, width = "4cm") %>%
+              column_spec(3, width = "4cm") %>%
+              column_spec(4, width = "3cm") %>%
+              column_spec(5, width = "3cm") %>%
+              column_spec(6, width = "4cm") %>%
+              row_spec(0, hline_after = T, bold = TRUE)  %>%
+              row_spec(c(1:11), hline_after = T)
+ 
+
+```
+
+\newpage
 
 ## Belief Measures
 
@@ -137,7 +195,7 @@ kbl(big1,
 
 ```{r, echo=FALSE}
 
-big2 <- big[5:6,]
+big2 <- big[5:11,]
 
 rownames(big2) <- NULL
 
@@ -154,7 +212,7 @@ kbl(big2,
               column_spec(5, width = "3cm") %>%
               column_spec(6, width = "4cm") %>%
               row_spec(0, hline_after = T, bold = TRUE)  %>%
-              row_spec(c(1:4), hline_after = T)
+              row_spec(c(1:5), hline_after = T)
 ```
 
 \newpage
@@ -201,7 +259,7 @@ kbl(rel1,
 ```
 
 ```{r, echo=FALSE}
-rel2 <- rel[7:10,]
+rel2 <- rel[7:12,]
 rownames(rel2) <- NULL
 
 kbl(rel2,  
@@ -217,9 +275,8 @@ kbl(rel2,
               column_spec(5, width = "3cm") %>%
               column_spec(6, width = "4cm") %>%
               row_spec(0, hline_after = T, bold = TRUE)  %>%
-              row_spec(c(1:3), hline_after = T)
+              row_spec(c(1:5), hline_after = T)
 ```
-
 
 ### Meta-Belief
 
@@ -529,17 +586,19 @@ kbl(snb9,
 
 
 ```
+
 \newpage
 
 #### Demographic Variables
 
 ```{r, echo=FALSE, warning=FALSE}
 
-rownames(dem) <- NULL
+
+dem1 <- dem[1:6,]
+rownames(dem1) <- NULL
 
 
-
-kbl(dem,  
+kbl(dem1,  
      "latex",
      booktabs = T) %>%
               kable_styling(full_width = T,
@@ -552,7 +611,31 @@ kbl(dem,
               column_spec(5, width = "3cm") %>%
               column_spec(6, width = "4cm") %>%
               row_spec(0, hline_after = T, bold = TRUE)  %>%
-              row_spec(c(1:10), hline_after = T)
+              row_spec(c(1:6), hline_after = T)
+
+
+```
+\newpage
+```{r, echo=FALSE, warning=FALSE}
+
+
+dem2 <- dem[6:12,]
+rownames(dem2) <- NULL
+
+kbl(dem2,  
+     "latex",
+     booktabs = T) %>%
+              kable_styling(full_width = T,
+                            fixed_thead = T,
+                            latex_options = c("scale_down")) %>%
+              column_spec(1, width = "3cm") %>%
+              column_spec(2, width = "4cm") %>%
+              column_spec(3, width = "4cm") %>%
+              column_spec(4, width = "3cm") %>%
+              column_spec(5, width = "3cm") %>%
+              column_spec(6, width = "4cm") %>%
+              row_spec(0, hline_after = T, bold = TRUE)  %>%
+              row_spec(c(1:6), hline_after = T)
 
 
 ```

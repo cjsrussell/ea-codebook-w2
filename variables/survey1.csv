@@ -24,4 +24,6 @@ Collectivism,collectivism,Individualism score,numeric,Individualism & Collectivi
 Rebelliousness (trolling),rebelliousnessTrolling,Rebelliousness trolling score,numeric,Rebelliousness,The mean of rb_01 : rb_04
 Existential Insecurity (upbringing),existentialInsecurity,Upbringing existential security score,numeric,Existential Security,mean es_15: es_21
 Meaning in Life,meaningLife,Meaning in life score,numeric,Need for Meaning,mean mlq_01: mlq_10
+Meaning in Life (search),meaningLifeSearch,Meaning in life search subscale score,numeric,Need for Meaning,"mean of mlq_02, 03, 07, 08, 10"
+Meaning in Life (presence),meaningLifePresence,Meaning in life presence subscale score,numeric,Need for Meaning,"mean of mlq_01, 04, 05, 06, 09"
 Social Desirability,socialDesirability,Social Desirability score,numeric,Social Desirability,mean sd_01: sd_08

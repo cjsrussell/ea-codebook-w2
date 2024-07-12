@@ -10,7 +10,7 @@ Welcome to the codebook for the second of the Explaining Atheism project. Here y
 
 This dataset is being collected via international surveys in Brazil, Japan, China, the United States, Denmark annd the UK.
 
-The dataset is comprised of two surveys of possible explanations of belief and non-belief, with the same belief measures included in both surveys. Each survey is run in a nationally representative sample (age, sex, region) of 1250 participants in each of the six countries.
+The dataset is comprised of two surveys of possible explanations of belief and non-belief, with the same belief measures included in both surveys. Each survey is run in a nationally representative sample (age, sex, region) of 1500 participants in each of the six countries.
 
 
 ### Additional Information

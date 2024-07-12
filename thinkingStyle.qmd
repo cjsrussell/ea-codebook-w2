@@ -58,7 +58,7 @@ For scoring responses are labelled as either "Correct", "Intuitive" or "Incorrec
 | crt_01 | second (or 2nd, 2 or any variation therein) | first (or 1st, 1 or any variation of) |
 | crt_02 | 8 (or eight or other variations of/typos)   | 7 (or seven or variations of)         |
 | crt_03 | Emily (or typos of)                         | June (or typos)                       |
-| crt_04 | 0                                           | 3                                     |
+| crt_04 | 0                                           | 27                                     |
 | crt_04 | 5 cents                                     | 10 cents                              |
 | crt_05 | 5 minutes                                   | 1 minute                              |
 | crt_06 | 47 days                                     | 24 days                               |

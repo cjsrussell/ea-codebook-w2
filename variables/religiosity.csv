@@ -57,3 +57,5 @@ Additional Caregiver Religiosity  Identity,caregiverReligiousID2,categorical,Whi
 10. Jewish
 11. Shinto
 12. Other (please specify)"
+Religiosity (local region) Survey,regionReligiosity,numeric,proportion of those identifying as religious in local region,rid_01 grouped by local region,proportion
+Religiosity (local region) External,regionReligiosity_external,numeric,proportion of those identifying as religious in local region,external data source (noted in papers/datafile),proportion

@@ -14,7 +14,8 @@ mot <- read.csv("variables/survey1.csv")
 colnames(mot) <- c("Variable Name", "Variable Label", "Description", "Variable Type", "Source (Section)", "Definition")
 
 
-tab <- mot %>% filter(`Variable Name` == "Meaning in Life")
+tab <- mot %>% filter(startsWith(`Variable Name`, "Meaning in Life"))
+
 
 ```
 
